@@ -1,0 +1,8 @@
+api-hub-frontend/node_modules/
+api-hub-frontend/dist/
+
+api-hub-backend/target/
+
+.env
+.env.local
+.vscode/
