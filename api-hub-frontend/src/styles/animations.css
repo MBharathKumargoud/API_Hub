@@ -1,12 +1,95 @@
-@keyframes fadeUp {
+/* =========================================================
+   API HUB ANIMATIONS
+   ========================================================= */
+
+@keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
   }
 
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.04);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
   }
 }
 
@@ -17,51 +100,55 @@
   }
 
   50% {
-    transform: translateY(-12px);
+    transform: translateY(-6px);
   }
 }
 
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
 
-  50% {
-    background-position: 100% 50%;
-  }
+/* =========================================================
+   UTILITY ANIMATION CLASSES
+   ========================================================= */
 
-  100% {
-    background-position: 0% 50%;
-  }
+.animate-fade-in {
+  animation: fadeIn 0.5s ease both;
 }
 
-@keyframes pulseGlow {
-  0%,
-  100% {
-    opacity: 0.5;
-  }
-
-  50% {
-    opacity: 0.9;
-  }
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease both;
 }
 
-.fade-up {
-  animation: fadeUp 0.7s ease forwards;
+.animate-fade-in-down {
+  animation: fadeInDown 0.5s ease both;
 }
 
-.float {
-  animation: float 4s ease-in-out infinite;
+.animate-slide-right {
+  animation: slideInRight 0.5s ease both;
 }
 
-.gradient-animation {
-  background-size: 200% 200%;
-  animation: gradientMove 8s ease infinite;
+.animate-slide-left {
+  animation: slideInLeft 0.5s ease both;
 }
 
-.pulse-glow {
-  animation: pulseGlow 3s ease-in-out infinite;
+.animate-scale-in {
+  animation: scaleIn 0.35s ease both;
 }
+
+.animate-pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -70,5 +157,6 @@
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
 }

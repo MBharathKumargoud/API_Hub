@@ -3017,3 +3017,3672 @@ input:focus-visible {
     font-size: 38px;
   }
 }
+/* =========================================================
+   DESKTOP HERO + FLOATING API ANIMATIONS
+   ========================================================= */
+
+/* Make the hero use the desktop viewport properly */
+
+.hero {
+  width: 100%;
+  max-width: 1440px;
+  min-height: calc(100vh - 82px);
+
+  margin: 0 auto;
+
+  padding: 55px 50px 65px;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(520px, 0.95fr);
+
+  gap: 30px;
+
+  box-sizing: border-box;
+}
+
+
+/* Keep content from becoming too small */
+
+.hero-copy {
+  max-width: 680px;
+}
+
+
+/* Make the visual larger on desktop */
+
+.hero-visual {
+  min-height: 600px;
+
+  transform: scale(1.05);
+}
+
+
+/* Bigger API orbit */
+
+.api-orbit {
+  width: 560px;
+  height: 560px;
+}
+
+
+/* Bigger rings */
+
+.ring-one {
+  width: 370px;
+  height: 370px;
+}
+
+.ring-two {
+  width: 520px;
+  height: 520px;
+}
+
+
+/* =====================================================
+   API FLOATING SYSTEM
+   ===================================================== */
+
+.api-code-card {
+  animation: apiResponseFloat 5s ease-in-out infinite;
+  will-change: transform;
+}
+
+.api-one {
+  animation: weatherFloat 6s ease-in-out infinite;
+  animation-delay: -1.5s;
+  will-change: transform;
+}
+
+.api-two {
+  animation: mapsFloat 6.5s ease-in-out infinite;
+  animation-delay: -3s;
+  will-change: transform;
+}
+
+.api-three {
+  animation: openaiFloat 5.5s ease-in-out infinite;
+  animation-delay: -2s;
+  will-change: transform;
+}
+
+.api-four {
+  animation: stripeFloat 6.2s ease-in-out infinite;
+  animation-delay: -4s;
+  will-change: transform;
+}
+
+.center-api {
+  animation: centerApiFloat 4.5s ease-in-out infinite;
+  will-change: transform;
+}
+
+.developer-badge {
+  animation: badgeFloat 5.8s ease-in-out infinite;
+  animation-delay: -2.5s;
+  will-change: transform;
+}
+
+
+/* =====================================================
+   API RESPONSE
+   ===================================================== */
+
+@keyframes apiResponseFloat {
+
+  0%,
+  100% {
+    transform:
+      translate3d(0, 0, 0)
+      rotate(0deg);
+  }
+
+  25% {
+    transform:
+      translate3d(-7px, -10px, 0)
+      rotate(-1deg);
+  }
+
+  50% {
+    transform:
+      translate3d(3px, -20px, 0)
+      rotate(1deg);
+  }
+
+  75% {
+    transform:
+      translate3d(8px, -8px, 0)
+      rotate(0deg);
+  }
+}
+
+
+/* =====================================================
+   WEATHER / CLOUD
+   ===================================================== */
+
+@keyframes weatherFloat {
+
+  0%,
+  100% {
+    transform:
+      translate3d(0, 0, 0)
+      rotate(0deg);
+  }
+
+  25% {
+    transform:
+      translate3d(8px, -12px, 0)
+      rotate(1deg);
+  }
+
+  50% {
+    transform:
+      translate3d(14px, -24px, 0)
+      rotate(2deg);
+  }
+
+  75% {
+    transform:
+      translate3d(5px, -12px, 0)
+      rotate(-1deg);
+  }
+}
+
+
+/* =====================================================
+   GOOGLE MAPS
+   ===================================================== */
+
+@keyframes mapsFloat {
+
+  0%,
+  100% {
+    transform:
+      translate3d(0, 0, 0)
+      rotate(0deg);
+  }
+
+  30% {
+    transform:
+      translate3d(-10px, -8px, 0)
+      rotate(-1deg);
+  }
+
+  60% {
+    transform:
+      translate3d(-15px, -20px, 0)
+      rotate(-2deg);
+  }
+
+  80% {
+    transform:
+      translate3d(-5px, -10px, 0)
+      rotate(1deg);
+  }
+}
+
+
+/* =====================================================
+   OPENAI
+   ===================================================== */
+
+@keyframes openaiFloat {
+
+  0%,
+  100% {
+    transform:
+      translate3d(0, 0, 0)
+      rotate(0deg);
+  }
+
+  35% {
+    transform:
+      translate3d(7px, -14px, 0)
+      rotate(1deg);
+  }
+
+  70% {
+    transform:
+      translate3d(-5px, -25px, 0)
+      rotate(-1deg);
+  }
+}
+
+
+/* =====================================================
+   STRIPE
+   ===================================================== */
+
+@keyframes stripeFloat {
+
+  0%,
+  100% {
+    transform:
+      translate3d(0, 0, 0)
+      rotate(0deg);
+  }
+
+  30% {
+    transform:
+      translate3d(-8px, -10px, 0)
+      rotate(-1deg);
+  }
+
+  60% {
+    transform:
+      translate3d(-12px, -22px, 0)
+      rotate(-2deg);
+  }
+
+  80% {
+    transform:
+      translate3d(-4px, -12px, 0)
+      rotate(1deg);
+  }
+}
+
+
+/* =====================================================
+   CENTER API
+   ===================================================== */
+
+@keyframes centerApiFloat {
+
+  0%,
+  100% {
+    transform:
+      translate3d(0, 0, 0)
+      scale(1);
+  }
+
+  50% {
+    transform:
+      translate3d(0, -16px, 0)
+      scale(1.025);
+  }
+}
+
+
+/* =====================================================
+   DEVELOPER BADGE
+   ===================================================== */
+
+@keyframes badgeFloat {
+
+  0%,
+  100% {
+    transform:
+      translate3d(0, 0, 0)
+      rotate(0deg);
+  }
+
+  35% {
+    transform:
+      translate3d(8px, -8px, 0)
+      rotate(1deg);
+  }
+
+  70% {
+    transform:
+      translate3d(-5px, -16px, 0)
+      rotate(-1deg);
+  }
+}
+
+/* =========================================================
+   INDIVIDUAL FLOAT MOTIONS
+   ========================================================= */
+
+@keyframes floatResponse {
+
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(-8px, -18px, 0);
+  }
+}
+
+
+@keyframes floatWeather {
+
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate3d(8px, -20px, 0) rotate(1deg);
+  }
+}
+
+
+@keyframes floatMaps {
+
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate3d(-7px, -17px, 0) rotate(-1deg);
+  }
+}
+
+
+@keyframes floatOpenAI {
+
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(6px, -22px, 0);
+  }
+}
+
+
+@keyframes floatStripe {
+
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(-6px, -16px, 0);
+  }
+}
+
+
+@keyframes centerFloat {
+
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -14px, 0);
+  }
+}
+
+
+@keyframes floatBadge {
+
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(7px, -12px, 0);
+  }
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   ========================================================= */
+
+@media (min-width: 1400px) {
+
+  .hero {
+    max-width: 1500px;
+
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .hero-copy h1 {
+    font-size: 84px;
+  }
+
+  .hero-visual {
+    transform: scale(1.12);
+  }
+}
+
+
+/* =========================================================
+   LAPTOP
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .hero {
+    grid-template-columns: 1fr 0.9fr;
+
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .hero-copy h1 {
+    font-size: 62px;
+  }
+
+  .hero-visual {
+    transform: scale(0.9);
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .hero {
+    width: 100%;
+
+    min-height: auto;
+
+    padding:
+      50px 20px
+      60px;
+
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual {
+    min-height: 430px;
+
+    transform: scale(0.72);
+  }
+
+  .api-orbit {
+    width: 500px;
+    height: 500px;
+  }
+}
+/* =====================================================
+   LARGE DESKTOP TYPOGRAPHY
+   ===================================================== */
+
+@media (min-width: 1200px) {
+
+  .hero-copy h1 {
+    font-size: 82px;
+    line-height: 0.98;
+    letter-spacing: -3px;
+  }
+
+  .hero-copy p {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 620px;
+  }
+
+  .eyebrow {
+    font-size: 14px;
+  }
+
+  .hero-search {
+    height: 62px;
+  }
+
+  .hero-search input {
+    font-size: 15px;
+  }
+
+  .hero-stats strong {
+    font-size: 22px;
+  }
+
+  .hero-stats span {
+    font-size: 12px;
+  }
+
+  .primary-button,
+  .secondary-button {
+    font-size: 14px;
+  }
+}
+/* Keep Stripe clear of the developer badge */
+.api-four {
+  bottom: 75px;
+  right: 105px;
+  z-index: 30;
+}
+
+/* Move developer badge away from Stripe */
+.developer-badge {
+  right: -10px;
+  bottom: -5px;
+  z-index: 30;
+}
+/* =====================================================
+   INTERACTIVE FLOATING API CARDS
+   ===================================================== */
+
+.floating-api {
+  cursor: pointer;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+
+/* Hover */
+
+.floating-api:hover {
+  transform:
+    translateY(-10px)
+    scale(1.035);
+
+  box-shadow:
+    0 25px 60px rgba(76, 70, 180, 0.18);
+
+  z-index: 50;
+}
+
+
+/* Small hint appears on hover */
+
+.floating-api-hint {
+  position: absolute;
+
+  left: 50%;
+  bottom: -30px;
+
+  transform:
+    translateX(-50%)
+    translateY(5px);
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  background: rgba(18, 24, 39, 0.92);
+  color: white;
+
+  font-size: 10px;
+  white-space: nowrap;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.floating-api:hover .floating-api-hint {
+  opacity: 1;
+
+  transform:
+    translateX(-50%)
+    translateY(0);
+}
+
+
+/* Active/open card */
+
+.floating-api-open {
+  transform:
+    translateY(-8px)
+    scale(1.04);
+
+  z-index: 100;
+}
+
+
+/* =====================================================
+   API POPUP
+   ===================================================== */
+
+.api-floating-popup {
+  position: absolute;
+
+  width: 300px;
+
+  padding: 22px;
+
+  border-radius: 22px;
+
+  background:
+    rgba(255, 255, 255, 0.96);
+
+  border: 1px solid rgba(110, 100, 255, 0.18);
+
+  box-shadow:
+    0 30px 80px rgba(50, 45, 130, 0.18);
+
+  backdrop-filter: blur(20px);
+
+  z-index: 200;
+
+  animation: apiPopupIn 0.3s ease forwards;
+}
+
+
+@keyframes apiPopupIn {
+
+  from {
+    opacity: 0;
+    transform:
+      translateY(12px)
+      scale(0.94);
+  }
+
+  to {
+    opacity: 1;
+    transform:
+      translateY(0)
+      scale(1);
+  }
+}
+
+
+/* Popup close */
+
+.api-popup-close {
+  position: absolute;
+
+  top: 12px;
+  right: 12px;
+
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  border-radius: 50%;
+
+  background: #f3f4fb;
+  color: #1a2033;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.api-popup-close:hover {
+  background: #e8e9f5;
+  transform: rotate(8deg);
+}
+
+
+/* Popup icon */
+
+.api-popup-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 14px;
+
+  border-radius: 15px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(112, 91, 255, 0.14),
+      rgba(77, 132, 255, 0.08)
+    );
+
+  color: #6757ff;
+}
+
+
+/* Popup text */
+
+.api-popup-category {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #7569e8;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+
+.api-popup-content h3 {
+  margin: 0 0 8px;
+
+  font-size: 22px;
+
+  color: #12182a;
+}
+
+
+.api-popup-content p {
+  margin: 0 0 16px;
+
+  color: #69728a;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* Features */
+
+.api-popup-features {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-bottom: 18px;
+}
+
+
+.api-popup-features span {
+  padding: 6px 9px;
+
+  border-radius: 8px;
+
+  background: #f4f4fc;
+
+  color: #525a70;
+
+  font-size: 10px;
+}
+
+
+/* Explore button */
+
+.api-popup-button {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 11px 15px;
+
+  border: none;
+  border-radius: 11px;
+
+  background: #141a2a;
+
+  color: white;
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.api-popup-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(20, 26, 42, 0.2);
+}
+/* =====================================================
+   STRIPE / DEVELOPER BADGE SPACING
+   ===================================================== */
+
+.api-four {
+  right: 120px;
+  bottom: 90px;
+  z-index: 20;
+}
+
+.developer-badge {
+  right: -5px;
+  bottom: -15px;
+  z-index: 30;
+}
+/* =====================================================
+   INTERACTIVE HERO ELEMENTS
+   ===================================================== */
+
+.api-code-card,
+.developer-badge {
+  cursor: pointer;
+}
+
+
+/* Remove default button styling */
+
+.api-code-card {
+  border: none;
+  font-family: inherit;
+  text-align: left;
+}
+
+
+/* Developer badge */
+
+.developer-badge {
+  border: none;
+  font-family: inherit;
+  text-align: left;
+}
+
+
+/* Hover */
+
+.api-code-card:hover,
+.developer-badge:hover {
+  transform:
+    translateY(-8px)
+    scale(1.03);
+
+  box-shadow:
+    0 25px 60px rgba(76, 70, 180, 0.18);
+}
+
+
+/* Keyboard accessibility */
+
+.api-code-card:focus-visible,
+.developer-badge:focus-visible {
+  outline: 2px solid #6d5dfc;
+  outline-offset: 4px;
+}
+/* =====================================================
+   HERO ACTION POPUPS
+   ===================================================== */
+
+.api-code-card,
+.developer-badge {
+  cursor: pointer;
+}
+
+
+/* Remove browser button styling */
+
+.api-code-card {
+  font-family: inherit;
+  text-align: left;
+}
+
+
+.developer-badge {
+  font-family: inherit;
+  text-align: left;
+}
+
+
+/* Hero popup */
+
+.hero-action-popup {
+  position: absolute;
+
+  width: 300px;
+
+  padding: 24px;
+
+  background: rgba(255, 255, 255, 0.97);
+
+  border: 1px solid rgba(105, 91, 255, 0.18);
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 30px 80px rgba(50, 45, 130, 0.2);
+
+  backdrop-filter: blur(20px);
+
+  z-index: 500;
+
+  animation: heroPopupIn 0.25s ease forwards;
+}
+
+
+@keyframes heroPopupIn {
+
+  from {
+    opacity: 0;
+    transform:
+      translateY(12px)
+      scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform:
+      translateY(0)
+      scale(1);
+  }
+
+}
+
+
+/* Response popup position */
+
+.response-popup {
+  top: 105px;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+
+/* Workspace popup position */
+
+.workspace-popup {
+  right: 10px;
+  bottom: 70px;
+}
+
+
+/* Close button */
+
+.hero-popup-close {
+  position: absolute;
+
+  top: 12px;
+  right: 12px;
+
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #f1f2f8;
+
+  color: #182033;
+
+  cursor: pointer;
+}
+
+
+.hero-popup-close:hover {
+  background: #e5e6ef;
+}
+
+
+/* Popup icon */
+
+.hero-popup-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 15px;
+
+  border-radius: 14px;
+
+  background: rgba(105, 91, 255, 0.1);
+
+  color: #6757ff;
+
+  font-weight: 700;
+}
+
+
+/* Label */
+
+.hero-popup-label {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #6d5dfc;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+}
+
+
+/* Heading */
+
+.hero-action-popup h3 {
+  margin: 0 0 9px;
+
+  color: #12182a;
+
+  font-size: 21px;
+}
+
+
+/* Description */
+
+.hero-action-popup p {
+  margin: 0 0 18px;
+
+  color: #69728a;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* Popup button */
+
+.hero-popup-button {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 11px 15px;
+
+  border: none;
+
+  border-radius: 11px;
+
+  background: #141a2a;
+
+  color: white;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.hero-popup-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(20, 26, 42, 0.2);
+}
+/* =========================================================
+   EXPLORE PAGE
+   API DIRECTORY / DISCOVERY
+   ========================================================= */
+
+.discover-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 85% 10%,
+      rgba(99, 91, 255, 0.10),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 10% 35%,
+      rgba(59, 130, 246, 0.06),
+      transparent 25%
+    ),
+    #f7f8ff;
+  color: #111827;
+}
+
+
+/* ---------- MAIN ---------- */
+
+.discover-main {
+  width: min(1240px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 70px 0 100px;
+}
+
+
+/* ---------- HERO ---------- */
+
+.discover-hero {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 0 70px;
+}
+
+.discover-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 8px 14px;
+  margin-bottom: 24px;
+
+  border-radius: 999px;
+
+  color: #635bff;
+  background: rgba(99, 91, 255, 0.08);
+  border: 1px solid rgba(99, 91, 255, 0.14);
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.discover-eyebrow span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #635bff;
+
+  box-shadow:
+    0 0 0 5px rgba(99, 91, 255, 0.10);
+}
+
+.discover-hero h1 {
+  max-width: 850px;
+  margin: 0 auto;
+
+  font-size: clamp(52px, 6vw, 78px);
+  line-height: 1;
+  letter-spacing: -4px;
+
+  font-weight: 700;
+
+  color: #111827;
+}
+
+.discover-hero h1 span {
+  background:
+    linear-gradient(
+      110deg,
+      #635bff,
+      #8b5cf6 45%,
+      #3b82f6
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+.discover-hero p {
+  max-width: 680px;
+
+  margin: 24px auto 32px;
+
+  color: #667085;
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* ---------- SEARCH ---------- */
+
+.discover-search {
+  width: min(720px, 100%);
+  height: 62px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 7px 7px 7px 20px;
+
+  border-radius: 17px;
+
+  background: rgba(255, 255, 255, 0.88);
+
+  border: 1px solid rgba(17, 24, 39, 0.09);
+
+  box-shadow:
+    0 20px 55px rgba(31, 41, 55, 0.09);
+
+  backdrop-filter: blur(20px);
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.discover-search:focus-within {
+  border-color: rgba(99, 91, 255, 0.35);
+
+  box-shadow:
+    0 22px 60px rgba(99, 91, 255, 0.14);
+
+  transform: translateY(-2px);
+}
+
+.discover-search > svg {
+  flex-shrink: 0;
+  color: #98a2b3;
+}
+
+.discover-search input {
+  flex: 1;
+  min-width: 0;
+
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #111827;
+
+  font-size: 14px;
+}
+
+.discover-search input::placeholder {
+  color: #98a2b3;
+}
+
+.discover-search button {
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 0 16px;
+
+  border: none;
+  border-radius: 13px;
+
+  color: white;
+
+  background: #111827;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.discover-search button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(17, 24, 39, 0.18);
+}
+
+
+/* ---------- SECTION HEADER ---------- */
+
+.discover-section-title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-bottom: 28px;
+}
+
+.discover-section-title > div > span,
+.directory-heading > div > span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #635bff;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+}
+
+.discover-section-title h2,
+.directory-heading h2 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 38px;
+  line-height: 1;
+
+  letter-spacing: -2px;
+}
+
+.discover-section-title p {
+  color: #98a2b3;
+
+  font-size: 13px;
+}
+
+
+/* ---------- CATEGORIES ---------- */
+
+.discover-categories {
+  padding: 0 0 75px;
+}
+
+.discover-category-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+.discover-category {
+  min-height: 44px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 0 15px;
+
+  border-radius: 12px;
+
+  color: #667085;
+
+  background: rgba(255, 255, 255, 0.72);
+
+  border: 1px solid rgba(17, 24, 39, 0.08);
+
+  font-size: 12px;
+  font-weight: 600;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.discover-category:hover {
+  transform: translateY(-3px);
+
+  color: #111827;
+
+  background: white;
+
+  border-color: rgba(99, 91, 255, 0.20);
+
+  box-shadow:
+    0 10px 25px rgba(31, 41, 55, 0.07);
+}
+
+.discover-category.active {
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #635bff,
+      #8b5cf6
+    );
+
+  border-color: transparent;
+
+  box-shadow:
+    0 10px 25px rgba(99, 91, 255, 0.22);
+}
+
+
+/* ---------- API DIRECTORY ---------- */
+
+.api-directory {
+  padding-top: 5px;
+}
+
+.directory-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  margin-bottom: 28px;
+}
+
+.api-count {
+  padding: 7px 12px;
+
+  border-radius: 999px;
+
+  color: #635bff;
+
+  background: #f0efff;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+
+/* ---------- API GRID ---------- */
+
+.api-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+
+/* ---------- EXPLORE API CARD ---------- */
+
+.discover-api-card {
+  position: relative;
+
+  min-height: 270px;
+
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 25px;
+
+  background:
+    rgba(255, 255, 255, 0.80);
+
+  border: 1px solid rgba(17, 24, 39, 0.07);
+
+  box-shadow:
+    0 12px 35px rgba(31, 41, 55, 0.055);
+
+  backdrop-filter: blur(15px);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.discover-api-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  right: -90px;
+  top: -90px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(99, 91, 255, 0.10),
+      transparent 70%
+    );
+
+  transition:
+    transform 0.4s ease;
+}
+
+.discover-api-card:hover {
+  transform: translateY(-8px);
+
+  border-color:
+    rgba(99, 91, 255, 0.18);
+
+  box-shadow:
+    0 28px 65px rgba(31, 41, 55, 0.11);
+}
+
+.discover-api-card:hover::before {
+  transform: scale(1.5);
+}
+
+
+/* ---------- API CARD TOP ---------- */
+
+.api-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 24px;
+}
+
+.discover-api-icon {
+  width: 54px;
+  height: 54px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 16px;
+}
+
+.discover-api-icon.orange {
+  color: #ea580c;
+  background: #ffedd5;
+}
+
+.discover-api-icon.purple {
+  color: #7c3aed;
+  background: #f3e8ff;
+}
+
+.discover-api-icon.green {
+  color: #16a34a;
+  background: #dcfce7;
+}
+
+.discover-api-icon.blue {
+  color: #2563eb;
+  background: #dbeafe;
+}
+
+.discover-api-icon.pink {
+  color: #db2777;
+  background: #fce7f3;
+}
+
+.discover-api-icon.cyan {
+  color: #0891b2;
+  background: #cffafe;
+}
+
+.api-category {
+  padding: 6px 10px;
+
+  border-radius: 999px;
+
+  color: #667085;
+
+  background: #f7f8fc;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+
+/* ---------- API CARD CONTENT ---------- */
+
+.discover-api-card h3 {
+  margin: 0 0 9px;
+
+  color: #111827;
+
+  font-size: 21px;
+
+  letter-spacing: -0.5px;
+}
+
+.discover-api-card p {
+  margin: 0;
+
+  color: #667085;
+
+  font-size: 13px;
+
+  line-height: 1.65;
+}
+
+
+/* ---------- API CARD FOOTER ---------- */
+
+.api-card-footer {
+  margin-top: auto;
+  padding-top: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-top: 1px solid rgba(17, 24, 39, 0.07);
+}
+
+.api-card-footer > span {
+  color: #98a2b3;
+
+  font-size: 11px;
+}
+
+.api-card-footer button {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 8px 12px;
+
+  border: none;
+  border-radius: 9px;
+
+  color: #635bff;
+
+  background: #f0efff;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.api-card-footer button:hover {
+  transform: translateX(3px);
+
+  background: #e7e5ff;
+}
+
+
+/* ---------- PAGE ANIMATION ---------- */
+
+.discover-hero,
+.discover-categories,
+.api-directory {
+  animation: explorePageIn 0.7s ease both;
+}
+
+.discover-categories {
+  animation-delay: 0.08s;
+}
+
+.api-directory {
+  animation-delay: 0.16s;
+}
+
+@keyframes explorePageIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ---------- EXPLORE RESPONSIVE ---------- */
+
+@media (max-width: 1000px) {
+  .discover-main {
+    width: calc(100% - 32px);
+  }
+
+  .api-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .discover-hero h1 {
+    font-size: 58px;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .discover-main {
+    width: calc(100% - 30px);
+
+    padding-top: 45px;
+  }
+
+  .discover-hero {
+    padding-bottom: 50px;
+  }
+
+  .discover-hero h1 {
+    font-size: 45px;
+    letter-spacing: -2.5px;
+  }
+
+  .discover-hero p {
+    font-size: 15px;
+  }
+
+  .discover-search {
+    height: auto;
+
+    padding: 7px;
+
+    flex-wrap: wrap;
+  }
+
+  .discover-search input {
+    height: 48px;
+  }
+
+  .discover-search button {
+    width: 100%;
+  }
+
+  .discover-section-title,
+  .directory-heading {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  .discover-section-title h2,
+  .directory-heading h2 {
+    font-size: 32px;
+  }
+
+  .api-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .discover-api-card {
+    min-height: 250px;
+  }
+}/* =========================================================
+   DISCOVER EMPTY STATE
+   ========================================================= */
+
+.discover-no-results {
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 50px;
+
+  border-radius: 25px;
+
+  background: rgba(255, 255, 255, 0.75);
+
+  border: 1px solid rgba(17, 24, 39, 0.07);
+
+  color: #98a2b3;
+}
+
+.discover-no-results svg {
+  margin-bottom: 15px;
+  color: #635bff;
+}
+
+.discover-no-results h3 {
+  margin: 0 0 8px;
+
+  color: #111827;
+
+  font-size: 22px;
+}
+
+.discover-no-results p {
+  margin: 0 0 20px;
+
+  font-size: 13px;
+}
+
+.discover-no-results button {
+  padding: 10px 16px;
+
+  border: none;
+  border-radius: 10px;
+
+  color: white;
+  background: #111827;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+.floating-api-card-button {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: inherit;
+
+  font: inherit;
+
+  cursor: pointer;
+
+  text-align: left;
+}
+
+.floating-api-card-button:focus {
+  outline: none;
+}
+/* =========================================================
+   API DETAILS PAGE
+   ========================================================= */
+
+.api-details-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(99, 91, 255, 0.10),
+      transparent 30%
+    ),
+    #f7f8ff;
+  color: #111827;
+}
+
+.api-details-main {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 55px 0 100px;
+}
+
+.api-back-button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  margin-bottom: 35px;
+
+  border: none;
+  background: transparent;
+
+  color: #667085;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: color 0.2s ease;
+}
+
+.api-back-button:hover {
+  color: #635bff;
+}
+
+
+/* HERO */
+
+.api-details-hero {
+  display: grid;
+
+  grid-template-columns: auto 1fr auto;
+
+  align-items: center;
+
+  gap: 25px;
+
+  padding: 35px;
+
+  border-radius: 30px;
+
+  background: rgba(255,255,255,0.82);
+
+  border: 1px solid rgba(17,24,39,0.07);
+
+  box-shadow:
+    0 25px 70px rgba(31,41,55,0.08);
+
+  backdrop-filter: blur(20px);
+}
+
+.api-details-icon {
+  width: 86px;
+  height: 86px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 25px;
+
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.api-details-icon.purple {
+  color: #7c3aed;
+  background: #f3e8ff;
+}
+
+.api-details-icon.orange {
+  color: #ea580c;
+  background: #ffedd5;
+}
+
+.api-details-icon.green {
+  color: #16a34a;
+  background: #dcfce7;
+}
+
+.api-details-icon.blue {
+  color: #2563eb;
+  background: #dbeafe;
+}
+
+.api-details-category {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #635bff;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.api-details-heading h1 {
+  margin: 0 0 8px;
+
+  font-size: 48px;
+
+  letter-spacing: -2px;
+}
+
+.api-details-heading p {
+  max-width: 600px;
+
+  margin: 0 0 12px;
+
+  color: #667085;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.api-provider {
+  display: flex;
+  gap: 6px;
+
+  color: #98a2b3;
+
+  font-size: 12px;
+}
+
+.api-provider strong {
+  color: #475467;
+}
+
+
+/* ACTIONS */
+
+.api-details-actions {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.api-test-button,
+.api-website-button {
+  min-width: 145px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 0 17px;
+
+  border-radius: 11px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  text-decoration: none;
+}
+
+.api-test-button {
+  border: none;
+
+  color: white;
+
+  background: #111827;
+
+  box-shadow:
+    0 10px 25px rgba(17,24,39,.15);
+}
+
+.api-website-button {
+  border: 1px solid rgba(17,24,39,.09);
+
+  color: #475467;
+
+  background: white;
+}
+
+
+/* CONTENT */
+
+.api-details-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+
+  margin-top: 22px;
+}
+
+.api-info-panel {
+  padding: 30px;
+
+  border-radius: 25px;
+
+  background: rgba(255,255,255,.82);
+
+  border: 1px solid rgba(17,24,39,.07);
+
+  box-shadow:
+    0 15px 40px rgba(31,41,55,.055);
+}
+
+.api-panel-label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #635bff;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: .12em;
+}
+
+.api-info-panel h2 {
+  margin: 0 0 14px;
+
+  font-size: 25px;
+
+  letter-spacing: -.8px;
+}
+
+.api-info-panel > p {
+  margin: 0;
+
+  color: #667085;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* FEATURES */
+
+.api-feature-list {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
+
+  margin-top: 25px;
+}
+
+.api-feature {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 10px 12px;
+
+  border-radius: 10px;
+
+  background: #f7f8fc;
+
+  color: #475467;
+
+  font-size: 11px;
+}
+
+.api-feature svg {
+  color: #635bff;
+}
+
+
+/* CONNECTION DETAILS */
+
+.api-detail-row {
+  padding: 16px 0;
+
+  border-bottom: 1px solid rgba(17,24,39,.07);
+}
+
+.api-detail-row span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #98a2b3;
+
+  font-size: 11px;
+}
+
+.api-detail-row strong {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #344054;
+
+  font-size: 13px;
+}
+
+.api-detail-row strong svg {
+  color: #635bff;
+}
+
+.api-detail-row code {
+  display: block;
+
+  padding: 10px;
+
+  overflow-x: auto;
+
+  border-radius: 8px;
+
+  color: #475467;
+
+  background: #f7f8fc;
+
+  font-size: 11px;
+}
+
+.api-start-button {
+  width: 100%;
+
+  margin-top: 20px;
+
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  border: none;
+  border-radius: 10px;
+
+  color: white;
+
+  background: #635bff;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+/* DOCUMENTATION */
+
+.api-doc-banner {
+  margin-top: 20px;
+
+  padding: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  border-radius: 25px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #171b2d,
+      #25204d
+    );
+
+  color: white;
+}
+
+.api-doc-banner .api-panel-label {
+  color: #a99fff;
+}
+
+.api-doc-banner h2 {
+  margin: 0 0 8px;
+
+  font-size: 25px;
+}
+
+.api-doc-banner p {
+  margin: 0;
+
+  max-width: 650px;
+
+  color: #b8bfd2;
+
+  font-size: 13px;
+}
+
+.api-doc-button {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 13px 17px;
+
+  border-radius: 10px;
+
+  color: #171b2d;
+
+  background: white;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+/* NOT FOUND */
+
+.api-not-found {
+  min-height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.api-not-found h1 {
+  margin-bottom: 10px;
+}
+
+.api-not-found p {
+  color: #667085;
+}
+
+.api-not-found button {
+  margin-top: 15px;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 11px 16px;
+
+  border: none;
+  border-radius: 10px;
+
+  color: white;
+  background: #111827;
+
+  cursor: pointer;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+  .api-details-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .api-details-actions {
+    flex-direction: row;
+  }
+
+  .api-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .api-doc-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .api-details-main {
+    width: calc(100% - 28px);
+  }
+
+  .api-details-hero {
+    padding: 25px;
+  }
+
+  .api-details-heading h1 {
+    font-size: 38px;
+  }
+
+  .api-details-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .api-feature-list {
+    grid-template-columns: 1fr;
+  }
+
+}
+/* =========================================================
+   FLOATING API CARD BUTTON
+   ========================================================= */
+
+
+/* =========================================================
+   EXPLORE DIRECTORY — 50 API DATASET + FILTER PANEL
+   ========================================================= */
+.discover-result-summary { display:flex; align-items:center; gap:5px; margin-top:12px; color:#7b8497; font-size:12px; }
+.discover-result-summary strong { color:#635bff; }
+.discover-result-summary button { margin-left:10px; border:0; background:transparent; color:#635bff; font-weight:700; cursor:pointer; }
+.discover-clear-search { display:grid; place-items:center; width:30px; height:30px; border:0; border-radius:9px; color:#7b8497; background:transparent; }
+.discover-filter-trigger { flex-shrink:0; }
+.api-card-meta { margin-top:13px; }
+.api-card-meta span { display:inline-flex; padding:5px 8px; border-radius:8px; background:#f0efff; color:#635bff; font-size:10px; font-weight:700; }
+.explore-filter-backdrop { position:fixed; inset:0; z-index:2000; display:flex; align-items:center; justify-content:center; padding:24px; background:rgba(10,13,25,.48); backdrop-filter:blur(9px); animation:filterBackdropIn .2s ease both; }
+.explore-filter-panel { width:min(820px,100%); max-height:min(88vh,850px); overflow:auto; padding:26px; border:1px solid rgba(255,255,255,.7); border-radius:28px; background:#fff; color:#182033; box-shadow:0 35px 100px rgba(10,13,25,.28); animation:filterPanelIn .25s ease both; }
+.explore-filter-header { display:flex; justify-content:space-between; align-items:center; gap:18px; padding-bottom:22px; border-bottom:1px solid #e9ebf2; }
+.explore-filter-header span { display:block; margin-bottom:7px; color:#635bff; font-size:10px; font-weight:800; letter-spacing:.13em; }
+.explore-filter-header h2 { color:#182033; font-size:23px; letter-spacing:-.6px; }
+.filter-close-button { display:grid; place-items:center; flex-shrink:0; width:38px; height:38px; border:1px solid #e0e4ed; border-radius:12px; color:#64708a; background:#f8f9fc; cursor:pointer; }
+.filter-group { padding:22px 0; border-bottom:1px solid #e9ebf2; }
+.filter-group > label { display:block; margin-bottom:14px; text-align:center; color:#47516a; font-size:12px; font-weight:800; }
+.filter-options { display:flex; flex-wrap:wrap; gap:9px; }
+.filter-options button { display:inline-flex; align-items:center; justify-content:center; gap:7px; min-height:37px; padding:8px 12px; border:1px solid #e0e4ed; border-radius:11px; background:#f8f9fc; color:#667085; font-size:11px; font-weight:650; cursor:pointer; transition:background .2s ease,color .2s ease,border-color .2s ease,transform .2s ease; }
+.filter-options button:hover { transform:translateY(-1px); border-color:#c7c2ff; color:#635bff; }
+.filter-options button.selected { border-color:#635bff; background:#635bff; color:#fff; box-shadow:0 8px 18px rgba(99,91,255,.18); }
+.explore-filter-footer { display:flex; align-items:center; justify-content:space-between; gap:12px; padding-top:22px; }
+.filter-reset-button { border:0; background:transparent; color:#68738a; font-size:12px; font-weight:700; cursor:pointer; }
+.filter-apply-button { display:inline-flex; align-items:center; gap:10px; min-height:42px; padding:0 16px; border:0; border-radius:12px; background:#111827; color:#fff; font-size:12px; font-weight:750; cursor:pointer; }
+.filter-apply-button:hover { background:#635bff; }
+.discover-no-results { display:flex; align-items:center; flex-direction:column; padding:55px 20px; text-align:center; border:1px dashed #d8dceb; border-radius:24px; background:rgba(255,255,255,.55); }
+.discover-no-results h3 { margin:14px 0 7px; color:#182033; font-size:21px; }
+.discover-no-results p { color:#7b8497; font-size:13px; }
+.discover-no-results button { margin-top:17px; padding:10px 14px; border:0; border-radius:10px; background:#635bff; color:#fff; font-weight:700; cursor:pointer; }
+.no-results-icon { display:grid; place-items:center; width:48px; height:48px; border-radius:15px; background:#f0efff; color:#635bff; }
+@keyframes filterBackdropIn { from { opacity:0; } to { opacity:1; } }
+@keyframes filterPanelIn { from { opacity:0; transform:translateY(12px) scale(.985); } to { opacity:1; transform:translateY(0) scale(1); } }
+
+/* Dark theme support for Explore and its filter dialog */
+html.dark-theme .discover-page { min-height:100vh; background:#090b12; color:#f5f7ff; }
+html.dark-theme .discover-hero h1, html.dark-theme .discover-section-title h2, html.dark-theme .directory-heading h2 { color:#f5f7ff; }
+html.dark-theme .discover-hero p, html.dark-theme .discover-section-title p, html.dark-theme .discover-result-summary { color:#a7afc0; }
+html.dark-theme .discover-search { background:rgba(255,255,255,.055); border-color:rgba(255,255,255,.12); }
+html.dark-theme .discover-search input { color:#f5f7ff; }
+html.dark-theme .discover-search input::placeholder { color:#8992a5; }
+html.dark-theme .discover-category { color:#a7afc0; background:rgba(255,255,255,.055); border-color:rgba(255,255,255,.1); }
+html.dark-theme .discover-category:hover { color:#fff; background:rgba(255,255,255,.1); }
+html.dark-theme .discover-api-card { background:linear-gradient(145deg,rgba(30,34,52,.92),rgba(18,21,34,.9)); border-color:rgba(255,255,255,.09); box-shadow:0 16px 45px rgba(0,0,0,.22); }
+html.dark-theme .discover-api-card h3 { color:#f5f7ff; }
+html.dark-theme .discover-api-card p, html.dark-theme .api-card-footer > span { color:#a7afc0; }
+html.dark-theme .api-card-footer { border-top-color:rgba(255,255,255,.09); }
+html.dark-theme .api-card-meta span { background:rgba(99,91,255,.18); color:#c9c5ff; }
+html.dark-theme .api-category { background:rgba(255,255,255,.08); color:#c2c8d5; }
+html.dark-theme .explore-filter-panel { background:#121520; border-color:rgba(255,255,255,.1); color:#f5f7ff; }
+html.dark-theme .explore-filter-header { border-bottom-color:rgba(255,255,255,.1); }
+html.dark-theme .explore-filter-header h2, html.dark-theme .filter-group > label { color:#f5f7ff; }
+html.dark-theme .filter-group { border-bottom-color:rgba(255,255,255,.09); }
+html.dark-theme .filter-options button { background:rgba(255,255,255,.05); border-color:rgba(255,255,255,.1); color:#b7bfd0; }
+html.dark-theme .filter-options button.selected { background:#635bff; border-color:#635bff; color:#fff; }
+html.dark-theme .filter-close-button { background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.12); color:#d3d8e4; }
+html.dark-theme .discover-no-results { background:rgba(255,255,255,.035); border-color:rgba(255,255,255,.12); }
+html.dark-theme .discover-no-results h3 { color:#f5f7ff; }
+html.dark-theme .discover-no-results p { color:#a7afc0; }
+@media (max-width:700px) { .explore-filter-backdrop { padding:10px; } .explore-filter-panel { max-height:94vh; padding:18px; border-radius:20px; } .explore-filter-header h2 { font-size:20px; } .filter-options { gap:7px; } .filter-options button { padding:8px 10px; } }
+
+
+/* =========================================================
+   API HUB — YESTERDAY EXPLORE OVERRIDES
+   50 APIs stay stored locally, but are not shown until
+   the user searches, chooses a category, or filters.
+   ========================================================= */
+
+/* Keep the API directory centered and consistent with the
+   yesterday Explore page. */
+.discover-main {
+  width: min(1180px, calc(100% - 64px));
+  margin: 0 auto;
+}
+
+/* Search bar: search icon + input + Filters button. */
+.discover-search {
+  width: min(680px, 100%);
+  margin: 34px auto 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 62px;
+  padding: 7px 8px 7px 18px;
+  border-radius: 18px;
+}
+
+.discover-search input {
+  flex: 1;
+  min-width: 0;
+}
+
+.discover-search > button {
+  flex: 0 0 auto;
+  min-width: 112px;
+}
+
+.discover-search .search-clear-button {
+  min-width: 0;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  background: transparent;
+  color: #667085;
+  box-shadow: none;
+}
+
+.discover-search .search-clear-button:hover {
+  transform: none;
+  box-shadow: none;
+  color: #111827;
+}
+
+/* Filters button from yesterday's layout. */
+.discover-search > button:not(.search-clear-button) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.discover-search > button.filter-active {
+  background: linear-gradient(135deg, #635bff, #8b5cf6);
+}
+
+/* Categories must remain horizontal on desktop. */
+.discover-category-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 2px 12px;
+  scrollbar-width: thin;
+}
+
+.discover-category-list::-webkit-scrollbar {
+  height: 5px;
+}
+
+.discover-category {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.discover-category small {
+  opacity: 0.72;
+  font-size: 10px;
+}
+
+/* Yesterday-style filter panel. */
+.explore-filter-panel {
+  width: min(760px, 100%);
+  margin: 18px auto 0;
+  border-radius: 22px;
+  padding: 24px;
+}
+
+.explore-filter-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.filter-group {
+  margin-bottom: 22px;
+}
+
+.filter-group > label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-options button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.explore-filter-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding-top: 18px;
+}
+
+.filter-apply {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+/* Initial state: no 50-card dump. */
+.discover-no-results {
+  min-height: 260px;
+}
+
+/* API results remain a three-column directory. */
+.api-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+@media (max-width: 1000px) {
+  .discover-main {
+    width: calc(100% - 32px);
+  }
+
+  .api-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .discover-category-list {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .discover-main {
+    width: calc(100% - 30px);
+  }
+
+  .discover-search {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .discover-search input {
+    min-width: 180px;
+  }
+
+  .discover-search > button:not(.search-clear-button) {
+    flex: 1 1 140px;
+  }
+
+  .api-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================================================
+   CATEGORIES — RESTORE YESTERDAY'S WIDE HORIZONTAL LAYOUT
+   ========================================================= */
+
+.discover-categories {
+  width: 100%;
+}
+
+.discover-section-title {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 24px;
+}
+
+.discover-section-title > div {
+  flex: 0 0 auto;
+}
+
+.discover-section-title > p {
+  max-width: 360px;
+  margin: 0 0 3px auto;
+  text-align: right;
+}
+
+.discover-category-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 2px 14px;
+}
+
+.discover-category {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+/* Keep the featured cards visible like yesterday,
+   while still allowing search to use all 50 APIs. */
+.api-directory {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .discover-section-title {
+    display: block;
+  }
+
+  .discover-section-title > p {
+    max-width: 100%;
+    margin: 8px 0 0;
+    text-align: left;
+  }
+
+  .discover-category-list {
+    overflow-x: auto;
+  }
+}
+
+
+/* =========================================================
+   FINAL EXPLORE POLISH
+   ========================================================= */
+
+/* Category heading should not compete for horizontal space
+   with the category buttons. */
+.discover-categories {
+  width: 100%;
+  margin-top: 54px;
+}
+
+.discover-section-title {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.discover-section-title > div {
+  width: 100%;
+}
+
+.discover-section-title > p {
+  max-width: none;
+  width: 100%;
+  margin: 8px 0 0;
+  text-align: left;
+}
+
+/* ONE horizontal category row.
+   No wrapping into vertical rows. */
+.discover-category-list {
+  width: 100%;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 2px 16px;
+  scrollbar-width: none;
+}
+
+.discover-category-list::-webkit-scrollbar {
+  display: none;
+}
+
+.discover-category {
+  flex: 0 0 auto !important;
+  white-space: nowrap !important;
+}
+
+/* =========================================================
+   API CARDS — DARK PREMIUM THEME
+   ========================================================= */
+
+html.dark-theme .discover-api-card,
+html[data-theme="dark"] .discover-api-card,
+body.dark-theme .discover-api-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(30, 34, 52, 0.96),
+      rgba(15, 18, 29, 0.96)
+    ) !important;
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.045) !important;
+  color: #f5f7ff !important;
+}
+
+html.dark-theme .discover-api-card:hover,
+html[data-theme="dark"] .discover-api-card:hover,
+body.dark-theme .discover-api-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(125, 115, 255, 0.32) !important;
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.38),
+    0 0 0 1px rgba(99, 91, 255, 0.08) !important;
+}
+
+html.dark-theme .discover-api-card h3,
+html[data-theme="dark"] .discover-api-card h3,
+body.dark-theme .discover-api-card h3 {
+  color: #f5f7ff !important;
+}
+
+html.dark-theme .discover-api-card p,
+html[data-theme="dark"] .discover-api-card p,
+body.dark-theme .discover-api-card p {
+  color: #98a2b8 !important;
+}
+
+html.dark-theme .discover-api-card .api-card-footer,
+html[data-theme="dark"] .discover-api-card .api-card-footer,
+body.dark-theme .discover-api-card .api-card-footer {
+  border-top-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+html.dark-theme .discover-api-card .api-card-footer > span,
+html[data-theme="dark"] .discover-api-card .api-card-footer > span,
+body.dark-theme .discover-api-card .api-card-footer > span {
+  color: #8993a8 !important;
+}
+
+html.dark-theme .discover-api-card .api-category,
+html[data-theme="dark"] .discover-api-card .api-category,
+body.dark-theme .discover-api-card .api-category {
+  background: rgba(255, 255, 255, 0.07) !important;
+  color: #b9c1d1 !important;
+}
+
+html.dark-theme .discover-api-card .api-card-action,
+html[data-theme="dark"] .discover-api-card .api-card-action,
+body.dark-theme .discover-api-card .api-card-action {
+  background: rgba(255, 255, 255, 0.94) !important;
+  color: #635bff !important;
+}
+
+/* API icon containers should blend into the dark cards. */
+html.dark-theme .discover-api-icon,
+html[data-theme="dark"] .discover-api-icon,
+body.dark-theme .discover-api-icon {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+/* Keep the directory visually separated from categories. */
+.api-directory {
+  margin-top: 58px;
+}
+
+/* Desktop: all categories stay on one line.
+   If the viewport is narrower, the row scrolls horizontally
+   instead of breaking into multiple rows. */
+@media (min-width: 901px) {
+  .discover-category-list {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 900px) {
+  .discover-category-list {
+    overflow-x: auto;
+  }
+}
+/* =========================================================
+   FINAL EXPLORE LAYOUT FIX
+   ========================================================= */
+
+/* ---------- CATEGORIES ---------- */
+
+.discover-categories {
+  display: block !important;
+  width: 100% !important;
+  margin-top: 50px;
+}
+
+.discover-section-title {
+  display: block !important;
+  width: 100% !important;
+  margin-bottom: 22px !important;
+}
+
+.discover-section-title > div {
+  width: 100% !important;
+}
+
+.discover-section-title > p {
+  width: auto !important;
+  max-width: 420px !important;
+  margin: 8px 0 0 !important;
+  text-align: left !important;
+}
+
+/* ALL 10 CATEGORY BUTTONS IN ONE ROW */
+.discover-category-list {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+
+  width: 100% !important;
+  max-width: none !important;
+
+  gap: 10px !important;
+
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+
+  padding: 5px 2px 14px !important;
+
+  scrollbar-width: none !important;
+}
+
+.discover-category-list::-webkit-scrollbar {
+  display: none !important;
+}
+
+.discover-category {
+  display: inline-flex !important;
+  flex: 0 0 auto !important;
+  white-space: nowrap !important;
+}
+
+/* ---------- API DIRECTORY ---------- */
+
+.api-directory {
+  width: 100% !important;
+  margin-top: 52px !important;
+}
+
+.directory-heading {
+  width: 100% !important;
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: space-between !important;
+}
+
+/* ---------- DARK API CARDS ---------- */
+
+.discover-api-card {
+  background:
+    linear-gradient(
+      145deg,
+      #1e2234 0%,
+      #121522 100%
+    ) !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.30),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04) !important;
+
+  color: #f5f7ff !important;
+}
+
+.discover-api-card:hover {
+  transform: translateY(-5px) !important;
+
+  border-color: rgba(110, 100, 255, 0.35) !important;
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.42),
+    0 0 0 1px rgba(99, 91, 255, 0.08) !important;
+}
+
+.discover-api-card h3 {
+  color: #f5f7ff !important;
+}
+
+.discover-api-card p {
+  color: #9ba5ba !important;
+}
+
+.discover-api-card .api-card-footer {
+  border-top-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.discover-api-card .api-card-footer > span {
+  color: #8993a8 !important;
+}
+
+.discover-api-card .api-category {
+  background: rgba(255, 255, 255, 0.07) !important;
+  color: #c0c7d6 !important;
+}
+
+.discover-api-card .api-card-action {
+  background: rgba(255, 255, 255, 0.95) !important;
+  color: #635bff !important;
+}
+
+/* ---------- 3 COLUMN API GRID ---------- */
+
+.api-grid {
+  display: grid !important;
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr)) !important;
+
+  gap: 18px !important;
+  width: 100% !important;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 900px) {
+  .discover-category-list {
+    overflow-x: auto !important;
+  }
+
+  .api-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .api-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+/* =========================================================
+   API CARD - FINAL PREMIUM STYLE
+   ========================================================= */
+
+.discover-api-card {
+  position: relative !important;
+  min-height: 270px !important;
+  padding: 25px !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  border-radius: 25px !important;
+
+  background: linear-gradient(
+    145deg,
+    #1e2234 0%,
+    #151827 55%,
+    #10131f 100%
+  ) !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04) !important;
+
+  overflow: hidden !important;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease !important;
+}
+
+/* Purple glow in top-right */
+.discover-api-card::before {
+  content: "" !important;
+
+  position: absolute !important;
+
+  width: 190px !important;
+  height: 190px !important;
+
+  right: -95px !important;
+  top: -95px !important;
+
+  border-radius: 50% !important;
+
+  background: radial-gradient(
+    circle,
+    rgba(99, 91, 255, 0.18),
+    transparent 70%
+  ) !important;
+
+  pointer-events: none !important;
+}
+
+/* Hover */
+.discover-api-card:hover {
+  transform: translateY(-7px) !important;
+
+  border-color: rgba(99, 91, 255, 0.35) !important;
+
+  box-shadow:
+    0 28px 65px rgba(0, 0, 0, 0.42),
+    0 0 25px rgba(99, 91, 255, 0.08) !important;
+}
+
+/* Card top */
+.api-card-top {
+  position: relative;
+  z-index: 1;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  margin-bottom: 24px !important;
+}
+
+/* Icon */
+.discover-api-icon {
+  width: 54px !important;
+  height: 54px !important;
+
+  display: grid !important;
+  place-items: center !important;
+
+  border-radius: 16px !important;
+}
+
+/* Category badge */
+.api-category {
+  padding: 6px 10px !important;
+
+  border-radius: 999px !important;
+
+  background: rgba(255, 255, 255, 0.07) !important;
+
+  color: #c3c9d8 !important;
+
+  font-size: 10px !important;
+  font-weight: 700 !important;
+}
+
+/* Content */
+.api-card-content {
+  position: relative;
+  z-index: 1;
+}
+
+.discover-api-card h3 {
+  margin: 0 0 9px !important;
+
+  color: #f5f7ff !important;
+
+  font-size: 21px !important;
+
+  letter-spacing: -0.4px !important;
+}
+
+.discover-api-card p {
+  margin: 0 !important;
+
+  color: #98a2b8 !important;
+
+  font-size: 13px !important;
+
+  line-height: 1.65 !important;
+}
+
+/* Footer */
+.api-card-footer {
+  position: relative;
+  z-index: 1;
+
+  margin-top: auto !important;
+  padding-top: 22px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.api-card-footer > span {
+  color: #8993a8 !important;
+
+  font-size: 11px !important;
+}
+
+.api-card-footer button,
+.api-card-action {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  gap: 6px !important;
+
+  padding: 9px 13px !important;
+
+  border: 0 !important;
+  border-radius: 10px !important;
+
+  background: #f3f1ff !important;
+
+  color: #635bff !important;
+
+  font-size: 11px !important;
+  font-weight: 700 !important;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease !important;
+}
+
+.api-card-footer button:hover,
+.api-card-action:hover {
+  transform: translateX(2px) !important;
+
+  background: #ffffff !important;
+}
+
+/* Icon colors */
+.discover-api-icon.orange {
+  color: #fb923c !important;
+  background: rgba(251, 146, 60, 0.14) !important;
+}
+
+.discover-api-icon.purple {
+  color: #a78bfa !important;
+  background: rgba(167, 139, 250, 0.14) !important;
+}
+
+.discover-api-icon.green {
+  color: #4ade80 !important;
+  background: rgba(74, 222, 128, 0.14) !important;
+}
+
+.discover-api-icon.blue {
+  color: #60a5fa !important;
+  background: rgba(96, 165, 250, 0.14) !important;
+}
+
+.discover-api-icon.pink {
+  color: #f472b6 !important;
+  background: rgba(244, 114, 182, 0.14) !important;
+}
+
+.discover-api-icon.cyan {
+  color: #22d3ee !important;
+  background: rgba(34, 211, 238, 0.14) !important;
+}
+/* =========================================================
+   API HUB — FORCE EXPLORE DARK THEME
+   ========================================================= */
+
+html.dark-theme .discover-page,
+html[data-theme="dark"] .discover-page,
+body.dark-theme .discover-page {
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(99, 91, 255, 0.10),
+      transparent 32%
+    ),
+    #090b12 !important;
+
+  color: #f8fafc !important;
+}
+
+/* API CARDS */
+html.dark-theme .discover-api-card,
+html[data-theme="dark"] .discover-api-card,
+body.dark-theme .discover-api-card {
+  background:
+    linear-gradient(
+      145deg,
+      #20243a 0%,
+      #171a2a 55%,
+      #111420 100%
+    ) !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.10) !important;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.35) !important;
+
+  color: #f8fafc !important;
+}
+
+html.dark-theme .discover-api-card h3,
+html[data-theme="dark"] .discover-api-card h3,
+body.dark-theme .discover-api-card h3 {
+  color: #f8fafc !important;
+}
+
+html.dark-theme .discover-api-card p,
+html[data-theme="dark"] .discover-api-card p,
+body.dark-theme .discover-api-card p {
+  color: #9da7ba !important;
+}
+
+html.dark-theme .api-card-footer,
+html[data-theme="dark"] .api-card-footer,
+body.dark-theme .api-card-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+html.dark-theme .api-card-footer span,
+html[data-theme="dark"] .api-card-footer span,
+body.dark-theme .api-card-footer span {
+  color: #8f99ad !important;
+}
+
+html.dark-theme .api-category,
+html[data-theme="dark"] .api-category,
+body.dark-theme .api-category {
+  background: rgba(255, 255, 255, 0.07) !important;
+  color: #c4cad8 !important;
+}
+
+/* =========================================================
+   EXPLORE PAGE — LAYOUT ONLY
+   Theme colors are defined in dark-theme.css and the original
+   light-theme rules above. Keep these rules structural only.
+   ========================================================= */
+
+.discover-categories {
+  width: 100%;
+  margin-top: 54px;
+}
+
+.discover-section-title {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.discover-section-title > div {
+  width: 100%;
+}
+
+.discover-section-title > p {
+  max-width: none;
+  width: 100%;
+  margin: 8px 0 0;
+  text-align: left;
+}
+
+.discover-category-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 2px 16px;
+  scrollbar-width: none;
+}
+
+.discover-category-list::-webkit-scrollbar {
+  display: none;
+}
+
+.discover-category {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.api-directory {
+  width: 100%;
+  margin-top: 52px;
+}
+
+.directory-heading {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+/* Authentication pages — shared light-theme layout */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--page-bg, #f7f8fc);
+  color: var(--text-primary, #171923);
+}
+
+.auth-main {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 24px 72px;
+}
+
+.auth-card {
+  width: min(100%, 460px);
+  padding: 36px;
+  border-radius: 28px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  box-shadow: 0 24px 70px rgba(31, 41, 55, 0.10);
+}
+
+.auth-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 26px;
+  color: #667085;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.auth-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  background: #f0efff;
+  color: #635bff;
+}
+
+.auth-eyebrow {
+  display: block;
+  margin-bottom: 10px;
+  color: #635bff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.auth-card h1 {
+  margin: 0 0 12px;
+  color: #171923;
+  font-size: clamp(28px, 4vw, 36px);
+  line-height: 1.15;
+}
+
+.auth-card > p {
+  margin: 0 0 26px;
+  color: #667085;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.auth-card form {
+  display: grid;
+  gap: 18px;
+}
+
+.auth-card form label {
+  display: grid;
+  gap: 8px;
+  color: #344054;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.auth-card input {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 46px;
+  padding: 12px 14px;
+  border: 1px solid #d0d5dd;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #171923;
+  font: inherit;
+  font-weight: 400;
+  outline: none;
+}
+
+.auth-card input::placeholder {
+  color: #98a2b3;
+}
+
+.auth-card input:focus {
+  border-color: #635bff;
+  box-shadow: 0 0 0 3px rgba(99, 91, 255, 0.14);
+}
+
+.auth-submit {
+  width: 100%;
+  min-height: 48px;
+  margin-top: 4px;
+  border: 0;
+  border-radius: 12px;
+  background: #635bff;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.auth-submit:hover {
+  background: #5145e5;
+  transform: translateY(-1px);
+}
+
+.auth-switch {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 24px;
+  color: #667085;
+  font-size: 14px;
+}
+
+.auth-switch a {
+  color: #635bff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.auth-switch a:hover,
+.auth-back:hover {
+  color: #5145e5;
+}
+
+@media (max-width: 520px) {
+  .auth-main {
+    padding: 32px 16px 48px;
+  }
+  .auth-card {
+    padding: 26px 22px;
+    border-radius: 22px;
+  }
+}
+
+/* =========================================================
+   TYPOGRAPHY PASS — BOTH THEMES
+   Slightly larger text for Explore and API details only.
+   Colors remain controlled by the active theme stylesheet.
+   ========================================================= */
+.discover-page .discover-section-title > div > span,
+.discover-page .directory-heading > div > span,
+.api-details-page .api-details-category,
+.api-details-page .api-panel-label {
+  font-size: 0.82rem;
+}
+
+.discover-page .discover-section-title h2,
+.discover-page .directory-heading h2 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  line-height: 1.2;
+}
+
+.discover-page .discover-section-title p,
+.discover-page .discover-hero > p {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.discover-page .api-card h3,
+.discover-page .api-card-content h3 {
+  font-size: 1.15rem;
+  line-height: 1.45;
+}
+
+.discover-page .api-card p,
+.discover-page .api-card-content p {
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.discover-page .api-card-category,
+.discover-page .api-card-provider {
+  font-size: 0.88rem;
+}
+
+.discover-page .api-card-button {
+  font-size: 0.92rem;
+}
+
+.api-details-page .api-details-category,
+.api-details-page .api-panel-label {
+  font-size: 0.8rem;
+}
+
+.api-details-page .api-details-heading p,
+.api-details-page .api-info-panel > p {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.api-details-page .api-provider,
+.api-details-page .api-info-panel label,
+.api-details-page .api-info-panel small {
+  font-size: 0.9rem;
+}
+
+.api-details-page .api-info-panel h2 {
+  font-size: 1.55rem;
+  line-height: 1.35;
+}
+
+.api-details-page .api-feature-list {
+  font-size: 0.92rem;
+}
+
+
+/* FINAL HERO CARD TYPOGRAPHY — BOTH THEMES */
+/* Slightly larger text in the floating cards and developer badge. */
+.floating-api-name {
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.floating-api-type {
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.api-code-card small {
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.api-code-card strong {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.developer-badge strong {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.developer-badge span {
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+
+/* EXPLORE TYPOGRAPHY — BOTH THEMES (targeted, layout-safe) */
+.discover-page .api-card h3,
+.discover-page .api-card-content h3 {
+  font-size: 1.25rem !important;
+  line-height: 1.45 !important;
+}
+
+.discover-page .api-card p,
+.discover-page .api-card-content p {
+  font-size: 1.02rem !important;
+  line-height: 1.75 !important;
+}
+
+.discover-page .api-card-category,
+.discover-page .api-card-provider,
+.discover-page .api-category {
+  font-size: 0.94rem !important;
+  line-height: 1.5 !important;
+}
+
+.discover-page .api-card-button,
+.discover-page .api-card-action,
+.discover-page .api-card-footer button {
+  font-size: 0.96rem !important;
+}
