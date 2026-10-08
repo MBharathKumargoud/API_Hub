@@ -2391,3 +2391,1455 @@ body.dark-theme .discover-page .api-card-action,
 body:has(.navbar-dark) .discover-page .api-card-action {
   font-size: 0.96rem !important;
 }
+/* =========================================================
+   API HUB — CATEGORIES PAGE DARK THEME
+   ========================================================= */
+
+html.dark-theme .categories-page,
+html[data-theme="dark"] .categories-page,
+body.dark-theme .categories-page {
+  background: #0b0f19;
+  color: #f5f7ff;
+}
+
+html.dark-theme .categories-main,
+html[data-theme="dark"] .categories-main,
+body.dark-theme .categories-main {
+  color: #f5f7ff;
+}
+
+/* Header */
+
+html.dark-theme .categories-compare-header h1,
+html[data-theme="dark"] .categories-compare-header h1,
+body.dark-theme .categories-compare-header h1 {
+  color: #f5f7ff;
+}
+
+html.dark-theme .categories-compare-header p,
+html[data-theme="dark"] .categories-compare-header p,
+body.dark-theme .categories-compare-header p {
+  color: #9ca6ba;
+}
+
+/* Back button */
+
+html.dark-theme .categories-back-button,
+html[data-theme="dark"] .categories-back-button,
+body.dark-theme .categories-back-button {
+  background: rgba(255, 255, 255, 0.045);
+  border-color: rgba(255, 255, 255, 0.11);
+  color: #cbd2e1;
+}
+
+html.dark-theme .categories-back-button:hover,
+html[data-theme="dark"] .categories-back-button:hover,
+body.dark-theme .categories-back-button:hover {
+  background: rgba(99, 91, 255, 0.12);
+  border-color: rgba(99, 91, 255, 0.45);
+  color: #ffffff;
+}
+
+/* Comparison table */
+
+html.dark-theme .categories-table-wrapper,
+html[data-theme="dark"] .categories-table-wrapper,
+body.dark-theme .categories-table-wrapper {
+  background: #111624;
+  border-color: rgba(255, 255, 255, 0.09);
+
+  box-shadow:
+    0 20px 55px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.025);
+}
+
+html.dark-theme .categories-comparison-table thead,
+html[data-theme="dark"] .categories-comparison-table thead,
+body.dark-theme .categories-comparison-table thead {
+  background: #151a29;
+}
+
+html.dark-theme .categories-comparison-table th,
+html[data-theme="dark"] .categories-comparison-table th,
+body.dark-theme .categories-comparison-table th {
+  color: #8f99ad;
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+html.dark-theme .categories-comparison-table td,
+html[data-theme="dark"] .categories-comparison-table td,
+body.dark-theme .categories-comparison-table td {
+  color: #c4cbda;
+  border-bottom-color: rgba(255, 255, 255, 0.07);
+}
+
+html.dark-theme .categories-comparison-table tbody tr:hover,
+html[data-theme="dark"] .categories-comparison-table tbody tr:hover,
+body.dark-theme .categories-comparison-table tbody tr:hover {
+  background: rgba(99, 91, 255, 0.045);
+}
+
+/* API names */
+
+html.dark-theme .comparison-api-name strong,
+html[data-theme="dark"] .comparison-api-name strong,
+body.dark-theme .comparison-api-name strong {
+  color: #f5f7ff;
+}
+
+html.dark-theme .comparison-api-name > div > span,
+html[data-theme="dark"] .comparison-api-name > div > span,
+body.dark-theme .comparison-api-name > div > span {
+  color: #7f899d;
+}
+
+/* API icons */
+
+html.dark-theme .comparison-api-icon,
+html[data-theme="dark"] .comparison-api-icon,
+body.dark-theme .comparison-api-icon {
+  background: rgba(99, 91, 255, 0.13);
+  color: #a79fff;
+}
+
+/* Save */
+
+html.dark-theme .comparison-save-button,
+html[data-theme="dark"] .comparison-save-button,
+body.dark-theme .comparison-save-button {
+  background: rgba(255, 255, 255, 0.045);
+  border-color: rgba(255, 255, 255, 0.10);
+  color: #8f99ad;
+}
+
+html.dark-theme .comparison-save-button:hover,
+html.dark-theme .comparison-save-button.saved,
+html[data-theme="dark"] .comparison-save-button:hover,
+html[data-theme="dark"] .comparison-save-button.saved,
+body.dark-theme .comparison-save-button:hover,
+body.dark-theme .comparison-save-button.saved {
+  background: rgba(99, 91, 255, 0.16);
+  border-color: rgba(139, 124, 255, 0.35);
+  color: #a79fff;
+}
+
+/* Authentication badge */
+
+html.dark-theme .comparison-badge,
+html[data-theme="dark"] .comparison-badge,
+body.dark-theme .comparison-badge {
+  background: rgba(255, 255, 255, 0.07);
+  color: #c4cbda;
+}
+
+/* Recommendation */
+
+html.dark-theme .categories-recommendation,
+html[data-theme="dark"] .categories-recommendation,
+body.dark-theme .categories-recommendation {
+  background:
+    linear-gradient(
+      135deg,
+      #111624 0%,
+      #15152a 100%
+    );
+
+  border-color: rgba(99, 91, 255, 0.25);
+
+  box-shadow:
+    0 20px 55px rgba(0, 0, 0, 0.28),
+    0 0 30px rgba(99, 91, 255, 0.04);
+}
+
+html.dark-theme .categories-recommendation h2,
+html[data-theme="dark"] .categories-recommendation h2,
+body.dark-theme .categories-recommendation h2 {
+  color: #f5f7ff;
+}
+
+html.dark-theme .recommendation-api,
+html[data-theme="dark"] .recommendation-api,
+body.dark-theme .recommendation-api {
+  background: #0d121f;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+html.dark-theme .recommendation-info h3,
+html[data-theme="dark"] .recommendation-info h3,
+body.dark-theme .recommendation-info h3 {
+  color: #f5f7ff;
+}
+
+html.dark-theme .recommendation-info p,
+html[data-theme="dark"] .recommendation-info p,
+body.dark-theme .recommendation-info p {
+  color: #9ca6ba;
+}
+
+html.dark-theme .recommendation-info > span,
+html[data-theme="dark"] .recommendation-info > span,
+body.dark-theme .recommendation-info > span {
+  color: #7f899d;
+}
+
+html.dark-theme .recommendation-why,
+html[data-theme="dark"] .recommendation-why,
+body.dark-theme .recommendation-why {
+  background: rgba(255, 255, 255, 0.035);
+}
+
+html.dark-theme .recommendation-why strong,
+html[data-theme="dark"] .recommendation-why strong,
+body.dark-theme .recommendation-why strong {
+  color: #d9deea;
+}
+
+html.dark-theme .recommendation-why p,
+html[data-theme="dark"] .recommendation-why p,
+body.dark-theme .recommendation-why p {
+  color: #9ca6ba;
+}
+
+/* See all */
+
+html.dark-theme .categories-see-all,
+html[data-theme="dark"] .categories-see-all,
+body.dark-theme .categories-see-all {
+  background: #111624;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+html.dark-theme .categories-see-all h2,
+html[data-theme="dark"] .categories-see-all h2,
+body.dark-theme .categories-see-all h2 {
+  color: #f5f7ff;
+}
+
+html.dark-theme .categories-see-all p,
+html[data-theme="dark"] .categories-see-all p,
+body.dark-theme .categories-see-all p {
+  color: #8f99ad;
+}
+
+html.dark-theme .categories-see-all-button,
+html[data-theme="dark"] .categories-see-all-button,
+body.dark-theme .categories-see-all-button {
+  background: #635bff;
+  color: #ffffff;
+}
+
+html.dark-theme .categories-see-all-button:hover,
+html[data-theme="dark"] .categories-see-all-button:hover,
+body.dark-theme .categories-see-all-button:hover {
+  background: #746cff;
+}
+/* =========================================================
+   CATEGORIES PAGE — DARK MODE FIX
+   ========================================================= */
+
+html.dark-theme .categories-page,
+html[data-theme="dark"] .categories-page,
+body.dark-theme .categories-page {
+  background:
+    radial-gradient(
+      circle at 85% 10%,
+      rgba(99, 91, 255, 0.08),
+      transparent 28%
+    ),
+    #090b12;
+
+  color: #f8fafc;
+}
+
+/* ---------- CATEGORIES HERO ---------- */
+
+html.dark-theme .categories-hero h1,
+html[data-theme="dark"] .categories-hero h1,
+body.dark-theme .categories-hero h1 {
+  color: #f8fafc;
+}
+
+html.dark-theme .categories-hero p,
+html[data-theme="dark"] .categories-hero p,
+body.dark-theme .categories-hero p {
+  color: #9da7ba;
+}
+
+/* ---------- CATEGORY CARDS ---------- */
+
+html.dark-theme .categories-page .category-card,
+html[data-theme="dark"] .categories-page .category-card,
+body.dark-theme .categories-page .category-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(25, 29, 43, 0.96),
+      rgba(15, 18, 29, 0.96)
+    );
+
+  border-color: rgba(255, 255, 255, 0.09);
+
+  color: #f8fafc;
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+html.dark-theme .categories-page .category-card:hover,
+html[data-theme="dark"] .categories-page .category-card:hover,
+body.dark-theme .categories-page .category-card:hover {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(31, 36, 54, 0.98),
+      rgba(17, 21, 34, 0.98)
+    );
+
+  border-color: rgba(99, 91, 255, 0.35);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.38),
+    0 0 30px rgba(99, 91, 255, 0.08);
+}
+
+/* Category title */
+
+html.dark-theme .categories-page .category-card-content h3,
+html[data-theme="dark"] .categories-page .category-card-content h3,
+body.dark-theme .categories-page .category-card-content h3 {
+  color: #f8fafc;
+}
+
+/* Category description */
+
+html.dark-theme .categories-page .category-card-content p,
+html[data-theme="dark"] .categories-page .category-card-content p,
+body.dark-theme .categories-page .category-card-content p {
+  color: #9da7ba;
+}
+
+/* Category count */
+
+html.dark-theme .categories-page .category-card-footer,
+html[data-theme="dark"] .categories-page .category-card-footer,
+body.dark-theme .categories-page .category-card-footer {
+  border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+html.dark-theme .categories-page .category-card-footer > span:first-child,
+html[data-theme="dark"] .categories-page .category-card-footer > span:first-child,
+body.dark-theme .categories-page .category-card-footer > span:first-child {
+  color: #8f99ad;
+}
+
+/* Arrow */
+
+html.dark-theme .categories-page .category-card-arrow,
+html[data-theme="dark"] .categories-page .category-card-arrow,
+body.dark-theme .categories-page .category-card-arrow {
+  background: rgba(99, 91, 255, 0.12);
+  color: #a79fff;
+}
+
+html.dark-theme .categories-page .category-card:hover .category-card-arrow,
+html[data-theme="dark"] .categories-page .category-card:hover .category-card-arrow,
+body.dark-theme .categories-page .category-card:hover .category-card-arrow {
+  background: rgba(99, 91, 255, 0.20);
+  color: #ffffff;
+}
+/* =========================================================
+   ALL CATEGORY APIs — DARK MODE
+   ========================================================= */
+
+/* Header */
+
+html.dark-theme .categories-all-header,
+html[data-theme="dark"] .categories-all-header,
+body.dark-theme .categories-all-header {
+  color: #f8fafc;
+}
+
+html.dark-theme .categories-all-header h1,
+html[data-theme="dark"] .categories-all-header h1,
+body.dark-theme .categories-all-header h1 {
+  color: #f8fafc;
+}
+
+html.dark-theme .categories-all-header p,
+html[data-theme="dark"] .categories-all-header p,
+body.dark-theme .categories-all-header p {
+  color: #9da7ba;
+}
+
+html.dark-theme .categories-api-count,
+html[data-theme="dark"] .categories-api-count,
+body.dark-theme .categories-api-count {
+  color: #a7afc0;
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.10);
+}
+
+/* ---------- API CARDS ---------- */
+
+html.dark-theme .categories-api-card-wrapper .api-card,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card,
+body.dark-theme .categories-api-card-wrapper .api-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(25, 29, 43, 0.96),
+      rgba(15, 18, 29, 0.96)
+    );
+
+  border-color: rgba(255, 255, 255, 0.09);
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+html.dark-theme .categories-api-card-wrapper .api-card:hover,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card:hover,
+body.dark-theme .categories-api-card-wrapper .api-card:hover {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(31, 36, 54, 0.98),
+      rgba(17, 21, 34, 0.98)
+    );
+
+  border-color: rgba(99, 91, 255, 0.32);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.34),
+    0 0 30px rgba(99, 91, 255, 0.08);
+}
+
+/* API card title */
+
+html.dark-theme .categories-api-card-wrapper .api-card-content h3,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card-content h3,
+body.dark-theme .categories-api-card-wrapper .api-card-content h3 {
+  color: #f8fafc;
+}
+
+/* API card description */
+
+html.dark-theme .categories-api-card-wrapper .api-card-content p,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card-content p,
+body.dark-theme .categories-api-card-wrapper .api-card-content p {
+  color: #9da7ba;
+}
+
+/* API category */
+
+html.dark-theme .categories-api-card-wrapper .api-card-category,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card-category,
+body.dark-theme .categories-api-card-wrapper .api-card-category {
+  color: #8f99ad;
+}
+
+/* Provider */
+
+html.dark-theme .categories-api-card-wrapper .api-card-provider,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card-provider,
+body.dark-theme .categories-api-card-wrapper .api-card-provider {
+  color: #8f99ad;
+}
+
+/* Card footer */
+
+html.dark-theme .categories-api-card-wrapper .api-card-footer,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card-footer,
+body.dark-theme .categories-api-card-wrapper .api-card-footer {
+  border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+/* View API button */
+
+html.dark-theme .categories-api-card-wrapper .api-card-button,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card-button,
+body.dark-theme .categories-api-card-wrapper .api-card-button {
+  background: rgba(99, 91, 255, 0.14);
+  border-color: rgba(99, 91, 255, 0.22);
+  color: #a79fff;
+}
+
+html.dark-theme .categories-api-card-wrapper .api-card-button:hover,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card-button:hover,
+body.dark-theme .categories-api-card-wrapper .api-card-button:hover {
+  background: #635bff;
+  border-color: #635bff;
+  color: #ffffff;
+}
+
+/* Save button */
+
+html.dark-theme .categories-save-button,
+html[data-theme="dark"] .categories-save-button,
+body.dark-theme .categories-save-button {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.10);
+  color: #a7afc0;
+}
+
+html.dark-theme .categories-save-button:hover,
+html.dark-theme .categories-save-button.saved,
+html[data-theme="dark"] .categories-save-button:hover,
+html[data-theme="dark"] .categories-save-button.saved,
+body.dark-theme .categories-save-button:hover,
+body.dark-theme .categories-save-button.saved {
+  background: rgba(99, 91, 255, 0.18);
+  border-color: rgba(139, 124, 255, 0.35);
+  color: #a79fff;
+}
+/* =========================================================
+   API HUB — SOFTER DARK THEME
+   Final override
+   ========================================================= */
+
+/* ---------- GLOBAL DARK BACKGROUND ---------- */
+
+html.dark-theme body,
+html[data-theme="dark"] body,
+body.dark-theme {
+  background: #10131c !important;
+  color: #eef1f7 !important;
+}
+
+/* Main page backgrounds */
+
+html.dark-theme .landing-page,
+html.dark-theme .discover-page,
+html.dark-theme .api-details-page,
+html.dark-theme .auth-page,
+html.dark-theme .categories-page,
+
+html[data-theme="dark"] .landing-page,
+html[data-theme="dark"] .discover-page,
+html[data-theme="dark"] .api-details-page,
+html[data-theme="dark"] .auth-page,
+html[data-theme="dark"] .categories-page,
+
+body.dark-theme .landing-page,
+body.dark-theme .discover-page,
+body.dark-theme .api-details-page,
+body.dark-theme .auth-page,
+body.dark-theme .categories-page {
+  background: #10131c !important;
+}
+
+/* ---------- NORMAL TEXT ---------- */
+
+html.dark-theme p,
+html[data-theme="dark"] p,
+body.dark-theme p {
+  color: #b7bfce;
+}
+
+/* ---------- HEADINGS ---------- */
+
+html.dark-theme h1,
+html.dark-theme h2,
+html.dark-theme h3,
+html.dark-theme h4,
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4 {
+  color: #f1f3f8;
+}
+
+
+/* =========================================================
+   ALL API DIRECTORY HEADER
+   ========================================================= */
+
+html.dark-theme .categories-all-header,
+html[data-theme="dark"] .categories-all-header,
+body.dark-theme .categories-all-header {
+  margin-bottom: 30px;
+}
+
+html.dark-theme .categories-all-header h1,
+html[data-theme="dark"] .categories-all-header h1,
+body.dark-theme .categories-all-header h1 {
+  color: #f4f6fb !important;
+
+  margin: 6px 0 7px;
+
+  line-height: 1.15;
+}
+
+html.dark-theme .categories-all-header p,
+html[data-theme="dark"] .categories-all-header p,
+body.dark-theme .categories-all-header p {
+  color: #b7bfce !important;
+
+  margin: 0;
+
+  line-height: 1.55;
+
+  font-size: 14px;
+}
+
+html.dark-theme .categories-eyebrow,
+html[data-theme="dark"] .categories-eyebrow,
+body.dark-theme .categories-eyebrow {
+  color: #8f86ff !important;
+
+  letter-spacing: 0.12em;
+}
+
+html.dark-theme .categories-api-count,
+html[data-theme="dark"] .categories-api-count,
+body.dark-theme .categories-api-count {
+  color: #c5cada !important;
+
+  background: rgba(255, 255, 255, 0.055) !important;
+
+  border-color: rgba(255, 255, 255, 0.10) !important;
+
+  margin-top: 12px;
+}
+
+
+/* =========================================================
+   GAP BETWEEN "8 APIs" AND CARDS
+   ========================================================= */
+
+html.dark-theme .categories-api-grid,
+html[data-theme="dark"] .categories-api-grid,
+body.dark-theme .categories-api-grid {
+  margin-top: 8px;
+}
+
+
+/* =========================================================
+   API CARDS — SOFTER DARK SURFACE
+   ========================================================= */
+
+html.dark-theme .categories-api-card-wrapper .api-card,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card,
+body.dark-theme .categories-api-card-wrapper .api-card {
+  background: #202532 !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.10) !important;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.18) !important;
+}
+
+html.dark-theme .categories-api-card-wrapper .api-card:hover,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card:hover,
+body.dark-theme .categories-api-card-wrapper .api-card:hover {
+  background: #252b3a !important;
+
+  border-color: rgba(139, 124, 255, 0.35) !important;
+
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.24) !important;
+}
+
+
+/* API card title */
+
+html.dark-theme .categories-api-card-wrapper .api-card h3,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card h3,
+body.dark-theme .categories-api-card-wrapper .api-card h3 {
+  color: #f0f2f7 !important;
+}
+
+
+/* API description */
+
+html.dark-theme .categories-api-card-wrapper .api-card p,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card p,
+body.dark-theme .categories-api-card-wrapper .api-card p {
+  color: #aeb7c8 !important;
+}
+
+
+/* API category */
+
+html.dark-theme .categories-api-card-wrapper .api-card-category,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card-category,
+body.dark-theme .categories-api-card-wrapper .api-card-category {
+  color: #aab2c3 !important;
+}
+
+
+/* Provider */
+
+html.dark-theme .categories-api-card-wrapper .api-card-provider,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card-provider,
+body.dark-theme .categories-api-card-wrapper .api-card-provider {
+  color: #aeb7c8 !important;
+}
+
+
+/* Footer line */
+
+html.dark-theme .categories-api-card-wrapper .api-card-footer,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card-footer,
+body.dark-theme .categories-api-card-wrapper .api-card-footer {
+  border-top-color: rgba(255, 255, 255, 0.09) !important;
+}
+
+
+/* View API button */
+
+html.dark-theme .categories-api-card-wrapper .api-card-button,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card-button,
+body.dark-theme .categories-api-card-wrapper .api-card-button {
+  background: rgba(139, 124, 255, 0.12) !important;
+
+  color: #b7b0ff !important;
+
+  border-color: rgba(139, 124, 255, 0.20) !important;
+}
+
+
+/* =========================================================
+   CATEGORY CARDS — SOFTER DARK
+   ========================================================= */
+
+html.dark-theme .categories-page .category-card,
+html[data-theme="dark"] .categories-page .category-card,
+body.dark-theme .categories-page .category-card {
+  background: #202532 !important;
+
+  border-color: rgba(255, 255, 255, 0.09) !important;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.16) !important;
+}
+
+html.dark-theme .categories-page .category-card:hover,
+html[data-theme="dark"] .categories-page .category-card:hover,
+body.dark-theme .categories-page .category-card:hover {
+  background: #252b3a !important;
+
+  border-color: rgba(139, 124, 255, 0.32) !important;
+}
+
+html.dark-theme .categories-page .category-card-content h3,
+html[data-theme="dark"] .categories-page .category-card-content h3,
+body.dark-theme .categories-page .category-card-content h3 {
+  color: #f0f2f7 !important;
+}
+
+html.dark-theme .categories-page .category-card-content p,
+html[data-theme="dark"] .categories-page .category-card-content p,
+body.dark-theme .categories-page .category-card-content p {
+  color: #adb6c7 !important;
+}
+
+
+/* =========================================================
+   NAVBAR — LESS BLACK
+   ========================================================= */
+
+html.dark-theme .navbar,
+html[data-theme="dark"] .navbar,
+body.dark-theme .navbar {
+  background: rgba(16, 19, 28, 0.94) !important;
+
+  border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+
+/* =========================================================
+   API HUB — FINAL DARK THEME CONTRAST & SURFACE FIX
+   ---------------------------------------------------------
+   Keeps the existing dark-theme.css structure intact.
+   This section intentionally comes LAST so it overrides
+   older dark-theme rules without changing the light theme.
+   ========================================================= */
+
+
+/* =========================================================
+   1. GLOBAL DARK BACKGROUND
+   ========================================================= */
+
+html.dark-theme body,
+html[data-theme="dark"] body,
+body.dark-theme {
+  background: #0D1117 !important;
+  color: #E6EDF3 !important;
+}
+
+
+/* Keep page-level dark backgrounds consistent */
+
+html.dark-theme .discover-page,
+html[data-theme="dark"] .discover-page,
+body.dark-theme .discover-page,
+
+html.dark-theme .api-details-page,
+html[data-theme="dark"] .api-details-page,
+body.dark-theme .api-details-page,
+
+html.dark-theme .categories-page,
+html[data-theme="dark"] .categories-page,
+body.dark-theme .categories-page {
+  background: #0D1117 !important;
+  color: #E6EDF3 !important;
+}
+
+
+/* =========================================================
+   2. TEXT HIERARCHY
+   ========================================================= */
+
+/* Primary headings — softer than pure white */
+
+html.dark-theme h1,
+html.dark-theme h2,
+html.dark-theme h3,
+html.dark-theme h4,
+html.dark-theme h5,
+html.dark-theme h6,
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6,
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6 {
+  color: #F0F6FC !important;
+}
+
+
+/* Body / secondary text */
+
+html.dark-theme p,
+html[data-theme="dark"] p,
+body.dark-theme p {
+  color: #8B949E !important;
+}
+
+
+/* API Details specific text */
+
+html.dark-theme .api-details-heading h1,
+html[data-theme="dark"] .api-details-heading h1,
+body.dark-theme .api-details-heading h1 {
+  color: #F0F6FC !important;
+}
+
+html.dark-theme .api-details-heading p,
+html[data-theme="dark"] .api-details-heading p,
+body.dark-theme .api-details-heading p {
+  color: #9198A1 !important;
+}
+
+html.dark-theme .api-provider span,
+html[data-theme="dark"] .api-provider span,
+body.dark-theme .api-provider span {
+  color: #8B949E !important;
+}
+
+html.dark-theme .api-provider strong,
+html[data-theme="dark"] .api-provider strong,
+body.dark-theme .api-provider strong {
+  color: #E6EDF3 !important;
+}
+
+
+/* =========================================================
+   3. CARD SURFACES
+   ========================================================= */
+
+/* API Details hero */
+
+html.dark-theme .api-details-hero,
+html[data-theme="dark"] .api-details-hero,
+body.dark-theme .api-details-hero {
+  background:
+    linear-gradient(
+      135deg,
+      #161B22 0%,
+      #1C2128 100%
+    ) !important;
+
+  border: 1px solid #30363D !important;
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.24) !important;
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+
+/* Main API information cards */
+
+html.dark-theme .api-info-panel,
+html[data-theme="dark"] .api-info-panel,
+body.dark-theme .api-info-panel {
+  background:
+    linear-gradient(
+      145deg,
+      #161B22 0%,
+      #1C2128 100%
+    ) !important;
+
+  border: 1px solid #30363D !important;
+
+  box-shadow:
+    0 16px 38px rgba(0, 0, 0, 0.20) !important;
+
+  color: #E6EDF3 !important;
+}
+
+
+/* API cards in directory / Explore */
+
+html.dark-theme .api-card,
+html[data-theme="dark"] .api-card,
+body.dark-theme .api-card {
+  background: #161B22 !important;
+
+  border: 1px solid #30363D !important;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.18) !important;
+
+  color: #E6EDF3 !important;
+}
+
+html.dark-theme .api-card:hover,
+html[data-theme="dark"] .api-card:hover,
+body.dark-theme .api-card:hover {
+  background: #1C2128 !important;
+
+  border-color: rgba(99, 102, 241, 0.50) !important;
+
+  box-shadow:
+    0 16px 38px rgba(0, 0, 0, 0.25),
+    0 0 0 1px rgba(99, 102, 241, 0.10) !important;
+}
+
+
+/* Category cards / items */
+
+html.dark-theme .categories-page .category-card,
+html[data-theme="dark"] .categories-page .category-card,
+body.dark-theme .categories-page .category-card,
+
+html.dark-theme .category-item,
+html[data-theme="dark"] .category-item,
+body.dark-theme .category-item {
+  background: #161B22 !important;
+
+  border-color: #30363D !important;
+}
+
+
+/* =========================================================
+   4. API CARD TEXT
+   ========================================================= */
+
+html.dark-theme .api-card h3,
+html[data-theme="dark"] .api-card h3,
+body.dark-theme .api-card h3 {
+  color: #E6EDF3 !important;
+}
+
+html.dark-theme .api-card p,
+html[data-theme="dark"] .api-card p,
+body.dark-theme .api-card p {
+  color: #8B949E !important;
+}
+
+html.dark-theme .api-card-category,
+html[data-theme="dark"] .api-card-category,
+body.dark-theme .api-card-category {
+  color: #A5B4FC !important;
+}
+
+html.dark-theme .api-card-provider,
+html[data-theme="dark"] .api-card-provider,
+body.dark-theme .api-card-provider {
+  color: #9198A1 !important;
+}
+
+
+/* =========================================================
+   5. API DETAILS SECTION HEADINGS
+   ========================================================= */
+
+html.dark-theme .api-details-page .api-panel-label,
+html[data-theme="dark"] .api-details-page .api-panel-label,
+body.dark-theme .api-details-page .api-panel-label {
+  color: #818CF8 !important;
+
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.12em !important;
+}
+
+html.dark-theme .api-details-page .api-info-panel h2,
+html[data-theme="dark"] .api-details-page .api-info-panel h2,
+body.dark-theme .api-details-page .api-info-panel h2 {
+  color: #F0F6FC !important;
+
+  font-size: 1.45rem !important;
+  line-height: 1.3 !important;
+}
+
+html.dark-theme .api-details-page .api-info-panel > p,
+html[data-theme="dark"] .api-details-page .api-info-panel > p,
+body.dark-theme .api-details-page .api-info-panel > p {
+  color: #9198A1 !important;
+
+  font-size: 0.98rem !important;
+  line-height: 1.75 !important;
+}
+
+
+/* =========================================================
+   6. PILLS / BADGES / CATEGORY / PROVIDER
+   ========================================================= */
+
+html.dark-theme .api-details-category,
+html[data-theme="dark"] .api-details-category,
+body.dark-theme .api-details-category {
+  color: #A5B4FC !important;
+
+  background: rgba(99, 102, 241, 0.10);
+  border-color: rgba(99, 102, 241, 0.18);
+}
+
+html.dark-theme .api-provider,
+html[data-theme="dark"] .api-provider,
+body.dark-theme .api-provider {
+  color: #8B949E !important;
+}
+
+
+/* =========================================================
+   7. INFORMATION ROWS
+   ========================================================= */
+
+html.dark-theme .api-detail-row,
+html[data-theme="dark"] .api-detail-row,
+body.dark-theme .api-detail-row {
+  border-bottom-color: #30363D !important;
+}
+
+html.dark-theme .api-detail-row > span,
+html[data-theme="dark"] .api-detail-row > span,
+body.dark-theme .api-detail-row > span {
+  color: #8B949E !important;
+}
+
+html.dark-theme .api-detail-row strong,
+html[data-theme="dark"] .api-detail-row strong,
+body.dark-theme .api-detail-row strong {
+  color: #E6EDF3 !important;
+}
+
+
+/* =========================================================
+   8. BASE URL / CODE BOX
+   ========================================================= */
+
+html.dark-theme .api-detail-row code,
+html[data-theme="dark"] .api-detail-row code,
+body.dark-theme .api-detail-row code {
+  display: block;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 11px 13px;
+
+  overflow-x: auto;
+
+  border: 1px solid #30363D !important;
+  border-radius: 9px;
+
+  background: #0D1117 !important;
+
+  color: #3FB950 !important;
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+
+  font-size: 12px;
+  line-height: 1.5;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   9. PRIMARY CTA BUTTON
+   ========================================================= */
+
+html.dark-theme .api-start-button,
+html[data-theme="dark"] .api-start-button,
+body.dark-theme .api-start-button {
+  background: #4F46E5 !important;
+
+  color: #FFFFFF !important;
+
+  border: 1px solid #6366F1 !important;
+
+  font-weight: 600 !important;
+
+  box-shadow:
+    0 8px 22px rgba(79, 70, 229, 0.24) !important;
+}
+
+html.dark-theme .api-start-button:hover,
+html[data-theme="dark"] .api-start-button:hover,
+body.dark-theme .api-start-button:hover {
+  background: #6366F1 !important;
+
+  color: #FFFFFF !important;
+
+  border-color: #818CF8 !important;
+}
+
+
+/* Existing generic primary buttons */
+
+html.dark-theme .api-primary-button,
+html[data-theme="dark"] .api-primary-button,
+body.dark-theme .api-primary-button {
+  background: #4F46E5 !important;
+
+  color: #FFFFFF !important;
+
+  font-weight: 600 !important;
+}
+
+html.dark-theme .api-primary-button:hover,
+html[data-theme="dark"] .api-primary-button:hover,
+body.dark-theme .api-primary-button:hover {
+  background: #6366F1 !important;
+}
+
+
+/* =========================================================
+   10. SECONDARY DOCUMENTATION / WEBSITE BUTTONS
+   ========================================================= */
+
+html.dark-theme .api-test-button,
+html.dark-theme .api-website-button,
+html.dark-theme .api-doc-button,
+
+html[data-theme="dark"] .api-test-button,
+html[data-theme="dark"] .api-website-button,
+html[data-theme="dark"] .api-doc-button,
+
+body.dark-theme .api-test-button,
+body.dark-theme .api-website-button,
+body.dark-theme .api-doc-button {
+  background: rgba(255, 255, 255, 0.05) !important;
+
+  border: 1px solid #30363D !important;
+
+  color: #E6EDF3 !important;
+
+  font-weight: 600 !important;
+}
+
+html.dark-theme .api-test-button:hover,
+html.dark-theme .api-website-button:hover,
+html.dark-theme .api-doc-button:hover,
+
+html[data-theme="dark"] .api-test-button:hover,
+html[data-theme="dark"] .api-website-button:hover,
+html[data-theme="dark"] .api-doc-button:hover,
+
+body.dark-theme .api-test-button:hover,
+body.dark-theme .api-website-button:hover,
+body.dark-theme .api-doc-button:hover {
+  background: rgba(255, 255, 255, 0.10) !important;
+
+  border-color: rgba(99, 102, 241, 0.50) !important;
+
+  color: #F0F6FC !important;
+}
+
+
+/* =========================================================
+   11. FEATURE ITEMS
+   ========================================================= */
+
+html.dark-theme .api-feature,
+html[data-theme="dark"] .api-feature,
+body.dark-theme .api-feature {
+  background: #111827 !important;
+
+  border: 1px solid #30363D !important;
+
+  color: #B1BAC4 !important;
+}
+
+html.dark-theme .api-feature svg,
+html[data-theme="dark"] .api-feature svg,
+body.dark-theme .api-feature svg {
+  color: #818CF8 !important;
+}
+
+
+/* =========================================================
+   12. DOCUMENTATION BANNER
+   ========================================================= */
+
+html.dark-theme .api-doc-banner,
+html[data-theme="dark"] .api-doc-banner,
+body.dark-theme .api-doc-banner {
+  background:
+    linear-gradient(
+      135deg,
+      #161B22 0%,
+      #1C2128 55%,
+      rgba(49, 46, 129, 0.55) 100%
+    ) !important;
+
+  border: 1px solid #30363D !important;
+
+  color: #E6EDF3 !important;
+}
+
+html.dark-theme .api-doc-banner h2,
+html[data-theme="dark"] .api-doc-banner h2,
+body.dark-theme .api-doc-banner h2 {
+  color: #F0F6FC !important;
+}
+
+html.dark-theme .api-doc-banner p,
+html[data-theme="dark"] .api-doc-banner p,
+body.dark-theme .api-doc-banner p {
+  color: #9198A1 !important;
+}
+
+
+/* =========================================================
+   13. ALL API DIRECTORY HEADER
+   ========================================================= */
+
+html.dark-theme .categories-all-header h1,
+html[data-theme="dark"] .categories-all-header h1,
+body.dark-theme .categories-all-header h1 {
+  color: #F0F6FC !important;
+
+  margin: 6px 0 8px !important;
+
+  line-height: 1.15 !important;
+}
+
+html.dark-theme .categories-all-header p,
+html[data-theme="dark"] .categories-all-header p,
+body.dark-theme .categories-all-header p {
+  color: #9198A1 !important;
+
+  margin: 0 !important;
+
+  line-height: 1.55 !important;
+}
+
+html.dark-theme .categories-api-count,
+html[data-theme="dark"] .categories-api-count,
+body.dark-theme .categories-api-count {
+  color: #B1BAC4 !important;
+
+  background: rgba(255, 255, 255, 0.05) !important;
+
+  border: 1px solid #30363D !important;
+
+  margin-top: 12px !important;
+}
+
+html.dark-theme .categories-api-grid,
+html[data-theme="dark"] .categories-api-grid,
+body.dark-theme .categories-api-grid {
+  margin-top: 18px !important;
+}
+
+
+/* =========================================================
+   14. NAVBAR
+   ========================================================= */
+
+html.dark-theme .navbar,
+html[data-theme="dark"] .navbar,
+body.dark-theme .navbar {
+  background: rgba(13, 17, 23, 0.94) !important;
+
+  border-bottom: 1px solid #21262D !important;
+}
+
+
+/* =========================================================
+   15. MUTED / DISABLED LINKS
+   ========================================================= */
+
+html.dark-theme .api-details-page a:not(
+  .api-start-button,
+  .api-test-button,
+  .api-website-button,
+  .api-doc-button
+),
+html[data-theme="dark"] .api-details-page a:not(
+  .api-start-button,
+  .api-test-button,
+  .api-website-button,
+  .api-doc-button
+),
+body.dark-theme .api-details-page a:not(
+  .api-start-button,
+  .api-test-button,
+  .api-website-button,
+  .api-doc-button
+) {
+  color: #8B949E;
+}
+
+html.dark-theme .api-details-page a:not(
+  .api-start-button,
+  .api-test-button,
+  .api-website-button,
+  .api-doc-button
+):hover,
+html[data-theme="dark"] .api-details-page a:not(
+  .api-start-button,
+  .api-test-button,
+  .api-website-button,
+  .api-doc-button
+):hover,
+body.dark-theme .api-details-page a:not(
+  .api-start-button,
+  .api-test-button,
+  .api-website-button,
+  .api-doc-button
+):hover {
+  color: #A5B4FC;
+}
+
+
+/* =========================================================
+   FINAL PALETTE
+   =========================================================
+   Background:       #0D1117
+   Card:             #161B22
+   Elevated card:    #1C2128
+   Border:           #30363D
+   Heading:          #F0F6FC
+   Body:             #8B949E
+   Secondary text:   #9198A1
+   Accent:            #818CF8 / #6366F1
+   Success/code:     #3FB950
+   Primary CTA:      #4F46E5
+   ========================================================= */
+/* =========================================================
+   API HUB — GRID VIEW OVERRIDES
+   ========================================================= */
+
+/* Ensure category page container gets dark background */
+html.dark-theme .categories-page,
+html[data-theme="dark"] .categories-page,
+body.dark-theme .categories-page {
+  background-color: #090b12 !important;
+  color: #f8fafc !important;
+  min-height: 100vh;
+}
+
+/* Heading section */
+html.dark-theme .directory-heading h1,
+html[data-theme="dark"] .directory-heading h1,
+body.dark-theme .directory-heading h1 {
+  color: #ffffff !important;
+}
+
+html.dark-theme .directory-heading p,
+html[data-theme="dark"] .directory-heading p,
+body.dark-theme .directory-heading p {
+  color: #9da7ba !important;
+}
+
+/* Force grid layout for card view */
+html.dark-theme .api-grid,
+html[data-theme="dark"] .api-grid,
+body.dark-theme .api-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 20px !important;
+  width: 100%;
+}
+
+/* Individual Card Dark Styling */
+html.dark-theme .api-grid .api-card,
+html[data-theme="dark"] .api-grid .api-card,
+body.dark-theme .api-grid .api-card {
+  background: linear-gradient(
+    145deg,
+    rgba(30, 34, 52, 0.92),
+    rgba(18, 21, 34, 0.90)
+  ) !important;
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+  border-radius: 12px !important;
+  padding: 20px !important;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28) !important;
+}
+
+html.dark-theme .api-grid .api-card:hover,
+html[data-theme="dark"] .api-grid .api-card:hover,
+body.dark-theme .api-grid .api-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(99, 91, 255, 0.4) !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4), 0 0 20px rgba(99, 91, 255, 0.12) !important;
+}
+
+/* Card Text Styling */
+html.dark-theme .api-grid .api-card h3,
+html[data-theme="dark"] .api-grid .api-card h3,
+body.dark-theme .api-grid .api-card h3 {
+  color: #f8fafc !important;
+}
+
+html.dark-theme .api-grid .api-card p,
+html[data-theme="dark"] .api-grid .api-card p,
+body.dark-theme .api-grid .api-card p {
+  color: #9da7ba !important;
+}
+
+/* Card Button Styling */
+html.dark-theme .api-grid .view-api-btn,
+html[data-theme="dark"] .api-grid .view-api-btn,
+body.dark-theme .api-grid .view-api-btn {
+  background: rgba(99, 91, 255, 0.15) !important;
+  border: 1px solid rgba(99, 91, 255, 0.3) !important;
+  color: #c4bdff !important;
+}
+
+html.dark-theme .api-grid .view-api-btn:hover,
+html[data-theme="dark"] .api-grid .view-api-btn:hover,
+body.dark-theme .api-grid .view-api-btn:hover {
+  background: #635bff !important;
+  border-color: #635bff !important;
+  color: #ffffff !important;
+}

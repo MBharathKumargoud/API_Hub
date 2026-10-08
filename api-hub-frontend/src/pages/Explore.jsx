@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 
 import {
   Search,
@@ -49,9 +49,12 @@ const categories = [
 
 function Explore() {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+
+  const initialSearch = searchParams.get("search") || "";
 
   const [activeCategory, setActiveCategory] = useState("All");
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState(initialSearch);
   const [showFilters, setShowFilters] = useState(false);
   const [selectedAuth, setSelectedAuth] = useState("All");
   const [selectedProvider, setSelectedProvider] = useState("All");
@@ -135,6 +138,55 @@ function Explore() {
     return <Icon size={25} />;
   };
 
+  const handleSearchSubmit = () => {
+    const query = searchTerm.trim();
+
+    if (!query) {
+      navigate("/explore");
+      return;
+    }
+
+    const normalizedQuery = query.toLowerCase();
+
+    const categoryAliases = {
+      "AI / ML": ["ai", "artificial intelligence", "machine learning", "ml", "ai/ml"],
+      Weather: ["weather", "forecast", "climate"],
+      Maps: ["map", "maps", "location", "navigation", "geocoding"],
+      Finance: ["finance", "financial", "stock", "stocks", "currency", "crypto", "banking"],
+      Payment: ["payment", "payments", "checkout"],
+      News: ["news", "article", "articles", "headlines"],
+      "E-commerce": ["ecommerce", "e-commerce", "shopping", "store", "shop"],
+      Security: ["security", "cybersecurity", "fraud", "virus", "ip reputation"],
+      "Developer Tools": ["developer", "developer tools", "github", "gitlab", "testing", "http"],
+    };
+
+    for (const [category, aliases] of Object.entries(categoryAliases)) {
+      if (aliases.some((alias) => normalizedQuery === alias || normalizedQuery.includes(alias))) {
+        navigate(`/categories?category=${encodeURIComponent(category)}&view=compare`);
+        return;
+      }
+    }
+
+    const matchingApis = apiData.filter((api) => {
+      const values = [api.name, api.provider, api.category, api.description]
+        .filter(Boolean)
+        .map((value) => value.toLowerCase());
+
+      return values.some((value) => value.includes(normalizedQuery));
+    });
+
+    const matchingCategories = [
+      ...new Set(matchingApis.map((api) => api.category).filter(Boolean)),
+    ];
+
+    if (matchingCategories.length === 1) {
+      navigate(`/categories?category=${encodeURIComponent(matchingCategories[0])}&view=compare`);
+      return;
+    }
+
+    navigate(`/explore?search=${encodeURIComponent(query)}`);
+  };
+
   return (
     <div className="discover-page">
       <Navbar />
@@ -167,7 +219,7 @@ function Explore() {
               onChange={(event) => setSearchTerm(event.target.value)}
               onKeyDown={(event) => {
                 if (event.key === "Enter") {
-                  event.currentTarget.blur();
+                  handleSearchSubmit();
                 }
               }}
               placeholder="Search APIs, providers or categories..."
@@ -364,6 +416,7 @@ function Explore() {
                 {filteredApis.map((api) => (
                   <ApiCard
                     key={api.id}
+                    id={api.id}
                     name={api.name}
                     category={api.category}
                     description={api.description}
@@ -392,6 +445,7 @@ function Explore() {
                 {featuredApis.map((api) => (
                   <ApiCard
                     key={api.id}
+                    id={api.id}
                     name={api.name}
                     category={api.category}
                     description={api.description}

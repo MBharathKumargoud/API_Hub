@@ -659,4 +659,277 @@ const apiData = [
   },
 ];
 
-export default apiData;
+
+/* ============================================================
+   FREE TIER & PRICING INFORMATION
+   ============================================================ */
+
+const pricingInfo = {
+  openai: {
+    freeTier: "No permanent free API tier",
+    pricing: "Pay-as-you-go",
+  },
+
+  "anthropic-claude": {
+    freeTier: "No permanent free API tier",
+    pricing: "Pay-as-you-go",
+  },
+
+  "google-gemini": {
+    freeTier: "Free tier; model-dependent limits",
+    pricing: "Free + pay-as-you-go",
+  },
+
+  "hugging-face": {
+    freeTier: "$0.10/month free inference credits",
+    pricing: "Pay-as-you-go",
+  },
+
+  cohere: {
+    freeTier: "Free trial API key",
+    pricing: "Pay-as-you-go",
+  },
+
+  groq: {
+    freeTier: "Free tier; rate limits vary",
+    pricing: "Free + usage-based",
+  },
+
+  replicate: {
+    freeTier: "No general free tier",
+    pricing: "Pay-per-use",
+  },
+
+  "stability-ai": {
+    freeTier: "25 free credits to start",
+    pricing: "Credit-based usage",
+  },
+
+  openweather: {
+    freeTier: "1,000 free One Call requests/day",
+    pricing: "Free + subscription/pay-per-call",
+  },
+
+  weatherapi: {
+    freeTier: "100,000 calls/month",
+    pricing: "Free + monthly plans",
+  },
+
+  "tomorrow-io": {
+    freeTier: "Free developer tier; limits vary",
+    pricing: "Free + paid plans",
+  },
+
+  "visual-crossing": {
+    freeTier: "1,000 weather records/day",
+    pricing: "Free + metered/subscription",
+  },
+
+  "google-maps": {
+    freeTier: "Free monthly usage thresholds vary by SKU",
+    pricing: "Pay-as-you-go",
+  },
+
+  mapbox: {
+    freeTier: "Free tier; product-specific limits",
+    pricing: "Usage-based",
+  },
+
+  openstreetmap: {
+    freeTier: "Free open geographic data; usage policy applies",
+    pricing: "Free data; service hosting varies",
+  },
+
+  locationiq: {
+    freeTier: "Free tier; daily request limit",
+    pricing: "Free + paid plans",
+  },
+
+  ipinfo: {
+    freeTier: "Free developer tier; limits vary",
+    pricing: "Free + paid plans",
+  },
+
+  "exchange-rates": {
+    freeTier: "Free tier; limited requests",
+    pricing: "Free + paid plans",
+  },
+
+  fixer: {
+    freeTier: "Free tier; limited monthly requests",
+    pricing: "Free + paid plans",
+  },
+
+  "alpha-vantage": {
+    freeTier: "25 requests/day on free tier",
+    pricing: "Free + premium plans",
+  },
+
+  finnhub: {
+    freeTier: "Free tier; rate limits apply",
+    pricing: "Free + paid plans",
+  },
+
+  polygon: {
+    freeTier: "Free tier; limited requests/rate",
+    pricing: "Free + paid plans",
+  },
+
+  coinbase: {
+    freeTier: "Free public API access; rate limits apply",
+    pricing: "Usage/rate-limit based",
+  },
+
+  coingecko: {
+    freeTier: "Free demo tier; rate limits apply",
+    pricing: "Free + paid plans",
+  },
+
+  stripe: {
+    freeTier: "No monthly API fee; test mode available",
+    pricing: "Per-transaction pricing",
+  },
+
+  paypal: {
+    freeTier: "Sandbox is free; production usage is transaction-based",
+    pricing: "Per-transaction pricing",
+  },
+
+  razorpay: {
+    freeTier: "No setup/annual fee on standard account",
+    pricing: "Per-transaction pricing",
+  },
+
+  adyen: {
+    freeTier: "No setup/monthly fee; pricing depends on payment method",
+    pricing: "Per-transaction pricing",
+  },
+
+  square: {
+    freeTier: "Free developer account/sandbox",
+    pricing: "Per-transaction pricing",
+  },
+
+  "news-api": {
+    freeTier: "Developer free plan; 100 requests/day",
+    pricing: "Free + paid plans",
+  },
+
+  "guardian-api": {
+    freeTier: "Free developer key; rate limits apply",
+    pricing: "Free + commercial options",
+  },
+
+  "nytimes-api": {
+    freeTier: "Free developer access; rate limits apply",
+    pricing: "Free + commercial/licensing options",
+  },
+
+  gnews: {
+    freeTier: "Free plan; limited requests",
+    pricing: "Free + paid plans",
+  },
+
+  mediastack: {
+    freeTier: "Free tier; limited monthly requests",
+    pricing: "Free + paid plans",
+  },
+
+  shopify: {
+    freeTier: "API access included with Shopify plans",
+    pricing: "Shopify subscription + plan-dependent costs",
+  },
+
+  woocommerce: {
+    freeTier: "Free/open-source plugin; hosting costs apply",
+    pricing: "Free software + hosting/extensions",
+  },
+
+  "amazon-sp-api": {
+    freeTier: "Seller access; usage limits vary by API",
+    pricing: "Seller-plan/marketplace dependent",
+  },
+
+  "ebay-api": {
+    freeTier: "Free developer account; call limits apply",
+    pricing: "Generally free API access; seller fees separate",
+  },
+
+  bigcommerce: {
+    freeTier: "API access included with BigCommerce plans",
+    pricing: "Subscription + plan-dependent costs",
+  },
+
+  virustotal: {
+    freeTier: "Free public API; 4 requests/minute",
+    pricing: "Free + premium/private offerings",
+  },
+
+  ipqualityscore: {
+    freeTier: "Free tier; limited monthly lookups",
+    pricing: "Free + paid plans",
+  },
+
+  abuseipdb: {
+    freeTier: "Free tier; 1,000 checks/day",
+    pricing: "Free + paid plans",
+  },
+
+  shodan: {
+    freeTier: "Free account with limited credits/access",
+    pricing: "Paid memberships/credits",
+  },
+
+  urlscan: {
+    freeTier: "Public API access; rate limits apply",
+    pricing: "Free + paid/private options",
+  },
+
+  github: {
+    freeTier: "Free; authenticated REST API has rate limits",
+    pricing: "Free; enterprise features paid",
+  },
+
+  gitlab: {
+    freeTier: "Free; rate limits apply",
+    pricing: "Free + paid tiers",
+  },
+
+  jsonplaceholder: {
+    freeTier: "Free; public demo API",
+    pricing: "Free",
+  },
+
+  httpbin: {
+    freeTier: "Free public service; fair-use limits",
+    pricing: "Free/open source",
+  },
+
+  nasa: {
+    freeTier: "DEMO_KEY: 30 requests/hour, 50/day",
+    pricing: "Free API access",
+  },
+
+  "twelve-data": {
+    freeTier: "Free tier; limited daily API credits",
+    pricing: "Free + paid plans",
+  },
+};
+
+
+/* ============================================================
+   ADD PRICING INFORMATION TO EVERY API
+   ============================================================ */
+
+const enrichedApiData = apiData.map((api) => ({
+  ...api,
+  freeTier: pricingInfo[api.id]?.freeTier || "Not specified",
+  pricing: pricingInfo[api.id]?.pricing || "Not specified",
+}));
+
+
+/* ============================================================
+   EXPORT
+   ============================================================ */
+
+export default enrichedApiData;

@@ -123,11 +123,56 @@ function Landing() {
      OPEN EXPLORE PAGE
      ========================================================= */
 
-  const openExplore = () => {
+  const openExplore = (searchQuery = "") => {
 
     setHeroPopup(null);
 
-    navigate("/explore");
+    const query = searchQuery.trim();
+
+    if (!query) {
+      navigate("/explore");
+      return;
+    }
+
+    const normalizedQuery = query.toLowerCase();
+
+    const categoryAliases = {
+      "AI / ML": ["ai", "artificial intelligence", "machine learning", "ml", "ai/ml"],
+      Weather: ["weather", "forecast", "climate"],
+      Maps: ["map", "maps", "location", "navigation", "geocoding"],
+      Finance: ["finance", "financial", "stock", "stocks", "currency", "crypto", "banking"],
+      Payment: ["payment", "payments", "checkout"],
+      News: ["news", "article", "articles", "headlines"],
+      "E-commerce": ["ecommerce", "e-commerce", "shopping", "store", "shop"],
+      Security: ["security", "cybersecurity", "fraud", "virus", "ip reputation"],
+      "Developer Tools": ["developer", "developer tools", "github", "gitlab", "testing", "http"],
+    };
+
+    for (const [category, aliases] of Object.entries(categoryAliases)) {
+      if (aliases.some((alias) => normalizedQuery === alias || normalizedQuery.includes(alias))) {
+        navigate(`/categories?category=${encodeURIComponent(category)}&view=compare`);
+        return;
+      }
+    }
+
+    const matchingApis = apiData.filter((api) => {
+      const values = [api.name, api.provider, api.category, api.description]
+        .filter(Boolean)
+        .map((value) => value.toLowerCase());
+
+      return values.some((value) => value.includes(normalizedQuery));
+    });
+
+    const matchingCategories = [
+      ...new Set(matchingApis.map((api) => api.category).filter(Boolean)),
+    ];
+
+    if (matchingCategories.length === 1) {
+      navigate(`/categories?category=${encodeURIComponent(matchingCategories[0])}&view=compare`);
+      return;
+    }
+
+    navigate(`/explore?search=${encodeURIComponent(query)}`);
 
   };
 
@@ -234,7 +279,7 @@ function Landing() {
 
                     if (event.key === "Enter") {
 
-                      openExplore();
+                      openExplore(event.currentTarget.value);
 
                     }
 
@@ -244,7 +289,10 @@ function Landing() {
 
                 <button
                   type="button"
-                  onClick={openExplore}
+                  onClick={() => {
+                    const input = document.querySelector(".hero-search input");
+                    openExplore(input?.value || "");
+                  }}
                   aria-label="Explore APIs"
                 >
 

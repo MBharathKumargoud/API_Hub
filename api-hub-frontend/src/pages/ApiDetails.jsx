@@ -5,15 +5,19 @@ import {
   ArrowLeft,
   ArrowRight,
   ExternalLink,
+  KeyRound,
   Code2,
   Globe,
   ShieldCheck,
   BookOpen,
   CheckCircle2,
+  Bookmark,
+  Check,
 } from "lucide-react";
 
 import Navbar from "../components/Navbar";
 import apiData from "../data/apiData";
+import { useSavedApis } from "../utils/savedApis";
 
 const categoryIcons = {
   "AI / ML": Code2,
@@ -30,45 +34,48 @@ const categoryIcons = {
 function ApiDetails() {
   const { apiName } = useParams();
   const navigate = useNavigate();
+  const { isSaved, toggleSave } = useSavedApis();
 
   const api = useMemo(
     () => apiData.find((item) => item.id === apiName),
     [apiName]
   );
 
+  const ApiIcon = api
+    ? categoryIcons[api.category] || Code2
+    : Code2;
+
   if (!api) {
     return (
-      <div className="api-details-page-wrapper">
+      <>
         <Navbar />
-
         <main className="api-details-page">
-          <div className="api-details-main">
+          <section className="api-not-found">
+            <div className="api-not-found-icon">
+              <Code2 size={30} />
+            </div>
+            <span className="section-label">404</span>
+            <h1>API not found</h1>
+            <p>
+              The API you are looking for does not exist in the API Hub directory.
+            </p>
             <button
               type="button"
-              className="api-back-button"
+              className="api-primary-button"
               onClick={() => navigate("/explore")}
             >
               <ArrowLeft size={17} />
               Back to Explore
             </button>
-
-            <section className="api-info-panel">
-              <span className="api-panel-label">API NOT FOUND</span>
-              <h2>We couldn't find that API.</h2>
-              <p>
-                The API may have been removed or the URL is incorrect.
-              </p>
-            </section>
-          </div>
+          </section>
         </main>
-      </div>
+      </>
     );
   }
 
-  const ApiIcon = categoryIcons[api.category] || Code2;
-
   const documentationUrl = api.documentation || api.website;
   const websiteUrl = api.website || api.documentation;
+  const saved = isSaved(api.id);
 
   const features = [
     `Category: ${api.category}`,
@@ -76,6 +83,8 @@ function ApiDetails() {
     api.authentication
       ? `Authentication: ${api.authentication}`
       : "Authentication information available from provider",
+    api.freeTier ? `Free tier: ${api.freeTier}` : "Free-tier information available from provider",
+    api.pricing ? `Pricing: ${api.pricing}` : "Pricing information available from provider",
     "Developer documentation",
   ];
 
@@ -84,7 +93,7 @@ function ApiDetails() {
       <Navbar />
 
       <main className="api-details-page">
-        <div className="api-details-main">
+        <div className="api-details-container">
           <button
             type="button"
             className="api-back-button"
@@ -95,37 +104,42 @@ function ApiDetails() {
           </button>
 
           <section className="api-details-hero">
-            <div
-              className={`api-details-icon ${api.color || ""}`}
-            >
-              <ApiIcon size={36} />
-            </div>
+            <div className="api-details-hero-left">
+              <div className={`api-details-icon ${api.color || ""}`}>
+                <ApiIcon size={36} />
+              </div>
 
-            <div className="api-details-heading">
-              <span className="api-details-category">
-                {api.category}
-              </span>
-
-              <h1>{api.name}</h1>
-
-              <p>{api.description}</p>
-
-              <div className="api-provider">
-                <span>Provided by</span>
-                <strong>{api.provider}</strong>
+              <div className="api-details-heading">
+                <span className="api-details-category">{api.category}</span>
+                <h1>{api.name}</h1>
+                <p>{api.description}</p>
               </div>
             </div>
 
             <div className="api-details-actions">
+              <button
+                type="button"
+                className="api-primary-button"
+                onClick={() => toggleSave(api.id)}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "8px",
+                }}
+              >
+                {saved ? <Check size={17} /> : <Bookmark size={17} />}
+                {saved ? "Saved" : "Save API"}
+              </button>
+
               {documentationUrl && (
                 <a
                   href={documentationUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="api-test-button"
+                  className="api-primary-button"
                 >
                   <Code2 size={17} />
-                  View Documentation
+                  Test / Explore API
                   <ExternalLink size={15} />
                 </a>
               )}
@@ -135,25 +149,50 @@ function ApiDetails() {
                   href={websiteUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="api-website-button"
+                  className="api-secondary-button"
                 >
-                  <Globe size={16} />
-                  Official Website
+                  Official Site
                   <ExternalLink size={15} />
                 </a>
               )}
             </div>
           </section>
 
-          <section className="api-details-grid">
-            <article className="api-info-panel">
-              <span className="api-panel-label">
-                ABOUT THIS API
-              </span>
+          <section className="api-info-grid">
+            <article className="api-info-card">
+              <div className="api-info-card-icon">
+                <BookOpen size={20} />
+              </div>
+              <div>
+                <span>ABOUT</span>
+                <h2>{api.name}</h2>
+                <p>{api.description}</p>
+              </div>
+            </article>
 
-              <h2>{api.name}</h2>
+            <article className="api-info-card">
+              <div className="api-info-card-icon">
+                <KeyRound size={20} />
+              </div>
+              <div>
+                <span>AUTHENTICATION</span>
+                <h2>{api.authentication || "API Key"}</h2>
+                <p>
+                  Check the official documentation for authentication and credential requirements.
+                </p>
+              </div>
+            </article>
+          </section>
 
-              <p>{api.description}</p>
+          <section className="api-details-content">
+            <div className="api-main-content">
+              <span className="section-label">API OVERVIEW</span>
+              <h2>Everything you need to get started.</h2>
+              <p>
+                {api.name} is available through the provider's developer platform. Use the official
+                documentation to learn about available endpoints, parameters, authentication and
+                integration options.
+              </p>
 
               <div className="api-feature-list">
                 {features.map((feature, index) => (
@@ -163,105 +202,72 @@ function ApiDetails() {
                   </div>
                 ))}
               </div>
-            </article>
+            </div>
 
-            <article className="api-info-panel">
-              <span className="api-panel-label">
-                API INFORMATION
-              </span>
+            <aside className="api-sidebar-card">
+              <span className="section-label">QUICK INFO</span>
 
-              <div className="api-detail-row">
+              <div className="api-sidebar-row">
                 <span>Provider</span>
                 <strong>{api.provider}</strong>
               </div>
 
-              <div className="api-detail-row">
+              <div className="api-sidebar-row">
                 <span>Category</span>
                 <strong>{api.category}</strong>
               </div>
 
-              <div className="api-detail-row">
+              <div className="api-sidebar-row">
                 <span>Authentication</span>
-                <strong>
-                  <ShieldCheck size={15} />
-                  {api.authentication || "Not specified"}
-                </strong>
-              </div>
-            </article>
-          </section>
-
-          <section className="api-details-grid">
-            <article className="api-info-panel">
-              <span className="api-panel-label">
-                CONNECTION DETAILS
-              </span>
-
-              <div className="api-detail-row">
-                <span>Base URL</span>
-                <code>{api.baseUrl || "Not provided"}</code>
+                <strong>{api.authentication || "API Key"}</strong>
               </div>
 
-              <div className="api-detail-row">
-                <span>Documentation</span>
-                <strong>
-                  <BookOpen size={15} />
-                  {documentationUrl
-                    ? "Available"
-                    : "Not provided"}
-                </strong>
-              </div>
+              {api.freeTier && (
+                <div className="api-sidebar-row">
+                  <span>Free Tier</span>
+                  <strong>{api.freeTier}</strong>
+                </div>
+              )}
+
+              {api.pricing && (
+                <div className="api-sidebar-row">
+                  <span>Pricing</span>
+                  <strong>{api.pricing}</strong>
+                </div>
+              )}
+
+              {api.baseUrl && (
+                <div className="api-sidebar-block">
+                  <span>Base URL</span>
+                  <code>{api.baseUrl}</code>
+                </div>
+              )}
 
               {documentationUrl && (
                 <a
                   href={documentationUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="api-doc-button"
+                  className="api-doc-link"
                 >
                   Open Documentation
                   <ArrowRight size={16} />
                 </a>
               )}
-            </article>
-
-            <article className="api-info-panel">
-              <span className="api-panel-label">
-                DEVELOPER ACCESS
-              </span>
-
-              <h2>Ready to build?</h2>
-
-              <p>
-                Use the official provider resources to create
-                credentials, understand authentication and integrate
-                this API into your application.
-              </p>
-
-              {websiteUrl && (
-                <a
-                  href={websiteUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="api-start-button"
-                >
-                  Visit Provider Website
-                  <ExternalLink size={16} />
-                </a>
-              )}
-            </article>
+            </aside>
           </section>
 
-          <section className="api-doc-banner">
-            <div>
-              <span className="api-panel-label">
-                READY TO BUILD?
-              </span>
+          <section className="api-documentation-banner">
+            <div className="api-documentation-icon">
+              <Code2 size={24} />
+            </div>
 
+            <div className="api-documentation-content">
+              <span className="section-label">READY TO BUILD?</span>
               <h2>Start integrating {api.name}.</h2>
-
               <p>
-                Visit the official developer documentation to create
-                credentials, explore endpoints and start building.
+                Visit the official developer documentation to create credentials, explore endpoints
+                and start building.
               </p>
             </div>
 
@@ -270,7 +276,7 @@ function ApiDetails() {
                 href={documentationUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="api-doc-button"
+                className="api-primary-button"
               >
                 View Documentation
                 <ExternalLink size={15} />

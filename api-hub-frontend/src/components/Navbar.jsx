@@ -166,7 +166,7 @@ function Navbar() {
 
 
           <a
-            href="/#categories"
+            href="/categories"
             onClick={closeMobileMenu}
           >
             Categories
@@ -174,7 +174,7 @@ function Navbar() {
 
 
           <a
-            href="/#pricing"
+            href="/pricing"
             onClick={closeMobileMenu}
           >
             Pricing
