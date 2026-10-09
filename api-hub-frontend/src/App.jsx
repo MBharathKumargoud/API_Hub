@@ -21,6 +21,7 @@ import "./styles/documentation-dark-theme.css";
 import "./styles/pricing-dark-theme.css";
 import "./styles/index.css";
 import "./styles/api-details-restore-styling.css";
+import "./styles/dashboard-dark-theme.css";
 import "./styles/api-card-layout-fix.css";
 import "./styles/api-testing.css";
 import "./styles/documentation-dashboard.css";

@@ -125,3 +125,136 @@
   .hub-docs-method-grid, .hub-dashboard-stats, .hub-dashboard-api-grid { grid-template-columns: 1fr; }
   .hub-docs-api-list { grid-template-columns: 1fr; }
 }
+
+
+/* =========================================================
+   DARK THEME OVERRIDES — Documentation and Dashboard
+   Keep these rules after the base component styles.
+   ========================================================= */
+
+html.dark-theme .hub-dashboard-page,
+html[data-theme="dark"] .hub-dashboard-page,
+body.dark-theme .hub-dashboard-page {
+  --bg-primary: #090b12;
+  --card-bg: #141a29;
+  --text-primary: #f4f7ff;
+  --text-secondary: #aab4c8;
+  --border-color: #30394e;
+  --input-bg: #101625;
+  background: #090b12 !important;
+  color: #f4f7ff !important;
+}
+
+/* Welcome banner: fixes pale heading on a white surface */
+html.dark-theme .hub-dashboard-welcome,
+html[data-theme="dark"] .hub-dashboard-welcome,
+body.dark-theme .hub-dashboard-welcome {
+  background: #141a29 !important;
+  border-color: #30394e !important;
+  color: #f4f7ff !important;
+}
+html.dark-theme .hub-dashboard-welcome h1,
+html[data-theme="dark"] .hub-dashboard-welcome h1,
+body.dark-theme .hub-dashboard-welcome h1 {
+  color: #f4f7ff !important;
+}
+html.dark-theme .hub-dashboard-welcome h1 span,
+html[data-theme="dark"] .hub-dashboard-welcome h1 span,
+body.dark-theme .hub-dashboard-welcome h1 span {
+  color: #a78bfa !important;
+}
+html.dark-theme .hub-dashboard-welcome p,
+html[data-theme="dark"] .hub-dashboard-welcome p,
+body.dark-theme .hub-dashboard-welcome p {
+  color: #aab4c8 !important;
+}
+
+/* Stats, saved API cards, empty state, and Quick Access cards */
+html.dark-theme .hub-dashboard-stat,
+html[data-theme="dark"] .hub-dashboard-stat,
+body.dark-theme .hub-dashboard-stat,
+html.dark-theme .hub-dashboard-api-card,
+html[data-theme="dark"] .hub-dashboard-api-card,
+body.dark-theme .hub-dashboard-api-card,
+html.dark-theme .hub-dashboard-empty,
+html[data-theme="dark"] .hub-dashboard-empty,
+body.dark-theme .hub-dashboard-empty,
+html.dark-theme .hub-dashboard-quick-card,
+html[data-theme="dark"] .hub-dashboard-quick-card,
+body.dark-theme .hub-dashboard-quick-card {
+  background: #141a29 !important;
+  border-color: #30394e !important;
+  color: #f4f7ff !important;
+  box-shadow: none;
+}
+
+html.dark-theme .hub-dashboard-stat small,
+html.dark-theme .hub-dashboard-stat span:not(.hub-dashboard-stat-icon),
+html.dark-theme .hub-dashboard-section-heading p,
+html.dark-theme .hub-dashboard-api-card p,
+html.dark-theme .hub-dashboard-quick-card p,
+html.dark-theme .hub-dashboard-empty p,
+html.dark-theme .hub-dashboard-notice p,
+html[data-theme="dark"] .hub-dashboard-stat small,
+html[data-theme="dark"] .hub-dashboard-stat span:not(.hub-dashboard-stat-icon),
+html[data-theme="dark"] .hub-dashboard-section-heading p,
+html[data-theme="dark"] .hub-dashboard-api-card p,
+html[data-theme="dark"] .hub-dashboard-quick-card p,
+html[data-theme="dark"] .hub-dashboard-empty p,
+html[data-theme="dark"] .hub-dashboard-notice p,
+body.dark-theme .hub-dashboard-stat small,
+body.dark-theme .hub-dashboard-stat span:not(.hub-dashboard-stat-icon),
+body.dark-theme .hub-dashboard-section-heading p,
+body.dark-theme .hub-dashboard-api-card p,
+body.dark-theme .hub-dashboard-quick-card p,
+body.dark-theme .hub-dashboard-empty p,
+body.dark-theme .hub-dashboard-notice p {
+  color: #aab4c8 !important;
+}
+
+html.dark-theme .hub-dashboard-stat strong,
+html.dark-theme .hub-dashboard-section-heading h2,
+html.dark-theme .hub-dashboard-api-card h3,
+html.dark-theme .hub-dashboard-quick-card strong,
+html.dark-theme .hub-dashboard-empty h3,
+html.dark-theme .hub-dashboard-notice,
+html[data-theme="dark"] .hub-dashboard-stat strong,
+html[data-theme="dark"] .hub-dashboard-section-heading h2,
+html[data-theme="dark"] .hub-dashboard-api-card h3,
+html[data-theme="dark"] .hub-dashboard-quick-card strong,
+html[data-theme="dark"] .hub-dashboard-empty h3,
+html[data-theme="dark"] .hub-dashboard-notice,
+body.dark-theme .hub-dashboard-stat strong,
+body.dark-theme .hub-dashboard-section-heading h2,
+body.dark-theme .hub-dashboard-api-card h3,
+body.dark-theme .hub-dashboard-quick-card strong,
+body.dark-theme .hub-dashboard-empty h3,
+body.dark-theme .hub-dashboard-notice {
+  color: #f4f7ff !important;
+}
+
+html.dark-theme .hub-dashboard-notice,
+html[data-theme="dark"] .hub-dashboard-notice,
+body.dark-theme .hub-dashboard-notice {
+  background: rgba(124, 58, 237, .12) !important;
+  border-color: rgba(167, 139, 250, .25) !important;
+}
+
+html.dark-theme .hub-dashboard-card-actions,
+html[data-theme="dark"] .hub-dashboard-card-actions,
+body.dark-theme .hub-dashboard-card-actions {
+  border-top-color: #30394e !important;
+}
+
+html.dark-theme .hub-dashboard-page a,
+html[data-theme="dark"] .hub-dashboard-page a,
+body.dark-theme .hub-dashboard-page a {
+  color: #b9a6ff;
+}
+html.dark-theme .hub-dashboard-primary,
+html[data-theme="dark"] .hub-dashboard-primary,
+body.dark-theme .hub-dashboard-primary {
+  color: #fff !important;
+  background: #7c3aed !important;
+  border-color: #7c3aed !important;
+}
