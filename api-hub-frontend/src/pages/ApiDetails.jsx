@@ -131,18 +131,14 @@ function ApiDetails() {
                 {saved ? "Saved" : "Save API"}
               </button>
 
-              {documentationUrl && (
-                <a
-                  href={documentationUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="api-primary-button"
-                >
-                  <Code2 size={17} />
-                  Test / Explore API
-                  <ExternalLink size={15} />
-                </a>
-              )}
+              <button
+                type="button"
+                className="api-primary-button"
+                onClick={() => navigate(`/api/${api.id}/test`)}
+              >
+                <Code2 size={17} />
+                Test API
+              </button>
 
               {websiteUrl && (
                 <a

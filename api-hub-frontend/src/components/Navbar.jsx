@@ -165,24 +165,24 @@ function Navbar() {
           </Link>
 
 
-          <a
-            href="/categories"
+          <Link
+            to="/categories"
             onClick={closeMobileMenu}
           >
             Categories
-          </a>
+          </Link>
 
 
-          <a
-            href="/pricing"
+          <Link
+            to="/pricing"
             onClick={closeMobileMenu}
           >
             Pricing
-          </a>
+          </Link>
 
 
           <a
-            href="/#docs"
+            href="/docs"
             onClick={closeMobileMenu}
           >
             Docs

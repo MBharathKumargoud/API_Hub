@@ -3843,3 +3843,350 @@ body.dark-theme .api-grid .view-api-btn:hover {
   border-color: #635bff !important;
   color: #ffffff !important;
 }
+/* =========================================================
+   API HUB — PRICING PAGE DARK THEME
+   Append these rules to the END of src/styles/dark-theme.css.
+   Uses the existing html.dark-theme / data-theme mechanism.
+   ========================================================= */
+
+html.dark-theme .pricing-redesign-main,
+html[data-theme="dark"] .pricing-redesign-main,
+body.dark-theme .pricing-redesign-main {
+  color: #f3f4f6;
+}
+
+html.dark-theme .pricing-redesign-hero h1,
+html[data-theme="dark"] .pricing-redesign-hero h1,
+body.dark-theme .pricing-redesign-hero h1,
+html.dark-theme .pricing-redesign-card h2,
+html[data-theme="dark"] .pricing-redesign-card h2,
+body.dark-theme .pricing-redesign-card h2 {
+  color: #f8fafc;
+}
+
+html.dark-theme .pricing-redesign-subtitle,
+html[data-theme="dark"] .pricing-redesign-subtitle,
+body.dark-theme .pricing-redesign-subtitle,
+html.dark-theme .pricing-redesign-description,
+html[data-theme="dark"] .pricing-redesign-description,
+body.dark-theme .pricing-redesign-description {
+  color: #aab4c8;
+}
+
+/* Main pricing cards and summary cards */
+html.dark-theme .pricing-redesign-card,
+html[data-theme="dark"] .pricing-redesign-card,
+body.dark-theme .pricing-redesign-card,
+html.dark-theme .pricing-redesign-count,
+html[data-theme="dark"] .pricing-redesign-count,
+body.dark-theme .pricing-redesign-count,
+html.dark-theme .pricing-redesign-note,
+html[data-theme="dark"] .pricing-redesign-note,
+body.dark-theme .pricing-redesign-note,
+html.dark-theme .pricing-redesign-footer,
+html[data-theme="dark"] .pricing-redesign-footer,
+body.dark-theme .pricing-redesign-footer {
+  background: #141a29;
+  color: #e5eaf4;
+  border-color: rgba(255, 255, 255, 0.10);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.18);
+}
+
+html.dark-theme .pricing-redesign-card:hover,
+html[data-theme="dark"] .pricing-redesign-card:hover,
+body.dark-theme .pricing-redesign-card:hover {
+  border-color: rgba(124, 108, 255, 0.55);
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.28);
+}
+
+/* Approximate/verified price panel */
+html.dark-theme .pricing-redesign-price,
+html[data-theme="dark"] .pricing-redesign-price,
+body.dark-theme .pricing-redesign-price {
+  background: linear-gradient(135deg, rgba(99, 91, 255, 0.15), rgba(139, 92, 246, 0.08));
+  border-color: rgba(139, 124, 255, 0.25);
+}
+
+html.dark-theme .pricing-redesign-price-label,
+html[data-theme="dark"] .pricing-redesign-price-label,
+body.dark-theme .pricing-redesign-price-label {
+  color: #b8adff;
+}
+
+html.dark-theme .pricing-redesign-price strong,
+html[data-theme="dark"] .pricing-redesign-price strong,
+body.dark-theme .pricing-redesign-price strong,
+html.dark-theme .pricing-redesign-price-value,
+html[data-theme="dark"] .pricing-redesign-price-value,
+body.dark-theme .pricing-redesign-price-value {
+  color: #b7a8ff;
+}
+
+html.dark-theme .pricing-redesign-price small,
+html[data-theme="dark"] .pricing-redesign-price small,
+body.dark-theme .pricing-redesign-price small,
+html.dark-theme .pricing-redesign-free-tier,
+html[data-theme="dark"] .pricing-redesign-free-tier,
+body.dark-theme .pricing-redesign-free-tier {
+  color: #aab4c8;
+}
+
+/* Pricing type badges */
+html.dark-theme .pricing-redesign-badge,
+html[data-theme="dark"] .pricing-redesign-badge,
+body.dark-theme .pricing-redesign-badge {
+  background: rgba(139, 124, 255, 0.16);
+  color: #c9c0ff;
+  border-color: rgba(139, 124, 255, 0.25);
+}
+
+/* Search input */
+html.dark-theme .pricing-redesign-search,
+html[data-theme="dark"] .pricing-redesign-search,
+body.dark-theme .pricing-redesign-search {
+  background: #0d1220;
+  border-color: #30394e;
+  color: #cbd5e1;
+}
+
+html.dark-theme .pricing-redesign-search input,
+html[data-theme="dark"] .pricing-redesign-search input,
+body.dark-theme .pricing-redesign-search input {
+  color: #f8fafc;
+  background: transparent;
+}
+
+html.dark-theme .pricing-redesign-search input::placeholder,
+html[data-theme="dark"] .pricing-redesign-search input::placeholder,
+body.dark-theme .pricing-redesign-search input::placeholder {
+  color: #7f8aa3;
+}
+
+/* Filter controls — active selection stays purple */
+html.dark-theme .pricing-redesign-filter,
+html[data-theme="dark"] .pricing-redesign-filter,
+body.dark-theme .pricing-redesign-filter {
+  color: #c4cce0;
+  background: #171e2e;
+  border-color: #30394e;
+}
+
+html.dark-theme .pricing-redesign-filter:hover,
+html[data-theme="dark"] .pricing-redesign-filter:hover,
+body.dark-theme .pricing-redesign-filter:hover {
+  color: #ffffff;
+  background: rgba(99, 91, 255, 0.18);
+  border-color: rgba(124, 108, 255, 0.55);
+}
+
+html.dark-theme .pricing-redesign-filter.active,
+html[data-theme="dark"] .pricing-redesign-filter.active,
+body.dark-theme .pricing-redesign-filter.active {
+  color: #ffffff;
+  background: #5145e5;
+  border-color: #6558ff;
+  box-shadow: 0 7px 18px rgba(81, 69, 229, 0.28);
+}
+
+html.dark-theme .pricing-redesign-filter-title,
+html[data-theme="dark"] .pricing-redesign-filter-title,
+body.dark-theme .pricing-redesign-filter-title {
+  color: #c4cce0;
+}
+
+/* Card footer/buttons */
+html.dark-theme .pricing-redesign-button,
+html[data-theme="dark"] .pricing-redesign-button,
+body.dark-theme .pricing-redesign-button {
+  color: #ffffff;
+  background: #5145e5;
+  border-color: #6558ff;
+}
+
+html.dark-theme .pricing-redesign-button:hover,
+html[data-theme="dark"] .pricing-redesign-button:hover,
+body.dark-theme .pricing-redesign-button:hover {
+  background: #4034d7;
+}
+
+html.dark-theme .pricing-redesign-empty,
+html[data-theme="dark"] .pricing-redesign-empty,
+body.dark-theme .pricing-redesign-empty {
+  color: #aab4c8;
+  background: #141a29;
+  border-color: #30394e;
+}
+
+/* Small-screen contrast */
+@media (max-width: 680px) {
+  html.dark-theme .pricing-redesign-card,
+  html[data-theme="dark"] .pricing-redesign-card,
+  body.dark-theme .pricing-redesign-card {
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+  }
+}
+/* API HUB — PRICING PAGE DARK THEME FIX
+   Append this entire block to the VERY END of src/styles/dark-theme.css.
+   !important is intentional because Pricing.jsx contains its own inline <style>. */
+
+html.dark-theme body .pricing-redesign-main,
+html[data-theme="dark"] body .pricing-redesign-main,
+body.dark-theme .pricing-redesign-main {
+  background: #090b12 !important;
+  background-image:
+    radial-gradient(circle at 85% 8%, rgba(99, 91, 255, 0.16), transparent 30%),
+    radial-gradient(circle at 8% 30%, rgba(59, 130, 246, 0.08), transparent 25%) !important;
+  color: #f8fafc !important;
+}
+
+/* Heading: fix the low-contrast white text visible in the screenshot */
+html.dark-theme body .pricing-redesign-hero h1,
+html[data-theme="dark"] body .pricing-redesign-hero h1,
+body.dark-theme .pricing-redesign-hero h1 {
+  color: #f8fafc !important;
+}
+html.dark-theme body .pricing-redesign-hero h1 span,
+html[data-theme="dark"] body .pricing-redesign-hero h1 span,
+body.dark-theme .pricing-redesign-hero h1 span {
+  color: #8b7cff !important;
+}
+html.dark-theme body .pricing-redesign-eyebrow,
+html[data-theme="dark"] body .pricing-redesign-eyebrow,
+body.dark-theme .pricing-redesign-eyebrow,
+html.dark-theme body .pricing-redesign-subtitle,
+html[data-theme="dark"] body .pricing-redesign-subtitle,
+body.dark-theme .pricing-redesign-subtitle,
+html.dark-theme body .pricing-redesign-filter-title,
+html[data-theme="dark"] body .pricing-redesign-filter-title,
+body.dark-theme .pricing-redesign-filter-title {
+  color: #aab4c8 !important;
+}
+
+/* Pricing note and count tiles */
+html.dark-theme body .pricing-redesign-note,
+html[data-theme="dark"] body .pricing-redesign-note,
+body.dark-theme .pricing-redesign-note,
+html.dark-theme body .pricing-redesign-count,
+html[data-theme="dark"] body .pricing-redesign-count,
+body.dark-theme .pricing-redesign-count {
+  background: #141a29 !important;
+  color: #e5eaf4 !important;
+  border-color: rgba(255,255,255,.10) !important;
+}
+html.dark-theme body .pricing-redesign-count span,
+html[data-theme="dark"] body .pricing-redesign-count span,
+body.dark-theme .pricing-redesign-count span {
+  color: #aab4c8 !important;
+}
+html.dark-theme body .pricing-redesign-count strong,
+html[data-theme="dark"] body .pricing-redesign-count strong,
+body.dark-theme .pricing-redesign-count strong {
+  color: #b7a8ff !important;
+}
+html.dark-theme body .pricing-redesign-count.free strong,
+html[data-theme="dark"] body .pricing-redesign-count.free strong,
+body.dark-theme .pricing-redesign-count.free strong {
+  color: #34d399 !important;
+}
+
+/* API cards */
+html.dark-theme body .pricing-redesign-card,
+html[data-theme="dark"] body .pricing-redesign-card,
+body.dark-theme .pricing-redesign-card {
+  background: #141a29 !important;
+  color: #e5eaf4 !important;
+  border-color: rgba(255,255,255,.10) !important;
+  box-shadow: 0 16px 38px rgba(0,0,0,.24) !important;
+}
+html.dark-theme body .pricing-redesign-card h2,
+html[data-theme="dark"] body .pricing-redesign-card h2,
+body.dark-theme .pricing-redesign-card h2 {
+  color: #f8fafc !important;
+}
+html.dark-theme body .pricing-redesign-description,
+html[data-theme="dark"] body .pricing-redesign-description,
+body.dark-theme .pricing-redesign-description {
+  color: #aab4c8 !important;
+}
+
+/* Price panel and its text */
+html.dark-theme body .pricing-redesign-price,
+html[data-theme="dark"] body .pricing-redesign-price,
+body.dark-theme .pricing-redesign-price {
+  background: linear-gradient(135deg, #211f42, #1b2033) !important;
+  border-color: rgba(139,124,255,.30) !important;
+}
+html.dark-theme body .pricing-redesign-price-label,
+html[data-theme="dark"] body .pricing-redesign-price-label,
+body.dark-theme .pricing-redesign-price-label {
+  color: #c4baff !important;
+}
+html.dark-theme body .pricing-redesign-price strong,
+html[data-theme="dark"] body .pricing-redesign-price strong,
+body.dark-theme .pricing-redesign-price strong,
+html.dark-theme body .pricing-redesign-price-value,
+html[data-theme="dark"] body .pricing-redesign-price-value,
+body.dark-theme .pricing-redesign-price-value {
+  color: #b7a8ff !important;
+}
+html.dark-theme body .pricing-redesign-price small,
+html[data-theme="dark"] body .pricing-redesign-price small,
+body.dark-theme .pricing-redesign-price small,
+html.dark-theme body .pricing-redesign-free-tier,
+html[data-theme="dark"] body .pricing-redesign-free-tier,
+body.dark-theme .pricing-redesign-free-tier {
+  color: #aab4c8 !important;
+}
+
+/* Filter buttons and search input */
+html.dark-theme body .pricing-redesign-filter,
+html[data-theme="dark"] body .pricing-redesign-filter,
+body.dark-theme .pricing-redesign-filter {
+  color: #d5dbea !important;
+  background: #171e2e !important;
+  border-color: #30394e !important;
+}
+html.dark-theme body .pricing-redesign-filter.active,
+html[data-theme="dark"] body .pricing-redesign-filter.active,
+body.dark-theme .pricing-redesign-filter.active {
+  color: #fff !important;
+  background: #5145e5 !important;
+  border-color: #6558ff !important;
+}
+html.dark-theme body .pricing-redesign-search,
+html[data-theme="dark"] body .pricing-redesign-search,
+body.dark-theme .pricing-redesign-search {
+  color: #cbd5e1 !important;
+  background: #0d1220 !important;
+  border-color: #30394e !important;
+}
+html.dark-theme body .pricing-redesign-search input,
+html[data-theme="dark"] body .pricing-redesign-search input,
+body.dark-theme .pricing-redesign-search input {
+  color: #f8fafc !important;
+  background: transparent !important;
+}
+html.dark-theme body .pricing-redesign-search input::placeholder,
+html[data-theme="dark"] body .pricing-redesign-search input::placeholder,
+body.dark-theme .pricing-redesign-search input::placeholder {
+  color: #8792a8 !important;
+}
+
+/* Buttons, tags, and empty state */
+html.dark-theme body .pricing-redesign-button,
+html[data-theme="dark"] body .pricing-redesign-button,
+body.dark-theme .pricing-redesign-button {
+  color: #fff !important;
+  background: #5145e5 !important;
+  border-color: #6558ff !important;
+}
+html.dark-theme body .pricing-redesign-footer,
+html[data-theme="dark"] body .pricing-redesign-footer,
+body.dark-theme .pricing-redesign-footer,
+html.dark-theme body .pricing-redesign-empty,
+html[data-theme="dark"] body .pricing-redesign-empty,
+body.dark-theme .pricing-redesign-empty {
+  color: #aab4c8 !important;
+  background: #141a29 !important;
+  border-color: rgba(255,255,255,.10) !important;
+}

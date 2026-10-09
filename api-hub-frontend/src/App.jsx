@@ -10,11 +10,20 @@ import Categories from "./pages/Categories";
 import Pricing from "./pages/Pricing";
 import PricingCategory from "./pages/PricingCategory";
 import ApiDetails from "./pages/ApiDetails";
+import ApiTesting from "./pages/ApiTesting";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Documentation from "./pages/Documentation";
+import Dashboard from "./pages/Dashboard";
 
 import "./styles/dark-theme.css";
+import "./styles/documentation-dark-theme.css";
+import "./styles/pricing-dark-theme.css";
 import "./styles/index.css";
+import "./styles/api-details-restore-styling.css";
+import "./styles/api-card-layout-fix.css";
+import "./styles/api-testing.css";
+import "./styles/documentation-dashboard.css";
 
 
 function App() {
@@ -26,7 +35,6 @@ function App() {
         {/* ==================================================
             HOME / LANDING
            ================================================== */}
-
         <Route
           path="/"
           element={<Landing />}
@@ -36,7 +44,6 @@ function App() {
         {/* ==================================================
             EXPLORE
            ================================================== */}
-
         <Route
           path="/explore"
           element={<Explore />}
@@ -46,7 +53,6 @@ function App() {
         {/* ==================================================
             CATEGORIES
            ================================================== */}
-
         <Route
           path="/categories"
           element={<Categories />}
@@ -54,9 +60,8 @@ function App() {
 
 
         {/* ==================================================
-            PRICING
+            PRICING LANDING
            ================================================== */}
-
         <Route
           path="/pricing"
           element={<Pricing />}
@@ -67,7 +72,6 @@ function App() {
             PRICING CATEGORY PAGES
             FREE / FREEMIUM / PAID
            ================================================== */}
-
         <Route
           path="/pricing/:type"
           element={<PricingCategory />}
@@ -75,9 +79,18 @@ function App() {
 
 
         {/* ==================================================
+            API TESTING PLAYGROUND
+            Keep this before /api/:apiName
+           ================================================== */}
+        <Route
+          path="/api/:apiName/test"
+          element={<ApiTesting />}
+        />
+
+
+        {/* ==================================================
             API DETAILS
            ================================================== */}
-
         <Route
           path="/api/:apiName"
           element={<ApiDetails />}
@@ -85,9 +98,32 @@ function App() {
 
 
         {/* ==================================================
+            DOCUMENTATION
+           ================================================== */}
+        <Route
+          path="/documentation"
+          element={<Documentation />}
+        />
+
+        {/* Keep /docs working as an alias for older links/bookmarks. */}
+        <Route
+          path="/docs"
+          element={<Documentation />}
+        />
+
+
+        {/* ==================================================
+            DASHBOARD
+           ================================================== */}
+        <Route
+          path="/dashboard"
+          element={<Dashboard />}
+        />
+
+
+        {/* ==================================================
             LOGIN
            ================================================== */}
-
         <Route
           path="/login"
           element={<Login />}
@@ -97,7 +133,6 @@ function App() {
         {/* ==================================================
             SIGN UP
            ================================================== */}
-
         <Route
           path="/signup"
           element={<Signup />}

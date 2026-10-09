@@ -127,7 +127,13 @@ function Landing() {
 
     setHeroPopup(null);
 
-    const query = searchQuery.trim();
+    // Buttons using onClick={openExplore} pass a click event as the first
+    // argument. Only trim an actual string; otherwise open the Explore page
+    // without a search query.
+    const query =
+      typeof searchQuery === "string"
+        ? searchQuery.trim()
+        : "";
 
     if (!query) {
       navigate("/explore");
