@@ -1,0 +1,17 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Frontend generated files
+api-hub-frontend/node_modules/
+api-hub-frontend/dist/
+
+# Backend generated files
+api-hub-backend/target/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
