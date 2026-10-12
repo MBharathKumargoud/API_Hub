@@ -1,0 +1,140 @@
+/*
+ * API Hub — Pricing page dark-theme overrides
+ * Add this file AFTER dark-theme.css in App.jsx.
+ * Targets the existing pricing-landing-* classes in Pricing.jsx.
+ */
+
+html.dark-theme .pricing-landing-page,
+html[data-theme="dark"] .pricing-landing-page,
+body.dark-theme .pricing-landing-page {
+  background:
+    radial-gradient(circle at 85% 8%, rgba(99, 91, 255, 0.15), transparent 30%),
+    radial-gradient(circle at 8% 30%, rgba(59, 130, 246, 0.07), transparent 25%),
+    #090b12 !important;
+  color: #f8fafc !important;
+}
+
+html.dark-theme .pricing-landing-hero h1,
+html[data-theme="dark"] .pricing-landing-hero h1,
+body.dark-theme .pricing-landing-hero h1,
+html.dark-theme .pricing-choice-card h2,
+html[data-theme="dark"] .pricing-choice-card h2,
+body.dark-theme .pricing-choice-card h2,
+html.dark-theme .pricing-panel-heading h2,
+html[data-theme="dark"] .pricing-panel-heading h2,
+body.dark-theme .pricing-panel-heading h2,
+html.dark-theme .pricing-popular-name strong,
+html[data-theme="dark"] .pricing-popular-name strong,
+body.dark-theme .pricing-popular-name strong,
+html.dark-theme .pricing-guide-item strong,
+html[data-theme="dark"] .pricing-guide-item strong,
+body.dark-theme .pricing-guide-item strong,
+html.dark-theme .pricing-landing-stat strong,
+html[data-theme="dark"] .pricing-landing-stat strong,
+body.dark-theme .pricing-landing-stat strong {
+  color: #f8fafc !important;
+}
+
+html.dark-theme .pricing-landing-hero p,
+html[data-theme="dark"] .pricing-landing-hero p,
+body.dark-theme .pricing-landing-hero p,
+html.dark-theme .pricing-choice-card p,
+html[data-theme="dark"] .pricing-choice-card p,
+body.dark-theme .pricing-choice-card p,
+html.dark-theme .pricing-popular-row span,
+html[data-theme="dark"] .pricing-popular-row span,
+body.dark-theme .pricing-popular-row span,
+html.dark-theme .pricing-guide-item p,
+html[data-theme="dark"] .pricing-guide-item p,
+body.dark-theme .pricing-guide-item p,
+html.dark-theme .pricing-landing-stat,
+html[data-theme="dark"] .pricing-landing-stat,
+body.dark-theme .pricing-landing-stat {
+  color: #aab4c8 !important;
+}
+
+html.dark-theme .pricing-landing-stat,
+html[data-theme="dark"] .pricing-landing-stat,
+body.dark-theme .pricing-landing-stat,
+html.dark-theme .pricing-choice-card,
+html[data-theme="dark"] .pricing-choice-card,
+body.dark-theme .pricing-choice-card,
+html.dark-theme .pricing-popular,
+html[data-theme="dark"] .pricing-popular,
+body.dark-theme .pricing-popular,
+html.dark-theme .pricing-guide,
+html[data-theme="dark"] .pricing-guide,
+body.dark-theme .pricing-guide {
+  background: #141a29 !important;
+  border-color: #30394e !important;
+  color: #e5eaf4 !important;
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.22) !important;
+}
+
+html.dark-theme .pricing-choice-card:hover,
+html[data-theme="dark"] .pricing-choice-card:hover,
+body.dark-theme .pricing-choice-card:hover {
+  border-color: rgba(124, 108, 255, 0.65) !important;
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.3) !important;
+}
+
+html.dark-theme .pricing-panel-heading,
+html[data-theme="dark"] .pricing-panel-heading,
+body.dark-theme .pricing-panel-heading,
+html.dark-theme .pricing-popular-row,
+html[data-theme="dark"] .pricing-popular-row,
+body.dark-theme .pricing-popular-row {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+html.dark-theme .pricing-popular-icon,
+html[data-theme="dark"] .pricing-popular-icon,
+body.dark-theme .pricing-popular-icon,
+html.dark-theme .pricing-guide-check,
+html[data-theme="dark"] .pricing-guide-check,
+body.dark-theme .pricing-guide-check,
+html.dark-theme .pricing-choice-arrow,
+html[data-theme="dark"] .pricing-choice-arrow,
+body.dark-theme .pricing-choice-arrow {
+  background: rgba(99, 91, 255, 0.18) !important;
+  color: #b9b2ff !important;
+}
+
+html.dark-theme .pricing-mini-badge,
+html[data-theme="dark"] .pricing-mini-badge,
+body.dark-theme .pricing-mini-badge {
+  background: rgba(16, 185, 129, 0.14) !important;
+  color: #6ee7b7 !important;
+}
+
+html.dark-theme .pricing-mini-badge.paid,
+html[data-theme="dark"] .pricing-mini-badge.paid,
+body.dark-theme .pricing-mini-badge.paid {
+  background: rgba(244, 63, 94, 0.14) !important;
+  color: #fda4af !important;
+}
+
+html.dark-theme .pricing-mini-view,
+html[data-theme="dark"] .pricing-mini-view,
+body.dark-theme .pricing-mini-view {
+  color: #a9a3ff !important;
+}
+
+html.dark-theme .pricing-mini-view:hover,
+html[data-theme="dark"] .pricing-mini-view:hover,
+body.dark-theme .pricing-mini-view:hover {
+  color: #ffffff !important;
+}
+
+html.dark-theme .pricing-landing-eyebrow,
+html[data-theme="dark"] .pricing-landing-eyebrow,
+body.dark-theme .pricing-landing-eyebrow {
+  background: rgba(99, 91, 255, 0.16) !important;
+  color: #b9b2ff !important;
+}
+
+html.dark-theme .pricing-landing-stat svg,
+html[data-theme="dark"] .pricing-landing-stat svg,
+body.dark-theme .pricing-landing-stat svg {
+  color: #a9a3ff !important;
+}

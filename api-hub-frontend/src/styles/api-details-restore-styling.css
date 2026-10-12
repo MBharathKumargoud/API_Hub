@@ -1,0 +1,630 @@
+/*
+ * API Hub — restore the original API Details visual styling for ApiDetails(3).jsx
+ *
+ * Why this is needed:
+ * index.css contains the older API Details selectors (.api-details-main,
+ * .api-details-grid, .api-info-panel, .api-doc-banner), while the current
+ * component uses .api-details-container, .api-info-grid, .api-info-card,
+ * .api-details-content, .api-sidebar-card and .api-documentation-banner.
+ * This file styles the current component with the same visual language as the
+ * existing page instead of replacing the API card component or its behavior.
+ *
+ * Import AFTER dark-theme.css, index.css and api-card-layout-fix-v2.css.
+ */
+
+.api-details-page-wrapper {
+  min-height: 100vh;
+  color: #111827;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.api-details-page {
+  min-height: 100vh;
+  color: #111827;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(99, 91, 255, 0.10), transparent 30%),
+    #f7f8ff;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.api-details-page .api-details-container {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 42px 0 100px;
+  box-sizing: border-box;
+}
+
+.api-details-page .api-back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0 0 26px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #667085;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color .2s ease;
+}
+
+.api-details-page .api-back-button:hover {
+  color: #635bff;
+}
+
+/* Hero: icon and text on the left, actions on the right. */
+.api-details-page .api-details-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 190px;
+  align-items: center;
+  gap: 28px;
+  min-width: 0;
+  padding: 34px;
+  border: 1px solid rgba(17, 24, 39, .07);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, .86);
+  box-shadow: 0 25px 70px rgba(31, 41, 55, .08);
+  backdrop-filter: blur(20px);
+  box-sizing: border-box;
+}
+
+.api-details-page .api-details-hero-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  min-width: 0;
+}
+
+.api-details-page .api-details-icon {
+  width: 76px;
+  height: 76px;
+  flex: 0 0 76px;
+  display: grid;
+  place-items: center;
+  border-radius: 21px;
+  font-size: 30px;
+  font-weight: 800;
+  box-sizing: border-box;
+}
+
+.api-details-page .api-details-icon.purple { color: #7c3aed; background: #f3e8ff; }
+.api-details-page .api-details-icon.orange { color: #ea580c; background: #ffedd5; }
+.api-details-page .api-details-icon.green { color: #16a34a; background: #dcfce7; }
+.api-details-page .api-details-icon.blue { color: #2563eb; background: #dbeafe; }
+.api-details-page .api-details-icon.pink { color: #db2777; background: #fce7f3; }
+.api-details-page .api-details-icon.cyan { color: #0891b2; background: #cffafe; }
+
+.api-details-page .api-details-heading {
+  min-width: 0;
+  flex: 1 1 auto;
+  overflow-wrap: anywhere;
+}
+
+.api-details-page .api-details-category {
+  display: block;
+  margin: 0 0 8px;
+  color: #635bff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+.api-details-page .api-details-heading h1 {
+  margin: 0 0 10px;
+  color: #111827;
+  font-size: clamp(30px, 3.1vw, 44px);
+  font-weight: 750;
+  letter-spacing: -1.6px;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.api-details-page .api-details-heading p {
+  max-width: 600px;
+  margin: 0;
+  color: #667085;
+  font-size: 14px;
+  line-height: 1.75;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+.api-details-page .api-details-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  width: 190px;
+  min-width: 0;
+}
+
+.api-details-page .api-details-actions > * {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 44px;
+  padding: 11px 13px;
+  border-radius: 11px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+.api-details-page .api-details-actions .api-primary-button {
+  border: 1px solid #111827;
+  background: #111827;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(17, 24, 39, .12);
+  transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+}
+
+.api-details-page .api-details-actions .api-primary-button:hover {
+  transform: translateY(-2px);
+  background: #292f40;
+  box-shadow: 0 14px 28px rgba(17, 24, 39, .16);
+}
+
+/* About and authentication cards. */
+.api-details-page .api-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.api-details-page .api-info-card {
+  min-width: 0;
+  padding: 23px;
+  border: 1px solid rgba(99, 112, 144, .16);
+  border-radius: 19px;
+  background: rgba(255, 255, 255, .68);
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+}
+
+.api-details-page .api-info-card > svg {
+  display: block;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.api-details-page .api-info-card > span {
+  display: block;
+  margin-bottom: 5px;
+  color: #635bff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.api-details-page .api-info-card h2,
+.api-details-page .api-info-card h3 {
+  margin: 0 0 7px;
+  color: #111827;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -.35px;
+  line-height: 1.35;
+}
+
+.api-details-page .api-info-card p {
+  margin: 0;
+  color: #667085;
+  font-size: 13px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+/* Overview and quick-info sidebar. */
+.api-details-page .api-details-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 340px);
+  align-items: start;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.api-details-page .api-main-content,
+.api-details-page .api-sidebar-card {
+  min-width: 0;
+  padding: 25px;
+  border: 1px solid rgba(99, 112, 144, .16);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, .58);
+  box-sizing: border-box;
+}
+
+.api-details-page .section-label {
+  display: block;
+  margin-bottom: 9px;
+  color: #635bff;
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.api-details-page .api-main-content h2,
+.api-details-page .api-sidebar-card h2 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 21px;
+  font-weight: 720;
+  letter-spacing: -.45px;
+  line-height: 1.35;
+}
+
+.api-details-page .api-main-content p,
+.api-details-page .api-sidebar-card p {
+  color: #667085;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.api-details-page .api-feature-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.api-details-page .api-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  min-width: 0;
+  padding: 11px 12px;
+  border: 1px solid rgba(99, 112, 144, .10);
+  border-radius: 11px;
+  background: rgba(247, 248, 252, .9);
+  color: #475467;
+  font-size: 12px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+.api-details-page .api-feature svg {
+  flex: 0 0 auto;
+  margin-top: 1px;
+  color: #635bff;
+}
+
+.api-details-page .api-sidebar-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(17, 24, 39, .07);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.api-details-page .api-sidebar-row span {
+  flex: 0 0 auto;
+  color: #98a2b3;
+}
+
+.api-details-page .api-sidebar-row strong {
+  min-width: 0;
+  color: #344054;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.api-details-page .api-sidebar-block {
+  display: grid;
+  gap: 8px;
+  padding: 13px 0;
+}
+
+.api-details-page .api-sidebar-block > span {
+  color: #98a2b3;
+  font-size: 11px;
+}
+
+.api-details-page .api-sidebar-block code {
+  display: block;
+  max-width: 100%;
+  padding: 10px;
+  border-radius: 9px;
+  background: rgba(99, 91, 255, .07);
+  color: #5145e5;
+  font-size: 11px;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.api-details-page .api-doc-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 11px 14px;
+  border: 1px solid rgba(99, 91, 255, .2);
+  border-radius: 10px;
+  background: rgba(99, 91, 255, .08);
+  color: #5145e5;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Documentation callout at the bottom. */
+.api-details-page .api-documentation-banner {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 20px;
+  padding: 24px;
+  border: 1px solid rgba(99, 91, 255, .18);
+  border-radius: 20px;
+  background: linear-gradient(120deg, rgba(99, 91, 255, .09), rgba(255, 255, 255, .78));
+  box-sizing: border-box;
+}
+
+.api-details-page .api-documentation-icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  flex: 0 0 52px;
+  border-radius: 15px;
+  background: rgba(99, 91, 255, .12);
+  color: #635bff;
+}
+
+.api-details-page .api-documentation-content {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.api-details-page .api-documentation-content h2 {
+  margin: 0 0 6px;
+  color: #111827;
+  font-size: 19px;
+  line-height: 1.4;
+}
+
+.api-details-page .api-documentation-content p {
+  margin: 0;
+  color: #667085;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.api-details-page .api-documentation-banner > a {
+  flex: 0 0 auto;
+}
+
+/* 404 page */
+.api-details-page .api-not-found {
+  width: min(600px, calc(100% - 40px));
+  margin: 80px auto;
+  padding: 40px;
+  border: 1px solid rgba(99, 112, 144, .16);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, .82);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.api-details-page .api-not-found h1 {
+  margin: 12px 0;
+  color: #111827;
+  font-size: 30px;
+}
+
+.api-details-page .api-not-found p {
+  color: #667085;
+  line-height: 1.7;
+}
+
+/* Preserve the same layout in dark mode. */
+html.dark-theme .api-details-page,
+html[data-theme="dark"] .api-details-page,
+body.dark-theme .api-details-page,
+body:has(.navbar-dark) .api-details-page {
+  color: #f8fafc;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(99, 91, 255, .13), transparent 30%),
+    #090b12;
+}
+
+html.dark-theme .api-details-page .api-details-hero,
+html[data-theme="dark"] .api-details-page .api-details-hero,
+body.dark-theme .api-details-page .api-details-hero,
+body:has(.navbar-dark) .api-details-page .api-details-hero {
+  background: rgba(255, 255, 255, .055);
+  border-color: rgba(255, 255, 255, .09);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, .25);
+}
+
+html.dark-theme .api-details-page .api-details-heading h1,
+html[data-theme="dark"] .api-details-page .api-details-heading h1,
+body.dark-theme .api-details-page .api-details-heading h1,
+body:has(.navbar-dark) .api-details-page .api-details-heading h1,
+html.dark-theme .api-details-page .api-info-card h2,
+html[data-theme="dark"] .api-details-page .api-info-card h2,
+body.dark-theme .api-details-page .api-info-card h2,
+body:has(.navbar-dark) .api-details-page .api-info-card h2,
+html.dark-theme .api-details-page .api-info-card h3,
+html[data-theme="dark"] .api-details-page .api-info-card h3,
+body.dark-theme .api-details-page .api-info-card h3,
+body:has(.navbar-dark) .api-details-page .api-info-card h3,
+html.dark-theme .api-details-page .api-main-content h2,
+html[data-theme="dark"] .api-details-page .api-main-content h2,
+body.dark-theme .api-details-page .api-main-content h2,
+body:has(.navbar-dark) .api-details-page .api-main-content h2,
+html.dark-theme .api-details-page .api-sidebar-card h2,
+html[data-theme="dark"] .api-details-page .api-sidebar-card h2,
+body.dark-theme .api-details-page .api-sidebar-card h2,
+body:has(.navbar-dark) .api-details-page .api-sidebar-card h2 {
+  color: #f8fafc;
+}
+
+html.dark-theme .api-details-page .api-details-heading p,
+html[data-theme="dark"] .api-details-page .api-details-heading p,
+body.dark-theme .api-details-page .api-details-heading p,
+body:has(.navbar-dark) .api-details-page .api-details-heading p,
+html.dark-theme .api-details-page .api-info-card p,
+html[data-theme="dark"] .api-details-page .api-info-card p,
+body.dark-theme .api-details-page .api-info-card p,
+body:has(.navbar-dark) .api-details-page .api-info-card p,
+html.dark-theme .api-details-page .api-main-content p,
+html[data-theme="dark"] .api-details-page .api-main-content p,
+body.dark-theme .api-details-page .api-main-content p,
+body:has(.navbar-dark) .api-details-page .api-main-content p,
+html.dark-theme .api-details-page .api-sidebar-card p,
+html[data-theme="dark"] .api-details-page .api-sidebar-card p,
+body.dark-theme .api-details-page .api-sidebar-card p,
+body:has(.navbar-dark) .api-details-page .api-sidebar-card p {
+  color: #a7afc0;
+}
+
+html.dark-theme .api-details-page .api-info-card,
+html[data-theme="dark"] .api-details-page .api-info-card,
+body.dark-theme .api-details-page .api-info-card,
+body:has(.navbar-dark) .api-details-page .api-info-card,
+html.dark-theme .api-details-page .api-main-content,
+html[data-theme="dark"] .api-details-page .api-main-content,
+body.dark-theme .api-details-page .api-main-content,
+body:has(.navbar-dark) .api-details-page .api-main-content,
+html.dark-theme .api-details-page .api-sidebar-card,
+html[data-theme="dark"] .api-details-page .api-sidebar-card,
+body.dark-theme .api-details-page .api-sidebar-card,
+body:has(.navbar-dark) .api-details-page .api-sidebar-card,
+html.dark-theme .api-details-page .api-documentation-banner,
+html[data-theme="dark"] .api-details-page .api-documentation-banner,
+body.dark-theme .api-details-page .api-documentation-banner,
+body:has(.navbar-dark) .api-details-page .api-documentation-banner {
+  background: rgba(255, 255, 255, .04);
+  border-color: rgba(255, 255, 255, .09);
+  color: #f8fafc;
+}
+
+html.dark-theme .api-details-page .api-feature,
+html[data-theme="dark"] .api-details-page .api-feature,
+body.dark-theme .api-details-page .api-feature,
+body:has(.navbar-dark) .api-details-page .api-feature {
+  background: rgba(255, 255, 255, .045);
+  border-color: rgba(255, 255, 255, .08);
+  color: #c0c9dc;
+}
+
+html.dark-theme .api-details-page .api-sidebar-row,
+html[data-theme="dark"] .api-details-page .api-sidebar-row,
+body.dark-theme .api-details-page .api-sidebar-row,
+body:has(.navbar-dark) .api-details-page .api-sidebar-row {
+  border-bottom-color: rgba(255, 255, 255, .08);
+}
+
+html.dark-theme .api-details-page .api-sidebar-row strong,
+html[data-theme="dark"] .api-details-page .api-sidebar-row strong,
+body.dark-theme .api-details-page .api-sidebar-row strong,
+body:has(.navbar-dark) .api-details-page .api-sidebar-row strong {
+  color: #e5e7eb;
+}
+
+html.dark-theme .api-details-page .api-documentation-content h2,
+html[data-theme="dark"] .api-details-page .api-documentation-content h2,
+body.dark-theme .api-details-page .api-documentation-content h2,
+body:has(.navbar-dark) .api-details-page .api-documentation-content h2 {
+  color: #f8fafc;
+}
+
+@media (max-width: 900px) {
+  .api-details-page .api-details-hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+  }
+
+  .api-details-page .api-details-actions {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .api-details-page .api-details-actions > * {
+    flex: 1 1 150px;
+  }
+
+  .api-details-page .api-details-content {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .api-details-page .api-info-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .api-details-page .api-documentation-banner {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .api-details-page .api-details-container {
+    width: calc(100% - 28px);
+    padding: 28px 0 56px;
+  }
+
+  .api-details-page .api-details-hero {
+    padding: 22px;
+  }
+
+  .api-details-page .api-details-hero-left {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .api-details-page .api-details-heading h1 {
+    font-size: 32px;
+    letter-spacing: -1px;
+  }
+
+  .api-details-page .api-details-actions {
+    flex-direction: column;
+  }
+
+  .api-details-page .api-details-actions > * {
+    flex-basis: auto;
+    width: 100%;
+  }
+
+  .api-details-page .api-info-grid,
+  .api-details-page .api-feature-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .api-details-page .api-info-card,
+  .api-details-page .api-main-content,
+  .api-details-page .api-sidebar-card {
+    padding: 19px;
+  }
+
+  .api-details-page .api-documentation-banner {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .api-details-page .api-documentation-banner > a {
+    width: 100%;
+  }
+}

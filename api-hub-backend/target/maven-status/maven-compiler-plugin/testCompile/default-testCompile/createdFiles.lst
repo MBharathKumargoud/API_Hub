@@ -1,7 +1,0 @@
-com\apihub\ApiDirectoryTest.class
-com\apihub\TestSupport.class
-com\apihub\ProjectSecurityTest.class
-com\apihub\TesterEndpointTest.class
-com\apihub\OutboundUrlValidatorTest.class
-com\apihub\ApiHubApplicationTests.class
-com\apihub\AuthTest.class

@@ -1,0 +1,151 @@
+/* Documentation page dark-mode fixes — append after documentation-dashboard.css */
+html.dark-theme .hub-docs-page,
+html[data-theme="dark"] .hub-docs-page,
+body.dark-theme .hub-docs-page {
+  --bg-primary: #090b12;
+  --card-bg: #141a29;
+  --text-primary: #f4f7ff;
+  --text-secondary: #aab4c8;
+  --border-color: #30394e;
+  --input-bg: #101625;
+  background: #090b12 !important;
+  color: #f4f7ff !important;
+}
+
+/* The page uses these exact class names. Keep every content panel dark. */
+html.dark-theme .hub-docs-hero,
+html.dark-theme .hub-docs-sidebar,
+html.dark-theme .hub-docs-content,
+html.dark-theme .hub-docs-reference,
+html.dark-theme .hub-docs-faq,
+html[data-theme="dark"] .hub-docs-hero,
+html[data-theme="dark"] .hub-docs-sidebar,
+html[data-theme="dark"] .hub-docs-content,
+html[data-theme="dark"] .hub-docs-reference,
+html[data-theme="dark"] .hub-docs-faq,
+body.dark-theme .hub-docs-hero,
+body.dark-theme .hub-docs-sidebar,
+body.dark-theme .hub-docs-content,
+body.dark-theme .hub-docs-reference,
+body.dark-theme .hub-docs-faq {
+  background: #141a29 !important;
+  color: #f4f7ff !important;
+  border-color: #30394e !important;
+}
+
+html.dark-theme .hub-docs-hero h1,
+html.dark-theme .hub-docs-api-title h2,
+html.dark-theme .hub-docs-section h3,
+html.dark-theme .hub-docs-reference-heading h2,
+html.dark-theme .hub-docs-faq h2,
+html.dark-theme .hub-docs-method-card h3,
+html.dark-theme .hub-docs-steps strong,
+html.dark-theme .hub-docs-facts strong,
+html[data-theme="dark"] .hub-docs-hero h1,
+html[data-theme="dark"] .hub-docs-api-title h2,
+html[data-theme="dark"] .hub-docs-section h3,
+html[data-theme="dark"] .hub-docs-reference-heading h2,
+html[data-theme="dark"] .hub-docs-faq h2,
+html[data-theme="dark"] .hub-docs-method-card h3,
+html[data-theme="dark"] .hub-docs-steps strong,
+html[data-theme="dark"] .hub-docs-facts strong,
+body.dark-theme .hub-docs-hero h1,
+body.dark-theme .hub-docs-api-title h2,
+body.dark-theme .hub-docs-section h3,
+body.dark-theme .hub-docs-reference-heading h2,
+body.dark-theme .hub-docs-faq h2,
+body.dark-theme .hub-docs-method-card h3,
+body.dark-theme .hub-docs-steps strong,
+body.dark-theme .hub-docs-facts strong {
+  color: #f4f7ff !important;
+}
+
+html.dark-theme .hub-docs-hero > p,
+html.dark-theme .hub-docs-api-title p,
+html.dark-theme .hub-docs-callout p,
+html.dark-theme .hub-docs-steps span,
+html.dark-theme .hub-docs-reference-heading p,
+html.dark-theme .hub-docs-method-card p,
+html.dark-theme .hub-docs-faq-item,
+html[data-theme="dark"] .hub-docs-hero > p,
+html[data-theme="dark"] .hub-docs-api-title p,
+html[data-theme="dark"] .hub-docs-callout p,
+html[data-theme="dark"] .hub-docs-steps span,
+html[data-theme="dark"] .hub-docs-reference-heading p,
+html[data-theme="dark"] .hub-docs-method-card p,
+html[data-theme="dark"] .hub-docs-faq-item,
+body.dark-theme .hub-docs-hero > p,
+body.dark-theme .hub-docs-api-title p,
+body.dark-theme .hub-docs-callout p,
+body.dark-theme .hub-docs-steps span,
+body.dark-theme .hub-docs-reference-heading p,
+body.dark-theme .hub-docs-method-card p,
+body.dark-theme .hub-docs-faq-item {
+  color: #aab4c8 !important;
+}
+
+/* Search input: avoid browser/global styles producing a black input strip. */
+html.dark-theme .hub-docs-search,
+html[data-theme="dark"] .hub-docs-search,
+body.dark-theme .hub-docs-search {
+  background: #101625 !important;
+  border-color: #39435b !important;
+  color: #b8c2d8 !important;
+}
+html.dark-theme .hub-docs-search input,
+html[data-theme="dark"] .hub-docs-search input,
+body.dark-theme .hub-docs-search input {
+  background: transparent !important;
+  color: #f4f7ff !important;
+  -webkit-text-fill-color: #f4f7ff !important;
+  caret-color: #a78bfa;
+}
+html.dark-theme .hub-docs-search input::placeholder,
+html[data-theme="dark"] .hub-docs-search input::placeholder,
+body.dark-theme .hub-docs-search input::placeholder {
+  color: #8793aa !important;
+  opacity: 1;
+}
+
+/* Directory items and the quick-reference method cards */
+html.dark-theme .hub-docs-api-item,
+html[data-theme="dark"] .hub-docs-api-item,
+body.dark-theme .hub-docs-api-item {
+  color: #e3e9f7 !important;
+}
+html.dark-theme .hub-docs-api-item small,
+html[data-theme="dark"] .hub-docs-api-item small,
+body.dark-theme .hub-docs-api-item small {
+  color: #aab4c8 !important;
+}
+html.dark-theme .hub-docs-api-item.is-active,
+html[data-theme="dark"] .hub-docs-api-item.is-active,
+body.dark-theme .hub-docs-api-item.is-active {
+  background: rgba(139, 92, 246, .18) !important;
+  border-color: rgba(167, 139, 250, .48) !important;
+}
+html.dark-theme .hub-docs-method-card,
+html[data-theme="dark"] .hub-docs-method-card,
+body.dark-theme .hub-docs-method-card {
+  background: #101625 !important;
+  border-color: #30394e !important;
+}
+html.dark-theme .hub-docs-callout,
+html[data-theme="dark"] .hub-docs-callout,
+body.dark-theme .hub-docs-callout {
+  background: rgba(124, 58, 237, .13) !important;
+  border-color: rgba(167, 139, 250, .28) !important;
+  color: #f4f7ff !important;
+}
+html.dark-theme .hub-docs-secondary,
+html[data-theme="dark"] .hub-docs-secondary,
+body.dark-theme .hub-docs-secondary {
+  background: #101625 !important;
+  border-color: #39435b !important;
+  color: #e6eaff !important;
+}
+html.dark-theme .hub-docs-faq-item button,
+html[data-theme="dark"] .hub-docs-faq-item button,
+body.dark-theme .hub-docs-faq-item button {
+  color: #f4f7ff !important;
+}

@@ -1,0 +1,76 @@
+/* =========================================
+   API HUB — DASHBOARD DARK THEME
+   ========================================= */
+
+html.dark-theme .hub-dashboard-page,
+html[data-theme="dark"] .hub-dashboard-page,
+body.dark-theme .hub-dashboard-page {
+    background: #090b12 !important;
+    color: #f4f7ff !important;
+}
+
+/* Main dashboard banner */
+html.dark-theme .hub-dashboard-hero,
+html[data-theme="dark"] .hub-dashboard-hero,
+body.dark-theme .hub-dashboard-hero {
+    background: #141a29 !important;
+    border-color: #30394e !important;
+    color: #f4f7ff !important;
+}
+
+/* Statistics cards and saved API cards */
+html.dark-theme .hub-dashboard-stat,
+html[data-theme="dark"] .hub-dashboard-stat,
+body.dark-theme .hub-dashboard-stat,
+html.dark-theme .hub-dashboard-api-card,
+html[data-theme="dark"] .hub-dashboard-api-card,
+body.dark-theme .hub-dashboard-api-card {
+    background: #141a29 !important;
+    border-color: #30394e !important;
+    color: #f4f7ff !important;
+}
+
+/* Headings */
+html.dark-theme .hub-dashboard-page h1,
+html.dark-theme .hub-dashboard-page h2,
+html.dark-theme .hub-dashboard-page h3,
+html[data-theme="dark"] .hub-dashboard-page h1,
+html[data-theme="dark"] .hub-dashboard-page h2,
+html[data-theme="dark"] .hub-dashboard-page h3,
+body.dark-theme .hub-dashboard-page h1,
+body.dark-theme .hub-dashboard-page h2,
+body.dark-theme .hub-dashboard-page h3 {
+    color: #f4f7ff !important;
+}
+
+/* Descriptions and secondary text */
+html.dark-theme .hub-dashboard-page p,
+html.dark-theme .hub-dashboard-page small,
+html[data-theme="dark"] .hub-dashboard-page p,
+html[data-theme="dark"] .hub-dashboard-page small,
+body.dark-theme .hub-dashboard-page p,
+body.dark-theme .hub-dashboard-page small {
+    color: #aab4c8 !important;
+}
+
+/* Search fields and other inputs */
+html.dark-theme .hub-dashboard-page input,
+html[data-theme="dark"] .hub-dashboard-page input,
+body.dark-theme .hub-dashboard-page input {
+    background: #101625 !important;
+    color: #f4f7ff !important;
+    border-color: #30394e !important;
+}
+
+/* Buttons and links */
+html.dark-theme .hub-dashboard-page a,
+html[data-theme="dark"] .hub-dashboard-page a,
+body.dark-theme .hub-dashboard-page a {
+    color: #a78bfa;
+}
+
+html.dark-theme .hub-dashboard-page a:hover,
+html[data-theme="dark"] .hub-dashboard-page a:hover,
+body.dark-theme .hub-dashboard-page a:hover {
+    color: #c4b5fd;
+}

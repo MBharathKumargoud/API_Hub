@@ -1,17 +1,5 @@
-# Secrets
+target/
 .env
-.env.*
-!.env.example
-
-# Frontend dependencies and build
-api-hub-frontend/node_modules/
-api-hub-frontend/dist/
-
-# Backend build
-api-hub-backend/target/
-
-# IDE and OS
-.vscode/
+*.iml
 .idea/
-.DS_Store
-Thumbs.db
+.vscode/

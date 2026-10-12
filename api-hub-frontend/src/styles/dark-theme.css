@@ -1,0 +1,4192 @@
+/* =========================================================
+   API HUB — COMPLETE DARK THEME
+   File: src/styles/dark-theme.css
+   ========================================================= */
+
+
+/* =========================================================
+   GLOBAL DARK THEME
+   ========================================================= */
+
+html.dark-theme,
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+html.dark-theme body,
+html[data-theme="dark"] body,
+body.dark-theme {
+  background: #090b12;
+  color: #f8fafc;
+
+  transition:
+    background 0.35s ease,
+    color 0.35s ease;
+}
+
+html.dark-theme *,
+html[data-theme="dark"] *,
+body.dark-theme * {
+  scrollbar-color: #34394d #090b12;
+}
+
+
+/* =========================================================
+   MAIN PAGE BACKGROUNDS
+   ========================================================= */
+
+html.dark-theme .landing-page,
+html[data-theme="dark"] .landing-page,
+body.dark-theme .landing-page,
+
+html.dark-theme .discover-page,
+html[data-theme="dark"] .discover-page,
+body.dark-theme .discover-page,
+
+html.dark-theme .api-details-page,
+html[data-theme="dark"] .api-details-page,
+body.dark-theme .api-details-page,
+
+html.dark-theme .auth-page,
+html[data-theme="dark"] .auth-page,
+body.dark-theme .auth-page {
+  background:
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(99, 91, 255, 0.16),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 10% 30%,
+      rgba(59, 130, 246, 0.08),
+      transparent 25%
+    ),
+    #090b12;
+
+  color: #f8fafc;
+}
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+html.dark-theme .navbar,
+html[data-theme="dark"] .navbar,
+body.dark-theme .navbar {
+  background: rgba(9, 11, 18, 0.82);
+
+  border-bottom-color:
+    rgba(255, 255, 255, 0.08);
+
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.12);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+html.dark-theme .logo,
+html[data-theme="dark"] .logo,
+body.dark-theme .logo {
+  color: #f8fafc;
+}
+
+html.dark-theme .logo-mark,
+html[data-theme="dark"] .logo-mark,
+body.dark-theme .logo-mark {
+  box-shadow:
+    0 8px 25px rgba(99, 91, 255, 0.30);
+}
+
+html.dark-theme .nav-links a,
+html[data-theme="dark"] .nav-links a,
+body.dark-theme .nav-links a {
+  color: #a7afc0;
+}
+
+html.dark-theme .nav-links a:hover,
+html[data-theme="dark"] .nav-links a:hover,
+body.dark-theme .nav-links a:hover {
+  color: #ffffff;
+}
+
+html.dark-theme .icon-button,
+html[data-theme="dark"] .icon-button,
+body.dark-theme .icon-button {
+  color: #e5e7eb;
+
+  background:
+    rgba(255, 255, 255, 0.06);
+
+  border-color:
+    rgba(255, 255, 255, 0.10);
+}
+
+html.dark-theme .icon-button:hover,
+html[data-theme="dark"] .icon-button:hover,
+body.dark-theme .icon-button:hover {
+  background:
+    rgba(255, 255, 255, 0.12);
+
+  border-color:
+    rgba(255, 255, 255, 0.18);
+}
+
+html.dark-theme .login-button,
+html[data-theme="dark"] .login-button,
+body.dark-theme .login-button {
+  color: #e5e7eb;
+
+  background:
+    rgba(255, 255, 255, 0.06);
+
+  border-color:
+    rgba(255, 255, 255, 0.10);
+}
+
+html.dark-theme .login-button:hover,
+html[data-theme="dark"] .login-button:hover,
+body.dark-theme .login-button:hover {
+  background:
+    rgba(255, 255, 255, 0.10);
+
+  border-color:
+    rgba(255, 255, 255, 0.18);
+}
+
+html.dark-theme .signup-button,
+html[data-theme="dark"] .signup-button,
+body.dark-theme .signup-button {
+  background: #f8fafc;
+  color: #090b12;
+}
+
+html.dark-theme .signup-button:hover,
+html[data-theme="dark"] .signup-button:hover,
+body.dark-theme .signup-button:hover {
+  background: #ffffff;
+
+  box-shadow:
+    0 10px 30px rgba(255, 255, 255, 0.10);
+}
+
+
+/* =========================================================
+   LANDING PAGE — HERO
+   ========================================================= */
+
+html.dark-theme .hero,
+html[data-theme="dark"] .hero,
+body.dark-theme .hero {
+  color: #f8fafc;
+}
+
+html.dark-theme .hero-copy h1,
+html[data-theme="dark"] .hero-copy h1,
+body.dark-theme .hero-copy h1 {
+  color: #f8fafc;
+}
+
+html.dark-theme .hero-copy p,
+html[data-theme="dark"] .hero-copy p,
+body.dark-theme .hero-copy p {
+  color: #aeb7c9;
+}
+
+html.dark-theme .hero-copy .gradient-text,
+html[data-theme="dark"] .hero-copy .gradient-text,
+body.dark-theme .hero-copy .gradient-text {
+  background:
+    linear-gradient(
+      135deg,
+      #8b83ff,
+      #60a5fa
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   LANDING PAGE — HERO SEARCH
+   ========================================================= */
+
+html.dark-theme .hero-search,
+html[data-theme="dark"] .hero-search,
+body.dark-theme .hero-search {
+  background:
+    rgba(255, 255, 255, 0.055);
+
+  border-color:
+    rgba(255, 255, 255, 0.11);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.20);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+html.dark-theme .hero-search input,
+html[data-theme="dark"] .hero-search input,
+body.dark-theme .hero-search input {
+  color: #f8fafc;
+}
+
+html.dark-theme .hero-search input::placeholder,
+html[data-theme="dark"] .hero-search input::placeholder,
+body.dark-theme .hero-search input::placeholder {
+  color: #7f899d;
+}
+
+html.dark-theme .hero-search button,
+html[data-theme="dark"] .hero-search button,
+body.dark-theme .hero-search button {
+  background: #635bff;
+  color: #ffffff;
+}
+
+html.dark-theme .hero-search button:hover,
+html[data-theme="dark"] .hero-search button:hover,
+body.dark-theme .hero-search button:hover {
+  background: #746cff;
+}
+
+
+/* =========================================================
+   LANDING PAGE — STATS
+   ========================================================= */
+
+html.dark-theme .hero-stats,
+html[data-theme="dark"] .hero-stats,
+body.dark-theme .hero-stats {
+  border-top-color:
+    rgba(255, 255, 255, 0.10);
+
+  border-bottom-color:
+    rgba(255, 255, 255, 0.10);
+}
+
+html.dark-theme .hero-stats > div,
+html[data-theme="dark"] .hero-stats > div,
+body.dark-theme .hero-stats > div {
+  border-right-color:
+    rgba(255, 255, 255, 0.10);
+}
+
+html.dark-theme .hero-stats strong,
+html[data-theme="dark"] .hero-stats strong,
+body.dark-theme .hero-stats strong,
+
+html.dark-theme .stat-number,
+html[data-theme="dark"] .stat-number,
+body.dark-theme .stat-number {
+  color: #f8fafc;
+}
+
+html.dark-theme .hero-stats span,
+html[data-theme="dark"] .hero-stats span,
+body.dark-theme .hero-stats span,
+
+html.dark-theme .stat-label,
+html[data-theme="dark"] .stat-label,
+body.dark-theme .stat-label {
+  color: #8f99ad;
+}
+
+
+/* =========================================================
+   LANDING PAGE — FLOATING API CARDS
+   ========================================================= */
+
+html.dark-theme .floating-api,
+html[data-theme="dark"] .floating-api,
+body.dark-theme .floating-api,
+
+html.dark-theme .api-code-card,
+html[data-theme="dark"] .api-code-card,
+body.dark-theme .api-code-card,
+
+html.dark-theme .developer-badge,
+html[data-theme="dark"] .developer-badge,
+body.dark-theme .developer-badge {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(30, 34, 52, 0.94),
+      rgba(18, 21, 34, 0.90)
+    );
+
+  border-color:
+    rgba(255, 255, 255, 0.12);
+
+  color: #f8fafc;
+
+  box-shadow:
+    0 25px 65px rgba(0, 0, 0, 0.38),
+    inset 0 1px 0 rgba(255, 255, 255, 0.07);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+html.dark-theme .floating-api-name,
+html[data-theme="dark"] .floating-api-name,
+body.dark-theme .floating-api-name {
+  color: #f8fafc;
+}
+
+html.dark-theme .floating-api-type,
+html[data-theme="dark"] .floating-api-type,
+body.dark-theme .floating-api-type {
+  color: #8f99ad;
+}
+
+html.dark-theme .floating-api-icon,
+html[data-theme="dark"] .floating-api-icon,
+body.dark-theme .floating-api-icon {
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.20);
+}
+
+
+/* =========================================================
+   ORBIT / DECORATIVE ELEMENTS
+   ========================================================= */
+
+html.dark-theme .api-orbit,
+html[data-theme="dark"] .api-orbit,
+body.dark-theme .api-orbit {
+  border-color:
+    rgba(255, 255, 255, 0.07);
+}
+
+html.dark-theme .hero-glow,
+html[data-theme="dark"] .hero-glow,
+body.dark-theme .hero-glow {
+  opacity: 0.65;
+}
+
+
+/* =========================================================
+   EXPLORE — MAIN
+   ========================================================= */
+
+html.dark-theme .discover-page,
+html[data-theme="dark"] .discover-page,
+body.dark-theme .discover-page {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(99, 91, 255, 0.16),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 10% 30%,
+      rgba(59, 130, 246, 0.08),
+      transparent 25%
+    ),
+    #090b12;
+
+  color: #f8fafc;
+}
+
+
+/* =========================================================
+   EXPLORE — HERO
+   ========================================================= */
+
+html.dark-theme .discover-hero h1,
+html[data-theme="dark"] .discover-hero h1,
+body.dark-theme .discover-hero h1,
+
+html.dark-theme .discover-section-title h2,
+html[data-theme="dark"] .discover-section-title h2,
+body.dark-theme .discover-section-title h2,
+
+html.dark-theme .directory-heading h2,
+html[data-theme="dark"] .directory-heading h2,
+body.dark-theme .directory-heading h2 {
+  color: #f8fafc;
+}
+
+html.dark-theme .discover-hero p,
+html[data-theme="dark"] .discover-hero p,
+body.dark-theme .discover-hero p,
+
+html.dark-theme .discover-section-title p,
+html[data-theme="dark"] .discover-section-title p,
+body.dark-theme .discover-section-title p,
+
+html.dark-theme .discover-result-summary,
+html[data-theme="dark"] .discover-result-summary,
+body.dark-theme .discover-result-summary {
+  color: #a7afc0;
+}
+
+
+/* =========================================================
+   SECTION LABEL
+   ========================================================= */
+
+html.dark-theme .section-label,
+html[data-theme="dark"] .section-label,
+body.dark-theme .section-label {
+  color: #8e87ff;
+}
+
+
+/* =========================================================
+   EXPLORE — SEARCH
+   ========================================================= */
+
+html.dark-theme .discover-search,
+html[data-theme="dark"] .discover-search,
+body.dark-theme .discover-search {
+  background:
+    rgba(255, 255, 255, 0.055);
+
+  border-color:
+    rgba(255, 255, 255, 0.10);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.20);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+html.dark-theme .discover-search input,
+html[data-theme="dark"] .discover-search input,
+body.dark-theme .discover-search input {
+  color: #f8fafc;
+}
+
+html.dark-theme .discover-search input::placeholder,
+html[data-theme="dark"] .discover-search input::placeholder,
+body.dark-theme .discover-search input::placeholder {
+  color: #7f899d;
+}
+
+html.dark-theme .discover-search-icon,
+html[data-theme="dark"] .discover-search-icon,
+body.dark-theme .discover-search-icon {
+  color: #8f99ad;
+}
+
+html.dark-theme .discover-search-button,
+html[data-theme="dark"] .discover-search-button,
+body.dark-theme .discover-search-button {
+  background: #635bff;
+  color: #ffffff;
+}
+
+html.dark-theme .discover-search-button:hover,
+html[data-theme="dark"] .discover-search-button:hover,
+body.dark-theme .discover-search-button:hover {
+  background: #746cff;
+}
+
+html.dark-theme .search-clear-button,
+html[data-theme="dark"] .search-clear-button,
+body.dark-theme .search-clear-button {
+  color: #9da7ba;
+}
+
+
+/* =========================================================
+   CATEGORY DIRECTORY
+   ========================================================= */
+
+html.dark-theme .discover-categories,
+html[data-theme="dark"] .discover-categories,
+body.dark-theme .discover-categories {
+  background: transparent;
+}
+
+
+/* =========================================================
+   CATEGORY CARDS — MAIN
+   ========================================================= */
+
+html.dark-theme .discover-category,
+html[data-theme="dark"] .discover-category,
+body.dark-theme .discover-category {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(25, 29, 43, 0.96),
+      rgba(15, 18, 29, 0.96)
+    );
+
+  color: #d8dcea;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.10);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    color 0.25s ease;
+}
+
+
+/* =========================================================
+   CATEGORY CARDS — HOVER
+   ========================================================= */
+
+html.dark-theme .discover-category:hover,
+html[data-theme="dark"] .discover-category:hover,
+body.dark-theme .discover-category:hover {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(38, 43, 63, 0.98),
+      rgba(19, 23, 36, 0.98)
+    );
+
+  color: #ffffff;
+
+  border-color:
+    rgba(124, 112, 255, 0.45);
+
+  transform:
+    translateY(-4px);
+
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.32),
+    0 0 0 1px rgba(99, 91, 255, 0.08);
+}
+
+
+/* =========================================================
+   CATEGORY CARDS — ACTIVE
+   ========================================================= */
+
+html.dark-theme .discover-category.active,
+html[data-theme="dark"] .discover-category.active,
+body.dark-theme .discover-category.active {
+  background:
+    linear-gradient(
+      135deg,
+      #635bff,
+      #4f46e5
+    );
+
+  color: #ffffff;
+
+  border-color: transparent;
+
+  box-shadow:
+    0 14px 35px rgba(99, 91, 255, 0.30);
+}
+
+
+/* =========================================================
+   CATEGORY ICON
+   ========================================================= */
+
+html.dark-theme .discover-category-icon,
+html[data-theme="dark"] .discover-category-icon,
+body.dark-theme .discover-category-icon {
+  background:
+    rgba(255, 255, 255, 0.08);
+
+  color: #aeb5ff;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.08);
+}
+
+html.dark-theme .discover-category.active .discover-category-icon,
+html[data-theme="dark"] .discover-category.active .discover-category-icon,
+body.dark-theme .discover-category.active .discover-category-icon {
+  background:
+    rgba(255, 255, 255, 0.16);
+
+  color: #ffffff;
+
+  border-color:
+    rgba(255, 255, 255, 0.12);
+}
+
+
+/* =========================================================
+   CATEGORY COUNT
+   ========================================================= */
+
+html.dark-theme .discover-category .category-count,
+html[data-theme="dark"] .discover-category .category-count,
+body.dark-theme .discover-category .category-count {
+  color: #8f97aa;
+}
+
+html.dark-theme .discover-category.active .category-count,
+html[data-theme="dark"] .discover-category.active .category-count,
+body.dark-theme .discover-category.active .category-count {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+
+/* =========================================================
+   CATEGORY GRID — 9 CATEGORIES
+   ========================================================= */
+
+.discover-categories {
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr));
+
+  gap: 14px;
+}
+
+
+/* =========================================================
+   API CARDS
+   ========================================================= */
+
+html.dark-theme .discover-api-card,
+html[data-theme="dark"] .discover-api-card,
+body.dark-theme .discover-api-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(30, 34, 52, 0.92),
+      rgba(18, 21, 34, 0.90)
+    );
+
+  border-color:
+    rgba(255, 255, 255, 0.09);
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.22);
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+html.dark-theme .discover-api-card:hover,
+html[data-theme="dark"] .discover-api-card:hover,
+body.dark-theme .discover-api-card:hover {
+  border-color:
+    rgba(99, 91, 255, 0.32);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.32),
+    0 0 0 1px rgba(99, 91, 255, 0.06);
+}
+
+html.dark-theme .discover-api-card h3,
+html[data-theme="dark"] .discover-api-card h3,
+body.dark-theme .discover-api-card h3 {
+  color: #f8fafc;
+}
+
+html.dark-theme .discover-api-card p,
+html[data-theme="dark"] .discover-api-card p,
+body.dark-theme .discover-api-card p {
+  color: #9da7ba;
+}
+
+html.dark-theme .api-card-footer,
+html[data-theme="dark"] .api-card-footer,
+body.dark-theme .api-card-footer {
+  color: #8f99ad;
+
+  border-top-color:
+    rgba(255, 255, 255, 0.09);
+}
+
+html.dark-theme .api-provider,
+html[data-theme="dark"] .api-provider,
+body.dark-theme .api-provider {
+  color: #8f99ad;
+}
+
+html.dark-theme .api-category,
+html[data-theme="dark"] .api-category,
+body.dark-theme .api-category {
+  background:
+    rgba(255, 255, 255, 0.08);
+
+  color: #c2c8d5;
+}
+
+html.dark-theme .api-card-action,
+html[data-theme="dark"] .api-card-action,
+body.dark-theme .api-card-action {
+  color: #a9a3ff;
+}
+
+html.dark-theme .api-card-action:hover,
+html[data-theme="dark"] .api-card-action:hover,
+body.dark-theme .api-card-action:hover {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   API CARD ICON
+   ========================================================= */
+
+html.dark-theme .discover-api-icon,
+html[data-theme="dark"] .discover-api-icon,
+body.dark-theme .discover-api-icon {
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.20);
+}
+
+
+/* =========================================================
+   TOOLBAR
+   ========================================================= */
+
+html.dark-theme .explore-toolbar,
+html[data-theme="dark"] .explore-toolbar,
+body.dark-theme .explore-toolbar {
+  color: #a7afc0;
+}
+
+html.dark-theme .explore-toolbar strong,
+html[data-theme="dark"] .explore-toolbar strong,
+body.dark-theme .explore-toolbar strong {
+  color: #f8fafc;
+}
+
+html.dark-theme .explore-filter-button,
+html[data-theme="dark"] .explore-filter-button,
+body.dark-theme .explore-filter-button {
+  background:
+    rgba(255, 255, 255, 0.055);
+
+  border-color:
+    rgba(255, 255, 255, 0.10);
+
+  color: #d5d9e3;
+}
+
+html.dark-theme .explore-filter-button:hover,
+html[data-theme="dark"] .explore-filter-button:hover,
+body.dark-theme .explore-filter-button:hover {
+  background:
+    rgba(255, 255, 255, 0.10);
+}
+
+html.dark-theme .explore-clear-button,
+html[data-theme="dark"] .explore-clear-button,
+body.dark-theme .explore-clear-button {
+  color: #9d96ff;
+}
+
+
+/* =========================================================
+   FILTER PANEL
+   ========================================================= */
+
+html.dark-theme .explore-filter-backdrop,
+html[data-theme="dark"] .explore-filter-backdrop,
+body.dark-theme .explore-filter-backdrop {
+  background:
+    rgba(0, 0, 0, 0.68);
+}
+
+html.dark-theme .explore-filter-panel,
+html[data-theme="dark"] .explore-filter-panel,
+body.dark-theme .explore-filter-panel {
+  background:
+    #121520;
+
+  border-color:
+    rgba(255, 255, 255, 0.10);
+
+  color: #f8fafc;
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.45);
+}
+
+html.dark-theme .explore-filter-header,
+html[data-theme="dark"] .explore-filter-header,
+body.dark-theme .explore-filter-header {
+  border-bottom-color:
+    rgba(255, 255, 255, 0.10);
+}
+
+html.dark-theme .explore-filter-header h2,
+html[data-theme="dark"] .explore-filter-header h2,
+body.dark-theme .explore-filter-header h2,
+
+html.dark-theme .filter-group > label,
+html[data-theme="dark"] .filter-group > label,
+body.dark-theme .filter-group > label {
+  color: #f8fafc;
+}
+
+html.dark-theme .filter-group,
+html[data-theme="dark"] .filter-group,
+body.dark-theme .filter-group {
+  border-bottom-color:
+    rgba(255, 255, 255, 0.09);
+}
+
+html.dark-theme .filter-options button,
+html[data-theme="dark"] .filter-options button,
+body.dark-theme .filter-options button {
+  background:
+    rgba(255, 255, 255, 0.05);
+
+  border-color:
+    rgba(255, 255, 255, 0.10);
+
+  color: #b7bfd0;
+}
+
+html.dark-theme .filter-options button:hover,
+html[data-theme="dark"] .filter-options button:hover,
+body.dark-theme .filter-options button:hover {
+  background:
+    rgba(255, 255, 255, 0.09);
+
+  color: #ffffff;
+}
+
+html.dark-theme .filter-options button.selected,
+html[data-theme="dark"] .filter-options button.selected,
+body.dark-theme .filter-options button.selected {
+  background: #635bff;
+
+  border-color: #635bff;
+
+  color: #ffffff;
+}
+
+html.dark-theme .filter-close-button,
+html[data-theme="dark"] .filter-close-button,
+body.dark-theme .filter-close-button {
+  background:
+    rgba(255, 255, 255, 0.06);
+
+  border-color:
+    rgba(255, 255, 255, 0.12);
+
+  color: #d3d8e4;
+}
+
+
+/* =========================================================
+   SELECT / INPUT INSIDE FILTERS
+   ========================================================= */
+
+html.dark-theme .filter-group select,
+html[data-theme="dark"] .filter-group select,
+body.dark-theme .filter-group select {
+  background:
+    #181c2a;
+
+  border-color:
+    rgba(255, 255, 255, 0.10);
+
+  color: #f8fafc;
+}
+
+html.dark-theme .filter-group select option,
+html[data-theme="dark"] .filter-group select option,
+body.dark-theme .filter-group select option {
+  background: #181c2a;
+  color: #f8fafc;
+}
+
+
+/* =========================================================
+   FILTER ACTION BUTTONS
+   ========================================================= */
+
+html.dark-theme .filter-reset-button,
+html[data-theme="dark"] .filter-reset-button,
+body.dark-theme .filter-reset-button {
+  color: #9da7ba;
+}
+
+html.dark-theme .filter-reset-button:hover,
+html[data-theme="dark"] .filter-reset-button:hover,
+body.dark-theme .filter-reset-button:hover {
+  color: #ffffff;
+}
+
+html.dark-theme .filter-apply-button,
+html[data-theme="dark"] .filter-apply-button,
+body.dark-theme .filter-apply-button {
+  background: #635bff;
+  color: #ffffff;
+}
+
+html.dark-theme .filter-apply-button:hover,
+html[data-theme="dark"] .filter-apply-button:hover,
+body.dark-theme .filter-apply-button:hover {
+  background: #746cff;
+}
+
+
+/* =========================================================
+   NO RESULTS
+   ========================================================= */
+
+html.dark-theme .discover-no-results,
+html[data-theme="dark"] .discover-no-results,
+body.dark-theme .discover-no-results {
+  background:
+    rgba(255, 255, 255, 0.035);
+
+  border-color:
+    rgba(255, 255, 255, 0.12);
+
+  color: #f8fafc;
+}
+
+html.dark-theme .discover-no-results h3,
+html[data-theme="dark"] .discover-no-results h3,
+body.dark-theme .discover-no-results h3 {
+  color: #f5f7ff;
+}
+
+html.dark-theme .discover-no-results p,
+html[data-theme="dark"] .discover-no-results p,
+body.dark-theme .discover-no-results p {
+  color: #a7afc0;
+}
+
+html.dark-theme .no-results-icon,
+html[data-theme="dark"] .no-results-icon,
+body.dark-theme .no-results-icon {
+  background:
+    rgba(99, 91, 255, 0.15);
+
+  color: #a9a3ff;
+}
+
+
+/* =========================================================
+   API DETAILS PAGE
+   ========================================================= */
+
+html.dark-theme .api-details-page,
+html[data-theme="dark"] .api-details-page,
+body.dark-theme .api-details-page {
+  background:
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(99, 91, 255, 0.13),
+      transparent 30%
+    ),
+    #090b12;
+
+  color: #f8fafc;
+}
+
+html.dark-theme .api-details-container,
+html[data-theme="dark"] .api-details-container,
+body.dark-theme .api-details-container {
+  color: #f8fafc;
+}
+
+html.dark-theme .api-back-button,
+html[data-theme="dark"] .api-back-button,
+body.dark-theme .api-back-button {
+  color: #a7afc0;
+}
+
+html.dark-theme .api-back-button:hover,
+html[data-theme="dark"] .api-back-button:hover,
+body.dark-theme .api-back-button:hover {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   API DETAILS HERO
+   ========================================================= */
+
+html.dark-theme .api-details-hero,
+html[data-theme="dark"] .api-details-hero,
+body.dark-theme .api-details-hero {
+  background:
+    rgba(255, 255, 255, 0.055);
+
+  border-color:
+    rgba(255, 255, 255, 0.09);
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+html.dark-theme .api-details-heading h1,
+html[data-theme="dark"] .api-details-heading h1,
+body.dark-theme .api-details-heading h1 {
+  color: #f8fafc;
+}
+
+html.dark-theme .api-details-heading p,
+html[data-theme="dark"] .api-details-heading p,
+body.dark-theme .api-details-heading p {
+  color: #a7afc0;
+}
+
+html.dark-theme .api-details-category,
+html[data-theme="dark"] .api-details-category,
+body.dark-theme .api-details-category {
+  color: #a9a3ff;
+}
+
+
+/* =========================================================
+   API DETAILS CONTENT
+   ========================================================= */
+
+html.dark-theme .api-details-section,
+html[data-theme="dark"] .api-details-section,
+body.dark-theme .api-details-section,
+
+html.dark-theme .api-info-card,
+html[data-theme="dark"] .api-info-card,
+body.dark-theme .api-info-card,
+
+html.dark-theme .api-sidebar-card,
+html[data-theme="dark"] .api-sidebar-card,
+body.dark-theme .api-sidebar-card {
+  background:
+    rgba(255, 255, 255, 0.04);
+
+  border-color:
+    rgba(255, 255, 255, 0.08);
+
+  color: #f8fafc;
+}
+
+html.dark-theme .api-info-card h3,
+html[data-theme="dark"] .api-info-card h3,
+body.dark-theme .api-info-card h3 {
+  color: #f8fafc;
+}
+
+html.dark-theme .api-info-card p,
+html[data-theme="dark"] .api-info-card p,
+body.dark-theme .api-info-card p {
+  color: #9da7ba;
+}
+
+
+/* =========================================================
+   API DETAILS SIDEBAR
+   ========================================================= */
+
+html.dark-theme .api-sidebar-row,
+html[data-theme="dark"] .api-sidebar-row,
+body.dark-theme .api-sidebar-row {
+  border-bottom-color:
+    rgba(255, 255, 255, 0.08);
+}
+
+html.dark-theme .api-sidebar-row span,
+html[data-theme="dark"] .api-sidebar-row span,
+body.dark-theme .api-sidebar-row span {
+  color: #8f99ad;
+}
+
+html.dark-theme .api-sidebar-row strong,
+html[data-theme="dark"] .api-sidebar-row strong,
+body.dark-theme .api-sidebar-row strong {
+  color: #f8fafc;
+}
+
+html.dark-theme .api-doc-link,
+html[data-theme="dark"] .api-doc-link,
+body.dark-theme .api-doc-link {
+  color: #a9a3ff;
+}
+
+html.dark-theme .api-doc-link:hover,
+html[data-theme="dark"] .api-doc-link:hover,
+body.dark-theme .api-doc-link:hover {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   API DETAILS BUTTONS
+   ========================================================= */
+
+html.dark-theme .api-primary-button,
+html[data-theme="dark"] .api-primary-button,
+body.dark-theme .api-primary-button {
+  background:
+    #635bff;
+
+  color: #ffffff;
+}
+
+html.dark-theme .api-primary-button:hover,
+html[data-theme="dark"] .api-primary-button:hover,
+body.dark-theme .api-primary-button:hover {
+  background:
+    #746cff;
+}
+
+html.dark-theme .api-secondary-button,
+html[data-theme="dark"] .api-secondary-button,
+body.dark-theme .api-secondary-button {
+  background:
+    rgba(255, 255, 255, 0.06);
+
+  border-color:
+    rgba(255, 255, 255, 0.10);
+
+  color: #e5e7eb;
+}
+
+html.dark-theme .api-secondary-button:hover,
+html[data-theme="dark"] .api-secondary-button:hover,
+body.dark-theme .api-secondary-button:hover {
+  background:
+    rgba(255, 255, 255, 0.11);
+}
+
+
+/* =========================================================
+   API DOCUMENTATION BANNER
+   ========================================================= */
+
+html.dark-theme .api-documentation-banner,
+html[data-theme="dark"] .api-documentation-banner,
+body.dark-theme .api-documentation-banner {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(99, 91, 255, 0.18),
+      rgba(59, 130, 246, 0.10)
+    );
+
+  border-color:
+    rgba(99, 91, 255, 0.25);
+
+  color: #f8fafc;
+}
+
+
+/* =========================================================
+   404 / API NOT FOUND
+   ========================================================= */
+
+html.dark-theme .api-not-found,
+html[data-theme="dark"] .api-not-found,
+body.dark-theme .api-not-found {
+  color: #f8fafc;
+}
+
+html.dark-theme .api-not-found p,
+html[data-theme="dark"] .api-not-found p,
+body.dark-theme .api-not-found p {
+  color: #9da7ba;
+}
+
+html.dark-theme .api-not-found-icon,
+html[data-theme="dark"] .api-not-found-icon,
+body.dark-theme .api-not-found-icon {
+  background:
+    rgba(99, 91, 255, 0.15);
+
+  color: #a9a3ff;
+}
+
+
+/* =========================================================
+   AUTH PAGES
+   ========================================================= */
+
+html.dark-theme .auth-page,
+html[data-theme="dark"] .auth-page,
+body.dark-theme .auth-page {
+  background:
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(99, 91, 255, 0.16),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 10% 30%,
+      rgba(59, 130, 246, 0.08),
+      transparent 25%
+    ),
+    #090b12;
+}
+
+html.dark-theme .auth-card,
+html[data-theme="dark"] .auth-card,
+body.dark-theme .auth-card {
+  background:
+    rgba(255, 255, 255, 0.055);
+
+  border-color:
+    rgba(255, 255, 255, 0.10);
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.30);
+
+  color: #f8fafc;
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+html.dark-theme .auth-card h1,
+html[data-theme="dark"] .auth-card h1,
+body.dark-theme .auth-card h1 {
+  color: #f8fafc;
+}
+
+html.dark-theme .auth-card p,
+html[data-theme="dark"] .auth-card p,
+body.dark-theme .auth-card p {
+  color: #9da7ba;
+}
+
+html.dark-theme .auth-card label,
+html[data-theme="dark"] .auth-card label,
+body.dark-theme .auth-card label {
+  color: #d8dcea;
+}
+
+html.dark-theme .auth-card input,
+html[data-theme="dark"] .auth-card input,
+body.dark-theme .auth-card input {
+  background:
+    rgba(255, 255, 255, 0.05);
+
+  border-color:
+    rgba(255, 255, 255, 0.10);
+
+  color: #f8fafc;
+}
+
+html.dark-theme .auth-card input::placeholder,
+html[data-theme="dark"] .auth-card input::placeholder,
+body.dark-theme .auth-card input::placeholder {
+  color: #7f899d;
+}
+
+html.dark-theme .auth-card input:focus,
+html[data-theme="dark"] .auth-card input:focus,
+body.dark-theme .auth-card input:focus {
+  border-color:
+    #635bff;
+
+  box-shadow:
+    0 0 0 3px rgba(99, 91, 255, 0.15);
+}
+
+
+/* =========================================================
+   GLOBAL SECTION HEADINGS
+   ========================================================= */
+
+html.dark-theme .section-heading h2,
+html[data-theme="dark"] .section-heading h2,
+body.dark-theme .section-heading h2 {
+  color: #f8fafc;
+}
+
+html.dark-theme .section-heading p,
+html[data-theme="dark"] .section-heading p,
+body.dark-theme .section-heading p {
+  color: #a7afc0;
+}
+
+
+/* =========================================================
+   DARK MODE COMPATIBILITY
+   Supports navbar-dark state too
+   ========================================================= */
+
+body:has(.navbar-dark) {
+  background: #090b12;
+  color: #f8fafc;
+}
+
+body:has(.navbar-dark) .landing-page,
+body:has(.navbar-dark) .discover-page,
+body:has(.navbar-dark) .api-details-page,
+body:has(.navbar-dark) .auth-page {
+  background:
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(99, 91, 255, 0.16),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 10% 30%,
+      rgba(59, 130, 246, 0.08),
+      transparent 25%
+    ),
+    #090b12;
+
+  color: #f8fafc;
+}
+
+body:has(.navbar-dark) .navbar {
+  background: rgba(9, 11, 18, 0.82);
+
+  border-bottom-color:
+    rgba(255, 255, 255, 0.08);
+}
+
+body:has(.navbar-dark) .hero-copy h1 {
+  color: #f8fafc;
+}
+
+body:has(.navbar-dark) .hero-copy p {
+  color: #aeb7c9;
+}
+
+body:has(.navbar-dark) .hero-stats {
+  border-top-color:
+    rgba(255, 255, 255, 0.10);
+
+  border-bottom-color:
+    rgba(255, 255, 255, 0.10);
+}
+
+body:has(.navbar-dark) .hero-stats > div {
+  border-right-color:
+    rgba(255, 255, 255, 0.10);
+}
+
+body:has(.navbar-dark) .hero-stats strong,
+body:has(.navbar-dark) .stat-number {
+  color: #f8fafc;
+}
+
+body:has(.navbar-dark) .hero-stats span,
+body:has(.navbar-dark) .stat-label {
+  color: #8f99ad;
+}
+
+body:has(.navbar-dark) .hero-search {
+  background:
+    rgba(255, 255, 255, 0.055);
+
+  border-color:
+    rgba(255, 255, 255, 0.11);
+}
+
+body:has(.navbar-dark) .hero-search input {
+  color: #f8fafc;
+}
+
+body:has(.navbar-dark) .hero-search input::placeholder {
+  color: #7f899d;
+}
+
+body:has(.navbar-dark) .logo {
+  color: #f8fafc;
+}
+
+body:has(.navbar-dark) .nav-links a {
+  color: #a7afc0;
+}
+
+body:has(.navbar-dark) .nav-links a:hover {
+  color: #ffffff;
+}
+
+body:has(.navbar-dark) .icon-button,
+body:has(.navbar-dark) .login-button {
+  color: #e5e7eb;
+
+  background:
+    rgba(255, 255, 255, 0.06);
+
+  border-color:
+    rgba(255, 255, 255, 0.10);
+}
+
+body:has(.navbar-dark) .signup-button {
+  color: #090b12;
+  background: #f8fafc;
+}
+
+body:has(.navbar-dark) .discover-category {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(25, 29, 43, 0.96),
+      rgba(15, 18, 29, 0.96)
+    );
+
+  border-color:
+    rgba(255, 255, 255, 0.10);
+
+  color: #d8dcea;
+}
+
+body:has(.navbar-dark) .discover-category:hover {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(38, 43, 63, 0.98),
+      rgba(19, 23, 36, 0.98)
+    );
+
+  color: #ffffff;
+}
+
+body:has(.navbar-dark) .discover-category.active {
+  background:
+    linear-gradient(
+      135deg,
+      #635bff,
+      #4f46e5
+    );
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   RESPONSIVE CATEGORY GRID
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .discover-categories {
+    grid-template-columns:
+      repeat(4, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .discover-categories {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .discover-categories {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+  }
+
+}
+
+
+@media (max-width: 420px) {
+
+  .discover-categories {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE DARK NAVIGATION
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  html.dark-theme .nav-links,
+  html[data-theme="dark"] .nav-links,
+  body.dark-theme .nav-links {
+    background:
+      rgba(12, 15, 24, 0.97);
+
+    border-color:
+      rgba(255, 255, 255, 0.10);
+
+    box-shadow:
+      0 20px 50px rgba(0, 0, 0, 0.35);
+  }
+
+  html.dark-theme .nav-links a,
+  html[data-theme="dark"] .nav-links a,
+  body.dark-theme .nav-links a {
+    color: #c5cada;
+  }
+
+  html.dark-theme .nav-links a:hover,
+  html[data-theme="dark"] .nav-links a:hover,
+  body.dark-theme .nav-links a:hover {
+    background:
+      rgba(255, 255, 255, 0.06);
+
+    color: #ffffff;
+  }
+
+}
+
+
+/* =========================================================
+   SMOOTH THEME TRANSITION
+   ========================================================= */
+
+html.dark-theme .discover-category,
+html.dark-theme .discover-api-card,
+html.dark-theme .floating-api,
+html.dark-theme .navbar,
+html.dark-theme .hero-search,
+html.dark-theme .discover-search,
+html.dark-theme .api-details-hero,
+html.dark-theme .auth-card {
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+/* =========================================================
+   LANDING PAGE — POPULAR CATEGORIES DARK THEME
+   ========================================================= */
+
+html.dark-theme .categories-section,
+html[data-theme="dark"] .categories-section,
+body.dark-theme .categories-section {
+  color: #f8fafc;
+}
+
+
+/* Section heading */
+
+html.dark-theme .categories-section .section-heading h2,
+html[data-theme="dark"] .categories-section .section-heading h2,
+body.dark-theme .categories-section .section-heading h2 {
+  color: #f8fafc;
+}
+
+html.dark-theme .categories-section .section-heading > div > span,
+html[data-theme="dark"] .categories-section .section-heading > div > span,
+body.dark-theme .categories-section .section-heading > div > span {
+  color: #8b7cff;
+}
+
+
+/* View all */
+
+html.dark-theme .categories-section .view-all,
+html[data-theme="dark"] .categories-section .view-all,
+body.dark-theme .categories-section .view-all {
+  color: #c9c5ff;
+
+  background: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+html.dark-theme .categories-section .view-all:hover,
+html[data-theme="dark"] .categories-section .view-all:hover,
+body.dark-theme .categories-section .view-all:hover {
+  color: #ffffff;
+
+  background: rgba(99, 91, 255, 0.10);
+
+  border-color: rgba(139, 124, 255, 0.45);
+}
+
+
+/* =========================================================
+   CATEGORY CARDS
+   ========================================================= */
+
+html.dark-theme .categories-section .category-item,
+html[data-theme="dark"] .categories-section .category-item,
+body.dark-theme .categories-section .category-item {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(30, 34, 52, 0.94),
+      rgba(18, 21, 34, 0.90)
+    );
+
+  border: 1px solid rgba(255, 255, 255, 0.10);
+
+  color: #f4f6ff;
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    color 0.3s ease;
+}
+
+
+/* Category card hover */
+
+html.dark-theme .categories-section .category-item:hover,
+html[data-theme="dark"] .categories-section .category-item:hover,
+body.dark-theme .categories-section .category-item:hover {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(38, 42, 64, 0.98),
+      rgba(20, 24, 40, 0.96)
+    );
+
+  border-color:
+    rgba(99, 91, 255, 0.38);
+
+  color: #ffffff;
+
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.38),
+    0 0 30px rgba(99, 91, 255, 0.10);
+}
+
+
+/* Category name */
+
+html.dark-theme .categories-section .category-item > span:last-child,
+html[data-theme="dark"] .categories-section .category-item > span:last-child,
+body.dark-theme .categories-section .category-item > span:last-child {
+  color: #f1f4fb;
+}
+
+html.dark-theme .categories-section .category-item:hover > span:last-child,
+html[data-theme="dark"] .categories-section .category-item:hover > span:last-child,
+body.dark-theme .categories-section .category-item:hover > span:last-child {
+  color: #ffffff;
+}
+
+
+/* Category icon */
+
+html.dark-theme .categories-section .category-icon,
+html[data-theme="dark"] .categories-section .category-icon,
+body.dark-theme .categories-section .category-icon {
+  border-color:
+    rgba(255, 255, 255, 0.08);
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================================
+   STORY CARD
+   ========================================================= */
+
+html.dark-theme .story-card,
+html[data-theme="dark"] .story-card,
+body.dark-theme .story-card {
+  background:
+    linear-gradient(
+      135deg,
+      #11172d,
+      #1b1b4b 55%,
+      #302a82
+    );
+
+  border-color:
+    rgba(255, 255, 255, 0.08);
+
+  color: #f8fafc;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.30);
+}
+
+html.dark-theme .story-label,
+html[data-theme="dark"] .story-label,
+body.dark-theme .story-label {
+  color: #9d96ff;
+}
+
+html.dark-theme .story-card h2,
+html[data-theme="dark"] .story-card h2,
+body.dark-theme .story-card h2 {
+  color: #ffffff;
+}
+
+html.dark-theme .story-card p,
+html[data-theme="dark"] .story-card p,
+body.dark-theme .story-card p {
+  color: #b6bdd0;
+}
+
+
+/* =========================================================
+   BUILT FOR DEVELOPERS BUTTON
+   ========================================================= */
+
+html.dark-theme .story-pill,
+html[data-theme="dark"] .story-pill,
+body.dark-theme .story-pill {
+  background:
+    rgba(255, 255, 255, 0.06);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.14);
+
+  color: #e7e9f5;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+html.dark-theme .story-pill:hover,
+html[data-theme="dark"] .story-pill:hover,
+body.dark-theme .story-pill:hover {
+  background:
+    rgba(255, 255, 255, 0.12);
+
+  border-color:
+    rgba(139, 124, 255, 0.45);
+
+  transform:
+    translateY(-3px);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+html.dark-theme .story-pill .pulse,
+html[data-theme="dark"] .story-pill .pulse,
+body.dark-theme .story-pill .pulse {
+  background: #8b83ff;
+
+  box-shadow:
+    0 0 12px rgba(139, 131, 255, 0.75);
+}
+/* =========================================================
+   EXPLORE API CARDS - FINAL DARK THEME
+   ========================================================= */
+
+html.dark-theme .discover-api-card,
+html[data-theme="dark"] .discover-api-card,
+body.dark-theme .discover-api-card {
+    background: linear-gradient(
+        145deg,
+        #1e2234 0%,
+        #151827 55%,
+        #10131f 100%
+    ) !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.09) !important;
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.30),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04) !important;
+
+    color: #f5f7ff !important;
+}
+
+html.dark-theme .discover-api-card:hover,
+html[data-theme="dark"] .discover-api-card:hover,
+body.dark-theme .discover-api-card:hover {
+    transform: translateY(-7px) !important;
+
+    border-color: rgba(99, 91, 255, 0.35) !important;
+
+    box-shadow:
+        0 28px 65px rgba(0, 0, 0, 0.42),
+        0 0 25px rgba(99, 91, 255, 0.08) !important;
+}
+
+html.dark-theme .discover-api-card h3,
+html[data-theme="dark"] .discover-api-card h3,
+body.dark-theme .discover-api-card h3 {
+    color: #f5f7ff !important;
+}
+
+html.dark-theme .discover-api-card p,
+html[data-theme="dark"] .discover-api-card p,
+body.dark-theme .discover-api-card p {
+    color: #98a2b8 !important;
+}
+
+html.dark-theme .api-card-footer,
+html[data-theme="dark"] .api-card-footer,
+body.dark-theme .api-card-footer {
+    border-top-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+html.dark-theme .api-card-footer > span,
+html[data-theme="dark"] .api-card-footer > span,
+body.dark-theme .api-card-footer > span {
+    color: #8993a8 !important;
+}
+
+html.dark-theme .api-category,
+html[data-theme="dark"] .api-category,
+body.dark-theme .api-category {
+    background: rgba(255, 255, 255, 0.07) !important;
+    color: #c3c9d8 !important;
+}
+
+html.dark-theme .api-card-footer button,
+html.dark-theme .api-card-action,
+html[data-theme="dark"] .api-card-footer button,
+html[data-theme="dark"] .api-card-action,
+body.dark-theme .api-card-footer button,
+body.dark-theme .api-card-action {
+    background: #f3f1ff !important;
+    color: #635bff !important;
+}
+
+/* FIX: Explore API cards when the navbar uses dark mode */
+
+body:has(.navbar-dark) .discover-api-card {
+  background: linear-gradient(
+    145deg,
+    #1e2234 0%,
+    #151827 55%,
+    #10131f 100%
+  ) !important;
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.3) !important;
+  color: #f5f7ff !important;
+}
+
+body:has(.navbar-dark) .discover-api-card h3 {
+  color: #f5f7ff !important;
+}
+
+body:has(.navbar-dark) .discover-api-card p {
+  color: #98a2b8 !important;
+}
+
+body:has(.navbar-dark) .discover-api-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(99, 91, 255, 0.45) !important;
+  box-shadow: 0 28px 65px rgba(0, 0, 0, 0.42) !important;
+}
+
+body:has(.navbar-dark) .discover-api-card .api-category {
+  background: rgba(255, 255, 255, 0.07) !important;
+  color: #c3c9d8 !important;
+}
+
+body:has(.navbar-dark) .discover-api-card .api-card-footer {
+  border-top-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Explore ApiCard.jsx uses .api-card (not .discover-api-card). */
+html.dark-theme .discover-page .api-card,
+html[data-theme="dark"] .discover-page .api-card,
+body.dark-theme .discover-page .api-card,
+body:has(.navbar-dark) .discover-page .api-card {
+  background: linear-gradient(145deg, #20243a 0%, #171a2a 55%, #111420 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.10) !important;
+  color: #f8fafc !important;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.30) !important;
+}
+
+html.dark-theme .discover-page .api-card h3,
+html[data-theme="dark"] .discover-page .api-card h3,
+body.dark-theme .discover-page .api-card h3,
+body:has(.navbar-dark) .discover-page .api-card h3 {
+  color: #f8fafc !important;
+  font-size: 1.15rem !important;
+  line-height: 1.45 !important;
+}
+
+html.dark-theme .discover-page .api-card p,
+html[data-theme="dark"] .discover-page .api-card p,
+body.dark-theme .discover-page .api-card p,
+body:has(.navbar-dark) .discover-page .api-card p {
+  color: #c0c9dc !important;
+  font-size: 0.95rem !important;
+  line-height: 1.7 !important;
+}
+
+html.dark-theme .discover-page .api-card-category,
+html[data-theme="dark"] .discover-page .api-card-category,
+body.dark-theme .discover-page .api-card-category,
+body:has(.navbar-dark) .discover-page .api-card-category {
+  color: #b9b4ff !important;
+}
+
+html.dark-theme .discover-page .api-card-provider,
+html[data-theme="dark"] .discover-page .api-card-provider,
+body.dark-theme .discover-page .api-card-provider,
+body:has(.navbar-dark) .discover-page .api-card-provider {
+  color: #aeb9d0 !important;
+}
+
+html.dark-theme .discover-page .api-card-button,
+html[data-theme="dark"] .discover-page .api-card-button,
+body.dark-theme .discover-page .api-card-button,
+body:has(.navbar-dark) .discover-page .api-card-button {
+  background: #f0efff !important;
+  color: #5145e5 !important;
+}
+
+/* Auth form contrast in dark mode; layout remains defined in index.css. */
+html.dark-theme .auth-card,
+html[data-theme="dark"] .auth-card,
+body.dark-theme .auth-card,
+body:has(.navbar-dark) .auth-card {
+  background: linear-gradient(145deg, #1b2031, #111522);
+  border-color: rgba(255, 255, 255, 0.10);
+  color: #f8fafc;
+}
+
+html.dark-theme .auth-card h1,
+html[data-theme="dark"] .auth-card h1,
+body.dark-theme .auth-card h1,
+body:has(.navbar-dark) .auth-card h1 {
+  color: #f8fafc;
+}
+
+html.dark-theme .auth-card > p,
+html[data-theme="dark"] .auth-card > p,
+body.dark-theme .auth-card > p,
+body:has(.navbar-dark) .auth-card > p {
+  color: #c0c9dc;
+}
+
+html.dark-theme .auth-card form label,
+html[data-theme="dark"] .auth-card form label,
+body.dark-theme .auth-card form label,
+body:has(.navbar-dark) .auth-card form label {
+  color: #e0e6f5;
+}
+
+html.dark-theme .auth-card input,
+html[data-theme="dark"] .auth-card input,
+body.dark-theme .auth-card input,
+body:has(.navbar-dark) .auth-card input {
+  background: rgba(255, 255, 255, 0.055);
+  border-color: rgba(255, 255, 255, 0.14);
+  color: #f8fafc;
+}
+
+html.dark-theme .auth-switch,
+html[data-theme="dark"] .auth-switch,
+body.dark-theme .auth-switch,
+body:has(.navbar-dark) .auth-switch {
+  color: #c0c9dc;
+}
+
+
+/* =========================================================
+   DARK THEME FINISH — API CARDS + API DETAILS READABILITY
+   Scoped to the active dark navbar so light mode is unchanged.
+   ========================================================= */
+
+/* Explore API cards: the component uses .api-card */
+body:has(.navbar-dark) .discover-page .api-card {
+  background: linear-gradient(145deg, #20243a 0%, #171b2c 58%, #111522 100%) !important;
+  border: 1px solid rgba(177, 169, 255, 0.20) !important;
+  color: #f4f6ff !important;
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.28) !important;
+}
+
+body:has(.navbar-dark) .discover-page .api-card h3,
+body:has(.navbar-dark) .discover-page .api-card-content h3 {
+  color: #ffffff !important;
+  font-size: 1.15rem !important;
+  line-height: 1.45 !important;
+}
+
+body:has(.navbar-dark) .discover-page .api-card p,
+body:has(.navbar-dark) .discover-page .api-card-content p {
+  color: #c8d2e8 !important;
+  font-size: 0.98rem !important;
+  line-height: 1.7 !important;
+}
+
+body:has(.navbar-dark) .discover-page .api-card-category {
+  color: #bdb6ff !important;
+  font-size: 0.88rem !important;
+  font-weight: 700 !important;
+}
+
+body:has(.navbar-dark) .discover-page .api-card-provider {
+  color: #b4bfd6 !important;
+  font-size: 0.88rem !important;
+}
+
+body:has(.navbar-dark) .discover-page .api-card-button {
+  background: #f0edff !important;
+  color: #4f46e5 !important;
+  border-color: transparent !important;
+  font-weight: 700 !important;
+}
+
+body:has(.navbar-dark) .discover-page .api-card-button:hover {
+  background: #ddd7ff !important;
+  color: #3529bd !important;
+}
+
+/* API details: actual content cards use .api-info-panel */
+body:has(.navbar-dark) .api-details-page .api-info-panel {
+  background: linear-gradient(145deg, #1c2132 0%, #151a29 100%) !important;
+  border: 1px solid rgba(177, 169, 255, 0.18) !important;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28) !important;
+  color: #eef2ff !important;
+}
+
+body:has(.navbar-dark) .api-details-page .api-info-panel h2 {
+  color: #ffffff !important;
+  font-size: 1.45rem !important;
+}
+
+body:has(.navbar-dark) .api-details-page .api-info-panel p,
+body:has(.navbar-dark) .api-details-page .api-info-panel > p {
+  color: #c8d2e8 !important;
+  font-size: 0.98rem !important;
+  line-height: 1.75 !important;
+}
+
+body:has(.navbar-dark) .api-details-page .api-panel-label {
+  color: #aaa4ff !important;
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+}
+
+body:has(.navbar-dark) .api-details-page .api-info-panel label,
+body:has(.navbar-dark) .api-details-page .api-info-panel small {
+  color: #aebbd4 !important;
+}
+
+body:has(.navbar-dark) .api-details-page .api-info-panel strong,
+body:has(.navbar-dark) .api-details-page .api-info-panel b {
+  color: #f1f4ff !important;
+}
+
+body:has(.navbar-dark) .api-details-page .api-info-panel input,
+body:has(.navbar-dark) .api-details-page .api-info-panel textarea,
+body:has(.navbar-dark) .api-details-page .api-info-panel select {
+  background: #101525 !important;
+  border: 1px solid #353d58 !important;
+  color: #f4f6ff !important;
+}
+
+body:has(.navbar-dark) .api-details-page .api-info-panel input::placeholder,
+body:has(.navbar-dark) .api-details-page .api-info-panel textarea::placeholder {
+  color: #8794b0 !important;
+}
+
+body:has(.navbar-dark) .api-details-page .api-info-panel a {
+  color: #b8b0ff !important;
+}
+
+body:has(.navbar-dark) .api-details-page .api-info-panel a:hover {
+  color: #dedaff !important;
+}
+
+body:has(.navbar-dark) .api-details-page .api-info-panel hr,
+body:has(.navbar-dark) .api-details-page .api-info-panel .api-info-row {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* =========================================================
+   DARK THEME — BRIGHTER TEXT + SLIGHTLY LARGER TYPE
+   Scoped to the active dark theme; light theme is untouched.
+   ========================================================= */
+html.dark-theme .discover-page,
+html[data-theme="dark"] .discover-page,
+body.dark-theme .discover-page,
+body:has(.navbar-dark) .discover-page,
+html.dark-theme .api-details-page,
+html[data-theme="dark"] .api-details-page,
+body.dark-theme .api-details-page,
+body:has(.navbar-dark) .api-details-page {
+  color: #f4f6ff !important;
+}
+
+html.dark-theme .discover-page .discover-section-title h2,
+html[data-theme="dark"] .discover-page .discover-section-title h2,
+body.dark-theme .discover-page .discover-section-title h2,
+body:has(.navbar-dark) .discover-page .discover-section-title h2,
+html.dark-theme .discover-page .directory-heading h2,
+html[data-theme="dark"] .discover-page .directory-heading h2,
+body.dark-theme .discover-page .directory-heading h2,
+body:has(.navbar-dark) .discover-page .directory-heading h2 {
+  color: #ffffff !important;
+  font-size: clamp(2rem, 3vw, 2.5rem) !important;
+}
+
+html.dark-theme .discover-page .discover-section-title p,
+html[data-theme="dark"] .discover-page .discover-section-title p,
+body.dark-theme .discover-page .discover-section-title p,
+body:has(.navbar-dark) .discover-page .discover-section-title p,
+html.dark-theme .discover-page .discover-hero > p,
+html[data-theme="dark"] .discover-page .discover-hero > p,
+body.dark-theme .discover-page .discover-hero > p,
+body:has(.navbar-dark) .discover-page .discover-hero > p {
+  color: #d0d9ee !important;
+  font-size: 1.04rem !important;
+  line-height: 1.8 !important;
+}
+
+html.dark-theme .discover-page .api-card h3,
+html[data-theme="dark"] .discover-page .api-card h3,
+body.dark-theme .discover-page .api-card h3,
+body:has(.navbar-dark) .discover-page .api-card h3,
+html.dark-theme .discover-page .api-card-content h3,
+html[data-theme="dark"] .discover-page .api-card-content h3,
+body.dark-theme .discover-page .api-card-content h3,
+body:has(.navbar-dark) .discover-page .api-card-content h3 {
+  color: #ffffff !important;
+  font-size: 1.2rem !important;
+  line-height: 1.45 !important;
+}
+
+html.dark-theme .discover-page .api-card p,
+html[data-theme="dark"] .discover-page .api-card p,
+body.dark-theme .discover-page .api-card p,
+body:has(.navbar-dark) .discover-page .api-card p,
+html.dark-theme .discover-page .api-card-content p,
+html[data-theme="dark"] .discover-page .api-card-content p,
+body.dark-theme .discover-page .api-card-content p,
+body:has(.navbar-dark) .discover-page .api-card-content p {
+  color: #d3dcf0 !important;
+  font-size: 1rem !important;
+  line-height: 1.75 !important;
+}
+
+html.dark-theme .discover-page .api-card-category,
+html[data-theme="dark"] .discover-page .api-card-category,
+body.dark-theme .discover-page .api-card-category,
+body:has(.navbar-dark) .discover-page .api-card-category {
+  color: #c4bdff !important;
+  font-size: 0.92rem !important;
+  font-weight: 700 !important;
+}
+
+html.dark-theme .discover-page .api-card-provider,
+html[data-theme="dark"] .discover-page .api-card-provider,
+body.dark-theme .discover-page .api-card-provider,
+body:has(.navbar-dark) .discover-page .api-card-provider {
+  color: #bdc9e2 !important;
+  font-size: 0.92rem !important;
+}
+
+html.dark-theme .api-details-page .api-details-heading h1,
+html[data-theme="dark"] .api-details-page .api-details-heading h1,
+body.dark-theme .api-details-page .api-details-heading h1,
+body:has(.navbar-dark) .api-details-page .api-details-heading h1 {
+  color: #ffffff !important;
+}
+
+html.dark-theme .api-details-page .api-details-heading p,
+html[data-theme="dark"] .api-details-page .api-details-heading p,
+body.dark-theme .api-details-page .api-details-heading p,
+body:has(.navbar-dark) .api-details-page .api-details-heading p {
+  color: #d3dcf0 !important;
+  font-size: 1.02rem !important;
+  line-height: 1.8 !important;
+}
+
+html.dark-theme .api-details-page .api-provider,
+html[data-theme="dark"] .api-details-page .api-provider,
+body.dark-theme .api-details-page .api-provider,
+body:has(.navbar-dark) .api-details-page .api-provider {
+  color: #bdc9e2 !important;
+  font-size: 0.92rem !important;
+}
+
+html.dark-theme .api-details-page .api-provider strong,
+html[data-theme="dark"] .api-details-page .api-provider strong,
+body.dark-theme .api-details-page .api-provider strong,
+body:has(.navbar-dark) .api-details-page .api-provider strong {
+  color: #e3e8ff !important;
+}
+
+html.dark-theme .api-details-page .api-info-panel h2,
+html[data-theme="dark"] .api-details-page .api-info-panel h2,
+body.dark-theme .api-details-page .api-info-panel h2,
+body:has(.navbar-dark) .api-details-page .api-info-panel h2 {
+  color: #ffffff !important;
+  font-size: 1.6rem !important;
+}
+
+html.dark-theme .api-details-page .api-info-panel > p,
+html[data-theme="dark"] .api-details-page .api-info-panel > p,
+body.dark-theme .api-details-page .api-info-panel > p,
+body:has(.navbar-dark) .api-details-page .api-info-panel > p {
+  color: #d3dcf0 !important;
+  font-size: 1.02rem !important;
+  line-height: 1.8 !important;
+}
+
+html.dark-theme .api-details-page .api-panel-label,
+html[data-theme="dark"] .api-details-page .api-panel-label,
+body.dark-theme .api-details-page .api-panel-label,
+body:has(.navbar-dark) .api-details-page .api-panel-label {
+  color: #bdb5ff !important;
+  font-size: 0.82rem !important;
+  font-weight: 800 !important;
+}
+
+html.dark-theme .api-details-page .api-info-panel label,
+html.dark-theme .api-details-page .api-info-panel small,
+html[data-theme="dark"] .api-details-page .api-info-panel label,
+html[data-theme="dark"] .api-details-page .api-info-panel small,
+body.dark-theme .api-details-page .api-info-panel label,
+body.dark-theme .api-details-page .api-info-panel small,
+body:has(.navbar-dark) .api-details-page .api-info-panel label,
+body:has(.navbar-dark) .api-details-page .api-info-panel small {
+  color: #bac7e2 !important;
+  font-size: 0.9rem !important;
+}
+
+html.dark-theme .api-details-page .api-info-panel strong,
+html[data-theme="dark"] .api-details-page .api-info-panel strong,
+body.dark-theme .api-details-page .api-info-panel strong,
+body:has(.navbar-dark) .api-details-page .api-info-panel strong {
+  color: #f2f4ff !important;
+}
+
+
+/* FINAL DARK THEME HERO TEXT CONTRAST FIX */
+/* Explicit child colors are necessary: inherited parent color cannot
+   override the light-theme colors declared directly on these elements. */
+html.dark-theme .floating-api-name,
+html[data-theme="dark"] .floating-api-name,
+body.dark-theme .floating-api-name,
+body:has(.navbar-dark) .floating-api-name {
+  color: #ffffff !important;
+  font-size: 15px !important;
+}
+
+html.dark-theme .floating-api-type,
+html[data-theme="dark"] .floating-api-type,
+body.dark-theme .floating-api-type,
+body:has(.navbar-dark) .floating-api-type {
+  color: #d7def0 !important;
+  font-size: 12px !important;
+}
+
+html.dark-theme .developer-badge,
+html[data-theme="dark"] .developer-badge,
+body.dark-theme .developer-badge,
+body:has(.navbar-dark) .developer-badge {
+  background: linear-gradient(145deg, #20243a, #141827) !important;
+  border: 1px solid rgba(177, 169, 255, 0.24) !important;
+  color: #f8fafc !important;
+}
+
+html.dark-theme .developer-badge strong,
+html[data-theme="dark"] .developer-badge strong,
+body.dark-theme .developer-badge strong,
+body:has(.navbar-dark) .developer-badge strong {
+  color: #ffffff !important;
+  font-size: 13px !important;
+}
+
+html.dark-theme .developer-badge span,
+html[data-theme="dark"] .developer-badge span,
+body.dark-theme .developer-badge span,
+body:has(.navbar-dark) .developer-badge span {
+  color: #d5def3 !important;
+  font-size: 12px !important;
+}
+
+html.dark-theme .api-code-card,
+html[data-theme="dark"] .api-code-card,
+body.dark-theme .api-code-card,
+body:has(.navbar-dark) .api-code-card {
+  background: linear-gradient(145deg, #20243a, #141827) !important;
+  border: 1px solid rgba(177, 169, 255, 0.24) !important;
+  color: #f8fafc !important;
+}
+
+html.dark-theme .api-code-card small,
+html[data-theme="dark"] .api-code-card small,
+body.dark-theme .api-code-card small,
+body:has(.navbar-dark) .api-code-card small {
+  color: #d5def3 !important;
+  font-size: 11px !important;
+}
+
+html.dark-theme .api-code-card strong,
+html[data-theme="dark"] .api-code-card strong,
+body.dark-theme .api-code-card strong,
+body:has(.navbar-dark) .api-code-card strong {
+  color: #ffffff !important;
+  font-size: 13px !important;
+}
+
+
+/* EXPLORE TYPOGRAPHY — DARK THEME OVERRIDES */
+html.dark-theme .discover-page .api-card h3,
+html[data-theme="dark"] .discover-page .api-card h3,
+body.dark-theme .discover-page .api-card h3,
+body:has(.navbar-dark) .discover-page .api-card h3,
+html.dark-theme .discover-page .api-card-content h3,
+html[data-theme="dark"] .discover-page .api-card-content h3,
+body.dark-theme .discover-page .api-card-content h3,
+body:has(.navbar-dark) .discover-page .api-card-content h3 {
+  font-size: 1.25rem !important;
+  line-height: 1.45 !important;
+}
+
+html.dark-theme .discover-page .api-card p,
+html[data-theme="dark"] .discover-page .api-card p,
+body.dark-theme .discover-page .api-card p,
+body:has(.navbar-dark) .discover-page .api-card p,
+html.dark-theme .discover-page .api-card-content p,
+html[data-theme="dark"] .discover-page .api-card-content p,
+body.dark-theme .discover-page .api-card-content p,
+body:has(.navbar-dark) .discover-page .api-card-content p {
+  font-size: 1.02rem !important;
+  line-height: 1.75 !important;
+}
+
+html.dark-theme .discover-page .api-card-category,
+html[data-theme="dark"] .discover-page .api-card-category,
+body.dark-theme .discover-page .api-card-category,
+body:has(.navbar-dark) .discover-page .api-card-category,
+html.dark-theme .discover-page .api-card-provider,
+html[data-theme="dark"] .discover-page .api-card-provider,
+body.dark-theme .discover-page .api-card-provider,
+body:has(.navbar-dark) .discover-page .api-card-provider {
+  font-size: 0.94rem !important;
+  line-height: 1.5 !important;
+}
+
+html.dark-theme .discover-page .api-card-button,
+html[data-theme="dark"] .discover-page .api-card-button,
+body.dark-theme .discover-page .api-card-button,
+body:has(.navbar-dark) .discover-page .api-card-button,
+html.dark-theme .discover-page .api-card-action,
+html[data-theme="dark"] .discover-page .api-card-action,
+body.dark-theme .discover-page .api-card-action,
+body:has(.navbar-dark) .discover-page .api-card-action {
+  font-size: 0.96rem !important;
+}
+/* =========================================================
+   API HUB — CATEGORIES PAGE DARK THEME
+   ========================================================= */
+
+html.dark-theme .categories-page,
+html[data-theme="dark"] .categories-page,
+body.dark-theme .categories-page {
+  background: #0b0f19;
+  color: #f5f7ff;
+}
+
+html.dark-theme .categories-main,
+html[data-theme="dark"] .categories-main,
+body.dark-theme .categories-main {
+  color: #f5f7ff;
+}
+
+/* Header */
+
+html.dark-theme .categories-compare-header h1,
+html[data-theme="dark"] .categories-compare-header h1,
+body.dark-theme .categories-compare-header h1 {
+  color: #f5f7ff;
+}
+
+html.dark-theme .categories-compare-header p,
+html[data-theme="dark"] .categories-compare-header p,
+body.dark-theme .categories-compare-header p {
+  color: #9ca6ba;
+}
+
+/* Back button */
+
+html.dark-theme .categories-back-button,
+html[data-theme="dark"] .categories-back-button,
+body.dark-theme .categories-back-button {
+  background: rgba(255, 255, 255, 0.045);
+  border-color: rgba(255, 255, 255, 0.11);
+  color: #cbd2e1;
+}
+
+html.dark-theme .categories-back-button:hover,
+html[data-theme="dark"] .categories-back-button:hover,
+body.dark-theme .categories-back-button:hover {
+  background: rgba(99, 91, 255, 0.12);
+  border-color: rgba(99, 91, 255, 0.45);
+  color: #ffffff;
+}
+
+/* Comparison table */
+
+html.dark-theme .categories-table-wrapper,
+html[data-theme="dark"] .categories-table-wrapper,
+body.dark-theme .categories-table-wrapper {
+  background: #111624;
+  border-color: rgba(255, 255, 255, 0.09);
+
+  box-shadow:
+    0 20px 55px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.025);
+}
+
+html.dark-theme .categories-comparison-table thead,
+html[data-theme="dark"] .categories-comparison-table thead,
+body.dark-theme .categories-comparison-table thead {
+  background: #151a29;
+}
+
+html.dark-theme .categories-comparison-table th,
+html[data-theme="dark"] .categories-comparison-table th,
+body.dark-theme .categories-comparison-table th {
+  color: #8f99ad;
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+html.dark-theme .categories-comparison-table td,
+html[data-theme="dark"] .categories-comparison-table td,
+body.dark-theme .categories-comparison-table td {
+  color: #c4cbda;
+  border-bottom-color: rgba(255, 255, 255, 0.07);
+}
+
+html.dark-theme .categories-comparison-table tbody tr:hover,
+html[data-theme="dark"] .categories-comparison-table tbody tr:hover,
+body.dark-theme .categories-comparison-table tbody tr:hover {
+  background: rgba(99, 91, 255, 0.045);
+}
+
+/* API names */
+
+html.dark-theme .comparison-api-name strong,
+html[data-theme="dark"] .comparison-api-name strong,
+body.dark-theme .comparison-api-name strong {
+  color: #f5f7ff;
+}
+
+html.dark-theme .comparison-api-name > div > span,
+html[data-theme="dark"] .comparison-api-name > div > span,
+body.dark-theme .comparison-api-name > div > span {
+  color: #7f899d;
+}
+
+/* API icons */
+
+html.dark-theme .comparison-api-icon,
+html[data-theme="dark"] .comparison-api-icon,
+body.dark-theme .comparison-api-icon {
+  background: rgba(99, 91, 255, 0.13);
+  color: #a79fff;
+}
+
+/* Save */
+
+html.dark-theme .comparison-save-button,
+html[data-theme="dark"] .comparison-save-button,
+body.dark-theme .comparison-save-button {
+  background: rgba(255, 255, 255, 0.045);
+  border-color: rgba(255, 255, 255, 0.10);
+  color: #8f99ad;
+}
+
+html.dark-theme .comparison-save-button:hover,
+html.dark-theme .comparison-save-button.saved,
+html[data-theme="dark"] .comparison-save-button:hover,
+html[data-theme="dark"] .comparison-save-button.saved,
+body.dark-theme .comparison-save-button:hover,
+body.dark-theme .comparison-save-button.saved {
+  background: rgba(99, 91, 255, 0.16);
+  border-color: rgba(139, 124, 255, 0.35);
+  color: #a79fff;
+}
+
+/* Authentication badge */
+
+html.dark-theme .comparison-badge,
+html[data-theme="dark"] .comparison-badge,
+body.dark-theme .comparison-badge {
+  background: rgba(255, 255, 255, 0.07);
+  color: #c4cbda;
+}
+
+/* Recommendation */
+
+html.dark-theme .categories-recommendation,
+html[data-theme="dark"] .categories-recommendation,
+body.dark-theme .categories-recommendation {
+  background:
+    linear-gradient(
+      135deg,
+      #111624 0%,
+      #15152a 100%
+    );
+
+  border-color: rgba(99, 91, 255, 0.25);
+
+  box-shadow:
+    0 20px 55px rgba(0, 0, 0, 0.28),
+    0 0 30px rgba(99, 91, 255, 0.04);
+}
+
+html.dark-theme .categories-recommendation h2,
+html[data-theme="dark"] .categories-recommendation h2,
+body.dark-theme .categories-recommendation h2 {
+  color: #f5f7ff;
+}
+
+html.dark-theme .recommendation-api,
+html[data-theme="dark"] .recommendation-api,
+body.dark-theme .recommendation-api {
+  background: #0d121f;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+html.dark-theme .recommendation-info h3,
+html[data-theme="dark"] .recommendation-info h3,
+body.dark-theme .recommendation-info h3 {
+  color: #f5f7ff;
+}
+
+html.dark-theme .recommendation-info p,
+html[data-theme="dark"] .recommendation-info p,
+body.dark-theme .recommendation-info p {
+  color: #9ca6ba;
+}
+
+html.dark-theme .recommendation-info > span,
+html[data-theme="dark"] .recommendation-info > span,
+body.dark-theme .recommendation-info > span {
+  color: #7f899d;
+}
+
+html.dark-theme .recommendation-why,
+html[data-theme="dark"] .recommendation-why,
+body.dark-theme .recommendation-why {
+  background: rgba(255, 255, 255, 0.035);
+}
+
+html.dark-theme .recommendation-why strong,
+html[data-theme="dark"] .recommendation-why strong,
+body.dark-theme .recommendation-why strong {
+  color: #d9deea;
+}
+
+html.dark-theme .recommendation-why p,
+html[data-theme="dark"] .recommendation-why p,
+body.dark-theme .recommendation-why p {
+  color: #9ca6ba;
+}
+
+/* See all */
+
+html.dark-theme .categories-see-all,
+html[data-theme="dark"] .categories-see-all,
+body.dark-theme .categories-see-all {
+  background: #111624;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+html.dark-theme .categories-see-all h2,
+html[data-theme="dark"] .categories-see-all h2,
+body.dark-theme .categories-see-all h2 {
+  color: #f5f7ff;
+}
+
+html.dark-theme .categories-see-all p,
+html[data-theme="dark"] .categories-see-all p,
+body.dark-theme .categories-see-all p {
+  color: #8f99ad;
+}
+
+html.dark-theme .categories-see-all-button,
+html[data-theme="dark"] .categories-see-all-button,
+body.dark-theme .categories-see-all-button {
+  background: #635bff;
+  color: #ffffff;
+}
+
+html.dark-theme .categories-see-all-button:hover,
+html[data-theme="dark"] .categories-see-all-button:hover,
+body.dark-theme .categories-see-all-button:hover {
+  background: #746cff;
+}
+/* =========================================================
+   CATEGORIES PAGE — DARK MODE FIX
+   ========================================================= */
+
+html.dark-theme .categories-page,
+html[data-theme="dark"] .categories-page,
+body.dark-theme .categories-page {
+  background:
+    radial-gradient(
+      circle at 85% 10%,
+      rgba(99, 91, 255, 0.08),
+      transparent 28%
+    ),
+    #090b12;
+
+  color: #f8fafc;
+}
+
+/* ---------- CATEGORIES HERO ---------- */
+
+html.dark-theme .categories-hero h1,
+html[data-theme="dark"] .categories-hero h1,
+body.dark-theme .categories-hero h1 {
+  color: #f8fafc;
+}
+
+html.dark-theme .categories-hero p,
+html[data-theme="dark"] .categories-hero p,
+body.dark-theme .categories-hero p {
+  color: #9da7ba;
+}
+
+/* ---------- CATEGORY CARDS ---------- */
+
+html.dark-theme .categories-page .category-card,
+html[data-theme="dark"] .categories-page .category-card,
+body.dark-theme .categories-page .category-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(25, 29, 43, 0.96),
+      rgba(15, 18, 29, 0.96)
+    );
+
+  border-color: rgba(255, 255, 255, 0.09);
+
+  color: #f8fafc;
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+html.dark-theme .categories-page .category-card:hover,
+html[data-theme="dark"] .categories-page .category-card:hover,
+body.dark-theme .categories-page .category-card:hover {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(31, 36, 54, 0.98),
+      rgba(17, 21, 34, 0.98)
+    );
+
+  border-color: rgba(99, 91, 255, 0.35);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.38),
+    0 0 30px rgba(99, 91, 255, 0.08);
+}
+
+/* Category title */
+
+html.dark-theme .categories-page .category-card-content h3,
+html[data-theme="dark"] .categories-page .category-card-content h3,
+body.dark-theme .categories-page .category-card-content h3 {
+  color: #f8fafc;
+}
+
+/* Category description */
+
+html.dark-theme .categories-page .category-card-content p,
+html[data-theme="dark"] .categories-page .category-card-content p,
+body.dark-theme .categories-page .category-card-content p {
+  color: #9da7ba;
+}
+
+/* Category count */
+
+html.dark-theme .categories-page .category-card-footer,
+html[data-theme="dark"] .categories-page .category-card-footer,
+body.dark-theme .categories-page .category-card-footer {
+  border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+html.dark-theme .categories-page .category-card-footer > span:first-child,
+html[data-theme="dark"] .categories-page .category-card-footer > span:first-child,
+body.dark-theme .categories-page .category-card-footer > span:first-child {
+  color: #8f99ad;
+}
+
+/* Arrow */
+
+html.dark-theme .categories-page .category-card-arrow,
+html[data-theme="dark"] .categories-page .category-card-arrow,
+body.dark-theme .categories-page .category-card-arrow {
+  background: rgba(99, 91, 255, 0.12);
+  color: #a79fff;
+}
+
+html.dark-theme .categories-page .category-card:hover .category-card-arrow,
+html[data-theme="dark"] .categories-page .category-card:hover .category-card-arrow,
+body.dark-theme .categories-page .category-card:hover .category-card-arrow {
+  background: rgba(99, 91, 255, 0.20);
+  color: #ffffff;
+}
+/* =========================================================
+   ALL CATEGORY APIs — DARK MODE
+   ========================================================= */
+
+/* Header */
+
+html.dark-theme .categories-all-header,
+html[data-theme="dark"] .categories-all-header,
+body.dark-theme .categories-all-header {
+  color: #f8fafc;
+}
+
+html.dark-theme .categories-all-header h1,
+html[data-theme="dark"] .categories-all-header h1,
+body.dark-theme .categories-all-header h1 {
+  color: #f8fafc;
+}
+
+html.dark-theme .categories-all-header p,
+html[data-theme="dark"] .categories-all-header p,
+body.dark-theme .categories-all-header p {
+  color: #9da7ba;
+}
+
+html.dark-theme .categories-api-count,
+html[data-theme="dark"] .categories-api-count,
+body.dark-theme .categories-api-count {
+  color: #a7afc0;
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.10);
+}
+
+/* ---------- API CARDS ---------- */
+
+html.dark-theme .categories-api-card-wrapper .api-card,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card,
+body.dark-theme .categories-api-card-wrapper .api-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(25, 29, 43, 0.96),
+      rgba(15, 18, 29, 0.96)
+    );
+
+  border-color: rgba(255, 255, 255, 0.09);
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+html.dark-theme .categories-api-card-wrapper .api-card:hover,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card:hover,
+body.dark-theme .categories-api-card-wrapper .api-card:hover {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(31, 36, 54, 0.98),
+      rgba(17, 21, 34, 0.98)
+    );
+
+  border-color: rgba(99, 91, 255, 0.32);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.34),
+    0 0 30px rgba(99, 91, 255, 0.08);
+}
+
+/* API card title */
+
+html.dark-theme .categories-api-card-wrapper .api-card-content h3,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card-content h3,
+body.dark-theme .categories-api-card-wrapper .api-card-content h3 {
+  color: #f8fafc;
+}
+
+/* API card description */
+
+html.dark-theme .categories-api-card-wrapper .api-card-content p,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card-content p,
+body.dark-theme .categories-api-card-wrapper .api-card-content p {
+  color: #9da7ba;
+}
+
+/* API category */
+
+html.dark-theme .categories-api-card-wrapper .api-card-category,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card-category,
+body.dark-theme .categories-api-card-wrapper .api-card-category {
+  color: #8f99ad;
+}
+
+/* Provider */
+
+html.dark-theme .categories-api-card-wrapper .api-card-provider,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card-provider,
+body.dark-theme .categories-api-card-wrapper .api-card-provider {
+  color: #8f99ad;
+}
+
+/* Card footer */
+
+html.dark-theme .categories-api-card-wrapper .api-card-footer,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card-footer,
+body.dark-theme .categories-api-card-wrapper .api-card-footer {
+  border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+/* View API button */
+
+html.dark-theme .categories-api-card-wrapper .api-card-button,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card-button,
+body.dark-theme .categories-api-card-wrapper .api-card-button {
+  background: rgba(99, 91, 255, 0.14);
+  border-color: rgba(99, 91, 255, 0.22);
+  color: #a79fff;
+}
+
+html.dark-theme .categories-api-card-wrapper .api-card-button:hover,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card-button:hover,
+body.dark-theme .categories-api-card-wrapper .api-card-button:hover {
+  background: #635bff;
+  border-color: #635bff;
+  color: #ffffff;
+}
+
+/* Save button */
+
+html.dark-theme .categories-save-button,
+html[data-theme="dark"] .categories-save-button,
+body.dark-theme .categories-save-button {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.10);
+  color: #a7afc0;
+}
+
+html.dark-theme .categories-save-button:hover,
+html.dark-theme .categories-save-button.saved,
+html[data-theme="dark"] .categories-save-button:hover,
+html[data-theme="dark"] .categories-save-button.saved,
+body.dark-theme .categories-save-button:hover,
+body.dark-theme .categories-save-button.saved {
+  background: rgba(99, 91, 255, 0.18);
+  border-color: rgba(139, 124, 255, 0.35);
+  color: #a79fff;
+}
+/* =========================================================
+   API HUB — SOFTER DARK THEME
+   Final override
+   ========================================================= */
+
+/* ---------- GLOBAL DARK BACKGROUND ---------- */
+
+html.dark-theme body,
+html[data-theme="dark"] body,
+body.dark-theme {
+  background: #10131c !important;
+  color: #eef1f7 !important;
+}
+
+/* Main page backgrounds */
+
+html.dark-theme .landing-page,
+html.dark-theme .discover-page,
+html.dark-theme .api-details-page,
+html.dark-theme .auth-page,
+html.dark-theme .categories-page,
+
+html[data-theme="dark"] .landing-page,
+html[data-theme="dark"] .discover-page,
+html[data-theme="dark"] .api-details-page,
+html[data-theme="dark"] .auth-page,
+html[data-theme="dark"] .categories-page,
+
+body.dark-theme .landing-page,
+body.dark-theme .discover-page,
+body.dark-theme .api-details-page,
+body.dark-theme .auth-page,
+body.dark-theme .categories-page {
+  background: #10131c !important;
+}
+
+/* ---------- NORMAL TEXT ---------- */
+
+html.dark-theme p,
+html[data-theme="dark"] p,
+body.dark-theme p {
+  color: #b7bfce;
+}
+
+/* ---------- HEADINGS ---------- */
+
+html.dark-theme h1,
+html.dark-theme h2,
+html.dark-theme h3,
+html.dark-theme h4,
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4 {
+  color: #f1f3f8;
+}
+
+
+/* =========================================================
+   ALL API DIRECTORY HEADER
+   ========================================================= */
+
+html.dark-theme .categories-all-header,
+html[data-theme="dark"] .categories-all-header,
+body.dark-theme .categories-all-header {
+  margin-bottom: 30px;
+}
+
+html.dark-theme .categories-all-header h1,
+html[data-theme="dark"] .categories-all-header h1,
+body.dark-theme .categories-all-header h1 {
+  color: #f4f6fb !important;
+
+  margin: 6px 0 7px;
+
+  line-height: 1.15;
+}
+
+html.dark-theme .categories-all-header p,
+html[data-theme="dark"] .categories-all-header p,
+body.dark-theme .categories-all-header p {
+  color: #b7bfce !important;
+
+  margin: 0;
+
+  line-height: 1.55;
+
+  font-size: 14px;
+}
+
+html.dark-theme .categories-eyebrow,
+html[data-theme="dark"] .categories-eyebrow,
+body.dark-theme .categories-eyebrow {
+  color: #8f86ff !important;
+
+  letter-spacing: 0.12em;
+}
+
+html.dark-theme .categories-api-count,
+html[data-theme="dark"] .categories-api-count,
+body.dark-theme .categories-api-count {
+  color: #c5cada !important;
+
+  background: rgba(255, 255, 255, 0.055) !important;
+
+  border-color: rgba(255, 255, 255, 0.10) !important;
+
+  margin-top: 12px;
+}
+
+
+/* =========================================================
+   GAP BETWEEN "8 APIs" AND CARDS
+   ========================================================= */
+
+html.dark-theme .categories-api-grid,
+html[data-theme="dark"] .categories-api-grid,
+body.dark-theme .categories-api-grid {
+  margin-top: 8px;
+}
+
+
+/* =========================================================
+   API CARDS — SOFTER DARK SURFACE
+   ========================================================= */
+
+html.dark-theme .categories-api-card-wrapper .api-card,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card,
+body.dark-theme .categories-api-card-wrapper .api-card {
+  background: #202532 !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.10) !important;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.18) !important;
+}
+
+html.dark-theme .categories-api-card-wrapper .api-card:hover,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card:hover,
+body.dark-theme .categories-api-card-wrapper .api-card:hover {
+  background: #252b3a !important;
+
+  border-color: rgba(139, 124, 255, 0.35) !important;
+
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.24) !important;
+}
+
+
+/* API card title */
+
+html.dark-theme .categories-api-card-wrapper .api-card h3,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card h3,
+body.dark-theme .categories-api-card-wrapper .api-card h3 {
+  color: #f0f2f7 !important;
+}
+
+
+/* API description */
+
+html.dark-theme .categories-api-card-wrapper .api-card p,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card p,
+body.dark-theme .categories-api-card-wrapper .api-card p {
+  color: #aeb7c8 !important;
+}
+
+
+/* API category */
+
+html.dark-theme .categories-api-card-wrapper .api-card-category,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card-category,
+body.dark-theme .categories-api-card-wrapper .api-card-category {
+  color: #aab2c3 !important;
+}
+
+
+/* Provider */
+
+html.dark-theme .categories-api-card-wrapper .api-card-provider,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card-provider,
+body.dark-theme .categories-api-card-wrapper .api-card-provider {
+  color: #aeb7c8 !important;
+}
+
+
+/* Footer line */
+
+html.dark-theme .categories-api-card-wrapper .api-card-footer,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card-footer,
+body.dark-theme .categories-api-card-wrapper .api-card-footer {
+  border-top-color: rgba(255, 255, 255, 0.09) !important;
+}
+
+
+/* View API button */
+
+html.dark-theme .categories-api-card-wrapper .api-card-button,
+html[data-theme="dark"] .categories-api-card-wrapper .api-card-button,
+body.dark-theme .categories-api-card-wrapper .api-card-button {
+  background: rgba(139, 124, 255, 0.12) !important;
+
+  color: #b7b0ff !important;
+
+  border-color: rgba(139, 124, 255, 0.20) !important;
+}
+
+
+/* =========================================================
+   CATEGORY CARDS — SOFTER DARK
+   ========================================================= */
+
+html.dark-theme .categories-page .category-card,
+html[data-theme="dark"] .categories-page .category-card,
+body.dark-theme .categories-page .category-card {
+  background: #202532 !important;
+
+  border-color: rgba(255, 255, 255, 0.09) !important;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.16) !important;
+}
+
+html.dark-theme .categories-page .category-card:hover,
+html[data-theme="dark"] .categories-page .category-card:hover,
+body.dark-theme .categories-page .category-card:hover {
+  background: #252b3a !important;
+
+  border-color: rgba(139, 124, 255, 0.32) !important;
+}
+
+html.dark-theme .categories-page .category-card-content h3,
+html[data-theme="dark"] .categories-page .category-card-content h3,
+body.dark-theme .categories-page .category-card-content h3 {
+  color: #f0f2f7 !important;
+}
+
+html.dark-theme .categories-page .category-card-content p,
+html[data-theme="dark"] .categories-page .category-card-content p,
+body.dark-theme .categories-page .category-card-content p {
+  color: #adb6c7 !important;
+}
+
+
+/* =========================================================
+   NAVBAR — LESS BLACK
+   ========================================================= */
+
+html.dark-theme .navbar,
+html[data-theme="dark"] .navbar,
+body.dark-theme .navbar {
+  background: rgba(16, 19, 28, 0.94) !important;
+
+  border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+
+/* =========================================================
+   API HUB — FINAL DARK THEME CONTRAST & SURFACE FIX
+   ---------------------------------------------------------
+   Keeps the existing dark-theme.css structure intact.
+   This section intentionally comes LAST so it overrides
+   older dark-theme rules without changing the light theme.
+   ========================================================= */
+
+
+/* =========================================================
+   1. GLOBAL DARK BACKGROUND
+   ========================================================= */
+
+html.dark-theme body,
+html[data-theme="dark"] body,
+body.dark-theme {
+  background: #0D1117 !important;
+  color: #E6EDF3 !important;
+}
+
+
+/* Keep page-level dark backgrounds consistent */
+
+html.dark-theme .discover-page,
+html[data-theme="dark"] .discover-page,
+body.dark-theme .discover-page,
+
+html.dark-theme .api-details-page,
+html[data-theme="dark"] .api-details-page,
+body.dark-theme .api-details-page,
+
+html.dark-theme .categories-page,
+html[data-theme="dark"] .categories-page,
+body.dark-theme .categories-page {
+  background: #0D1117 !important;
+  color: #E6EDF3 !important;
+}
+
+
+/* =========================================================
+   2. TEXT HIERARCHY
+   ========================================================= */
+
+/* Primary headings — softer than pure white */
+
+html.dark-theme h1,
+html.dark-theme h2,
+html.dark-theme h3,
+html.dark-theme h4,
+html.dark-theme h5,
+html.dark-theme h6,
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6,
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6 {
+  color: #F0F6FC !important;
+}
+
+
+/* Body / secondary text */
+
+html.dark-theme p,
+html[data-theme="dark"] p,
+body.dark-theme p {
+  color: #8B949E !important;
+}
+
+
+/* API Details specific text */
+
+html.dark-theme .api-details-heading h1,
+html[data-theme="dark"] .api-details-heading h1,
+body.dark-theme .api-details-heading h1 {
+  color: #F0F6FC !important;
+}
+
+html.dark-theme .api-details-heading p,
+html[data-theme="dark"] .api-details-heading p,
+body.dark-theme .api-details-heading p {
+  color: #9198A1 !important;
+}
+
+html.dark-theme .api-provider span,
+html[data-theme="dark"] .api-provider span,
+body.dark-theme .api-provider span {
+  color: #8B949E !important;
+}
+
+html.dark-theme .api-provider strong,
+html[data-theme="dark"] .api-provider strong,
+body.dark-theme .api-provider strong {
+  color: #E6EDF3 !important;
+}
+
+
+/* =========================================================
+   3. CARD SURFACES
+   ========================================================= */
+
+/* API Details hero */
+
+html.dark-theme .api-details-hero,
+html[data-theme="dark"] .api-details-hero,
+body.dark-theme .api-details-hero {
+  background:
+    linear-gradient(
+      135deg,
+      #161B22 0%,
+      #1C2128 100%
+    ) !important;
+
+  border: 1px solid #30363D !important;
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.24) !important;
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+
+/* Main API information cards */
+
+html.dark-theme .api-info-panel,
+html[data-theme="dark"] .api-info-panel,
+body.dark-theme .api-info-panel {
+  background:
+    linear-gradient(
+      145deg,
+      #161B22 0%,
+      #1C2128 100%
+    ) !important;
+
+  border: 1px solid #30363D !important;
+
+  box-shadow:
+    0 16px 38px rgba(0, 0, 0, 0.20) !important;
+
+  color: #E6EDF3 !important;
+}
+
+
+/* API cards in directory / Explore */
+
+html.dark-theme .api-card,
+html[data-theme="dark"] .api-card,
+body.dark-theme .api-card {
+  background: #161B22 !important;
+
+  border: 1px solid #30363D !important;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.18) !important;
+
+  color: #E6EDF3 !important;
+}
+
+html.dark-theme .api-card:hover,
+html[data-theme="dark"] .api-card:hover,
+body.dark-theme .api-card:hover {
+  background: #1C2128 !important;
+
+  border-color: rgba(99, 102, 241, 0.50) !important;
+
+  box-shadow:
+    0 16px 38px rgba(0, 0, 0, 0.25),
+    0 0 0 1px rgba(99, 102, 241, 0.10) !important;
+}
+
+
+/* Category cards / items */
+
+html.dark-theme .categories-page .category-card,
+html[data-theme="dark"] .categories-page .category-card,
+body.dark-theme .categories-page .category-card,
+
+html.dark-theme .category-item,
+html[data-theme="dark"] .category-item,
+body.dark-theme .category-item {
+  background: #161B22 !important;
+
+  border-color: #30363D !important;
+}
+
+
+/* =========================================================
+   4. API CARD TEXT
+   ========================================================= */
+
+html.dark-theme .api-card h3,
+html[data-theme="dark"] .api-card h3,
+body.dark-theme .api-card h3 {
+  color: #E6EDF3 !important;
+}
+
+html.dark-theme .api-card p,
+html[data-theme="dark"] .api-card p,
+body.dark-theme .api-card p {
+  color: #8B949E !important;
+}
+
+html.dark-theme .api-card-category,
+html[data-theme="dark"] .api-card-category,
+body.dark-theme .api-card-category {
+  color: #A5B4FC !important;
+}
+
+html.dark-theme .api-card-provider,
+html[data-theme="dark"] .api-card-provider,
+body.dark-theme .api-card-provider {
+  color: #9198A1 !important;
+}
+
+
+/* =========================================================
+   5. API DETAILS SECTION HEADINGS
+   ========================================================= */
+
+html.dark-theme .api-details-page .api-panel-label,
+html[data-theme="dark"] .api-details-page .api-panel-label,
+body.dark-theme .api-details-page .api-panel-label {
+  color: #818CF8 !important;
+
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.12em !important;
+}
+
+html.dark-theme .api-details-page .api-info-panel h2,
+html[data-theme="dark"] .api-details-page .api-info-panel h2,
+body.dark-theme .api-details-page .api-info-panel h2 {
+  color: #F0F6FC !important;
+
+  font-size: 1.45rem !important;
+  line-height: 1.3 !important;
+}
+
+html.dark-theme .api-details-page .api-info-panel > p,
+html[data-theme="dark"] .api-details-page .api-info-panel > p,
+body.dark-theme .api-details-page .api-info-panel > p {
+  color: #9198A1 !important;
+
+  font-size: 0.98rem !important;
+  line-height: 1.75 !important;
+}
+
+
+/* =========================================================
+   6. PILLS / BADGES / CATEGORY / PROVIDER
+   ========================================================= */
+
+html.dark-theme .api-details-category,
+html[data-theme="dark"] .api-details-category,
+body.dark-theme .api-details-category {
+  color: #A5B4FC !important;
+
+  background: rgba(99, 102, 241, 0.10);
+  border-color: rgba(99, 102, 241, 0.18);
+}
+
+html.dark-theme .api-provider,
+html[data-theme="dark"] .api-provider,
+body.dark-theme .api-provider {
+  color: #8B949E !important;
+}
+
+
+/* =========================================================
+   7. INFORMATION ROWS
+   ========================================================= */
+
+html.dark-theme .api-detail-row,
+html[data-theme="dark"] .api-detail-row,
+body.dark-theme .api-detail-row {
+  border-bottom-color: #30363D !important;
+}
+
+html.dark-theme .api-detail-row > span,
+html[data-theme="dark"] .api-detail-row > span,
+body.dark-theme .api-detail-row > span {
+  color: #8B949E !important;
+}
+
+html.dark-theme .api-detail-row strong,
+html[data-theme="dark"] .api-detail-row strong,
+body.dark-theme .api-detail-row strong {
+  color: #E6EDF3 !important;
+}
+
+
+/* =========================================================
+   8. BASE URL / CODE BOX
+   ========================================================= */
+
+html.dark-theme .api-detail-row code,
+html[data-theme="dark"] .api-detail-row code,
+body.dark-theme .api-detail-row code {
+  display: block;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 11px 13px;
+
+  overflow-x: auto;
+
+  border: 1px solid #30363D !important;
+  border-radius: 9px;
+
+  background: #0D1117 !important;
+
+  color: #3FB950 !important;
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+
+  font-size: 12px;
+  line-height: 1.5;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   9. PRIMARY CTA BUTTON
+   ========================================================= */
+
+html.dark-theme .api-start-button,
+html[data-theme="dark"] .api-start-button,
+body.dark-theme .api-start-button {
+  background: #4F46E5 !important;
+
+  color: #FFFFFF !important;
+
+  border: 1px solid #6366F1 !important;
+
+  font-weight: 600 !important;
+
+  box-shadow:
+    0 8px 22px rgba(79, 70, 229, 0.24) !important;
+}
+
+html.dark-theme .api-start-button:hover,
+html[data-theme="dark"] .api-start-button:hover,
+body.dark-theme .api-start-button:hover {
+  background: #6366F1 !important;
+
+  color: #FFFFFF !important;
+
+  border-color: #818CF8 !important;
+}
+
+
+/* Existing generic primary buttons */
+
+html.dark-theme .api-primary-button,
+html[data-theme="dark"] .api-primary-button,
+body.dark-theme .api-primary-button {
+  background: #4F46E5 !important;
+
+  color: #FFFFFF !important;
+
+  font-weight: 600 !important;
+}
+
+html.dark-theme .api-primary-button:hover,
+html[data-theme="dark"] .api-primary-button:hover,
+body.dark-theme .api-primary-button:hover {
+  background: #6366F1 !important;
+}
+
+
+/* =========================================================
+   10. SECONDARY DOCUMENTATION / WEBSITE BUTTONS
+   ========================================================= */
+
+html.dark-theme .api-test-button,
+html.dark-theme .api-website-button,
+html.dark-theme .api-doc-button,
+
+html[data-theme="dark"] .api-test-button,
+html[data-theme="dark"] .api-website-button,
+html[data-theme="dark"] .api-doc-button,
+
+body.dark-theme .api-test-button,
+body.dark-theme .api-website-button,
+body.dark-theme .api-doc-button {
+  background: rgba(255, 255, 255, 0.05) !important;
+
+  border: 1px solid #30363D !important;
+
+  color: #E6EDF3 !important;
+
+  font-weight: 600 !important;
+}
+
+html.dark-theme .api-test-button:hover,
+html.dark-theme .api-website-button:hover,
+html.dark-theme .api-doc-button:hover,
+
+html[data-theme="dark"] .api-test-button:hover,
+html[data-theme="dark"] .api-website-button:hover,
+html[data-theme="dark"] .api-doc-button:hover,
+
+body.dark-theme .api-test-button:hover,
+body.dark-theme .api-website-button:hover,
+body.dark-theme .api-doc-button:hover {
+  background: rgba(255, 255, 255, 0.10) !important;
+
+  border-color: rgba(99, 102, 241, 0.50) !important;
+
+  color: #F0F6FC !important;
+}
+
+
+/* =========================================================
+   11. FEATURE ITEMS
+   ========================================================= */
+
+html.dark-theme .api-feature,
+html[data-theme="dark"] .api-feature,
+body.dark-theme .api-feature {
+  background: #111827 !important;
+
+  border: 1px solid #30363D !important;
+
+  color: #B1BAC4 !important;
+}
+
+html.dark-theme .api-feature svg,
+html[data-theme="dark"] .api-feature svg,
+body.dark-theme .api-feature svg {
+  color: #818CF8 !important;
+}
+
+
+/* =========================================================
+   12. DOCUMENTATION BANNER
+   ========================================================= */
+
+html.dark-theme .api-doc-banner,
+html[data-theme="dark"] .api-doc-banner,
+body.dark-theme .api-doc-banner {
+  background:
+    linear-gradient(
+      135deg,
+      #161B22 0%,
+      #1C2128 55%,
+      rgba(49, 46, 129, 0.55) 100%
+    ) !important;
+
+  border: 1px solid #30363D !important;
+
+  color: #E6EDF3 !important;
+}
+
+html.dark-theme .api-doc-banner h2,
+html[data-theme="dark"] .api-doc-banner h2,
+body.dark-theme .api-doc-banner h2 {
+  color: #F0F6FC !important;
+}
+
+html.dark-theme .api-doc-banner p,
+html[data-theme="dark"] .api-doc-banner p,
+body.dark-theme .api-doc-banner p {
+  color: #9198A1 !important;
+}
+
+
+/* =========================================================
+   13. ALL API DIRECTORY HEADER
+   ========================================================= */
+
+html.dark-theme .categories-all-header h1,
+html[data-theme="dark"] .categories-all-header h1,
+body.dark-theme .categories-all-header h1 {
+  color: #F0F6FC !important;
+
+  margin: 6px 0 8px !important;
+
+  line-height: 1.15 !important;
+}
+
+html.dark-theme .categories-all-header p,
+html[data-theme="dark"] .categories-all-header p,
+body.dark-theme .categories-all-header p {
+  color: #9198A1 !important;
+
+  margin: 0 !important;
+
+  line-height: 1.55 !important;
+}
+
+html.dark-theme .categories-api-count,
+html[data-theme="dark"] .categories-api-count,
+body.dark-theme .categories-api-count {
+  color: #B1BAC4 !important;
+
+  background: rgba(255, 255, 255, 0.05) !important;
+
+  border: 1px solid #30363D !important;
+
+  margin-top: 12px !important;
+}
+
+html.dark-theme .categories-api-grid,
+html[data-theme="dark"] .categories-api-grid,
+body.dark-theme .categories-api-grid {
+  margin-top: 18px !important;
+}
+
+
+/* =========================================================
+   14. NAVBAR
+   ========================================================= */
+
+html.dark-theme .navbar,
+html[data-theme="dark"] .navbar,
+body.dark-theme .navbar {
+  background: rgba(13, 17, 23, 0.94) !important;
+
+  border-bottom: 1px solid #21262D !important;
+}
+
+
+/* =========================================================
+   15. MUTED / DISABLED LINKS
+   ========================================================= */
+
+html.dark-theme .api-details-page a:not(
+  .api-start-button,
+  .api-test-button,
+  .api-website-button,
+  .api-doc-button
+),
+html[data-theme="dark"] .api-details-page a:not(
+  .api-start-button,
+  .api-test-button,
+  .api-website-button,
+  .api-doc-button
+),
+body.dark-theme .api-details-page a:not(
+  .api-start-button,
+  .api-test-button,
+  .api-website-button,
+  .api-doc-button
+) {
+  color: #8B949E;
+}
+
+html.dark-theme .api-details-page a:not(
+  .api-start-button,
+  .api-test-button,
+  .api-website-button,
+  .api-doc-button
+):hover,
+html[data-theme="dark"] .api-details-page a:not(
+  .api-start-button,
+  .api-test-button,
+  .api-website-button,
+  .api-doc-button
+):hover,
+body.dark-theme .api-details-page a:not(
+  .api-start-button,
+  .api-test-button,
+  .api-website-button,
+  .api-doc-button
+):hover {
+  color: #A5B4FC;
+}
+
+
+/* =========================================================
+   FINAL PALETTE
+   =========================================================
+   Background:       #0D1117
+   Card:             #161B22
+   Elevated card:    #1C2128
+   Border:           #30363D
+   Heading:          #F0F6FC
+   Body:             #8B949E
+   Secondary text:   #9198A1
+   Accent:            #818CF8 / #6366F1
+   Success/code:     #3FB950
+   Primary CTA:      #4F46E5
+   ========================================================= */
+/* =========================================================
+   API HUB — GRID VIEW OVERRIDES
+   ========================================================= */
+
+/* Ensure category page container gets dark background */
+html.dark-theme .categories-page,
+html[data-theme="dark"] .categories-page,
+body.dark-theme .categories-page {
+  background-color: #090b12 !important;
+  color: #f8fafc !important;
+  min-height: 100vh;
+}
+
+/* Heading section */
+html.dark-theme .directory-heading h1,
+html[data-theme="dark"] .directory-heading h1,
+body.dark-theme .directory-heading h1 {
+  color: #ffffff !important;
+}
+
+html.dark-theme .directory-heading p,
+html[data-theme="dark"] .directory-heading p,
+body.dark-theme .directory-heading p {
+  color: #9da7ba !important;
+}
+
+/* Force grid layout for card view */
+html.dark-theme .api-grid,
+html[data-theme="dark"] .api-grid,
+body.dark-theme .api-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 20px !important;
+  width: 100%;
+}
+
+/* Individual Card Dark Styling */
+html.dark-theme .api-grid .api-card,
+html[data-theme="dark"] .api-grid .api-card,
+body.dark-theme .api-grid .api-card {
+  background: linear-gradient(
+    145deg,
+    rgba(30, 34, 52, 0.92),
+    rgba(18, 21, 34, 0.90)
+  ) !important;
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+  border-radius: 12px !important;
+  padding: 20px !important;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28) !important;
+}
+
+html.dark-theme .api-grid .api-card:hover,
+html[data-theme="dark"] .api-grid .api-card:hover,
+body.dark-theme .api-grid .api-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(99, 91, 255, 0.4) !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4), 0 0 20px rgba(99, 91, 255, 0.12) !important;
+}
+
+/* Card Text Styling */
+html.dark-theme .api-grid .api-card h3,
+html[data-theme="dark"] .api-grid .api-card h3,
+body.dark-theme .api-grid .api-card h3 {
+  color: #f8fafc !important;
+}
+
+html.dark-theme .api-grid .api-card p,
+html[data-theme="dark"] .api-grid .api-card p,
+body.dark-theme .api-grid .api-card p {
+  color: #9da7ba !important;
+}
+
+/* Card Button Styling */
+html.dark-theme .api-grid .view-api-btn,
+html[data-theme="dark"] .api-grid .view-api-btn,
+body.dark-theme .api-grid .view-api-btn {
+  background: rgba(99, 91, 255, 0.15) !important;
+  border: 1px solid rgba(99, 91, 255, 0.3) !important;
+  color: #c4bdff !important;
+}
+
+html.dark-theme .api-grid .view-api-btn:hover,
+html[data-theme="dark"] .api-grid .view-api-btn:hover,
+body.dark-theme .api-grid .view-api-btn:hover {
+  background: #635bff !important;
+  border-color: #635bff !important;
+  color: #ffffff !important;
+}
+/* =========================================================
+   API HUB — PRICING PAGE DARK THEME
+   Append these rules to the END of src/styles/dark-theme.css.
+   Uses the existing html.dark-theme / data-theme mechanism.
+   ========================================================= */
+
+html.dark-theme .pricing-redesign-main,
+html[data-theme="dark"] .pricing-redesign-main,
+body.dark-theme .pricing-redesign-main {
+  color: #f3f4f6;
+}
+
+html.dark-theme .pricing-redesign-hero h1,
+html[data-theme="dark"] .pricing-redesign-hero h1,
+body.dark-theme .pricing-redesign-hero h1,
+html.dark-theme .pricing-redesign-card h2,
+html[data-theme="dark"] .pricing-redesign-card h2,
+body.dark-theme .pricing-redesign-card h2 {
+  color: #f8fafc;
+}
+
+html.dark-theme .pricing-redesign-subtitle,
+html[data-theme="dark"] .pricing-redesign-subtitle,
+body.dark-theme .pricing-redesign-subtitle,
+html.dark-theme .pricing-redesign-description,
+html[data-theme="dark"] .pricing-redesign-description,
+body.dark-theme .pricing-redesign-description {
+  color: #aab4c8;
+}
+
+/* Main pricing cards and summary cards */
+html.dark-theme .pricing-redesign-card,
+html[data-theme="dark"] .pricing-redesign-card,
+body.dark-theme .pricing-redesign-card,
+html.dark-theme .pricing-redesign-count,
+html[data-theme="dark"] .pricing-redesign-count,
+body.dark-theme .pricing-redesign-count,
+html.dark-theme .pricing-redesign-note,
+html[data-theme="dark"] .pricing-redesign-note,
+body.dark-theme .pricing-redesign-note,
+html.dark-theme .pricing-redesign-footer,
+html[data-theme="dark"] .pricing-redesign-footer,
+body.dark-theme .pricing-redesign-footer {
+  background: #141a29;
+  color: #e5eaf4;
+  border-color: rgba(255, 255, 255, 0.10);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.18);
+}
+
+html.dark-theme .pricing-redesign-card:hover,
+html[data-theme="dark"] .pricing-redesign-card:hover,
+body.dark-theme .pricing-redesign-card:hover {
+  border-color: rgba(124, 108, 255, 0.55);
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.28);
+}
+
+/* Approximate/verified price panel */
+html.dark-theme .pricing-redesign-price,
+html[data-theme="dark"] .pricing-redesign-price,
+body.dark-theme .pricing-redesign-price {
+  background: linear-gradient(135deg, rgba(99, 91, 255, 0.15), rgba(139, 92, 246, 0.08));
+  border-color: rgba(139, 124, 255, 0.25);
+}
+
+html.dark-theme .pricing-redesign-price-label,
+html[data-theme="dark"] .pricing-redesign-price-label,
+body.dark-theme .pricing-redesign-price-label {
+  color: #b8adff;
+}
+
+html.dark-theme .pricing-redesign-price strong,
+html[data-theme="dark"] .pricing-redesign-price strong,
+body.dark-theme .pricing-redesign-price strong,
+html.dark-theme .pricing-redesign-price-value,
+html[data-theme="dark"] .pricing-redesign-price-value,
+body.dark-theme .pricing-redesign-price-value {
+  color: #b7a8ff;
+}
+
+html.dark-theme .pricing-redesign-price small,
+html[data-theme="dark"] .pricing-redesign-price small,
+body.dark-theme .pricing-redesign-price small,
+html.dark-theme .pricing-redesign-free-tier,
+html[data-theme="dark"] .pricing-redesign-free-tier,
+body.dark-theme .pricing-redesign-free-tier {
+  color: #aab4c8;
+}
+
+/* Pricing type badges */
+html.dark-theme .pricing-redesign-badge,
+html[data-theme="dark"] .pricing-redesign-badge,
+body.dark-theme .pricing-redesign-badge {
+  background: rgba(139, 124, 255, 0.16);
+  color: #c9c0ff;
+  border-color: rgba(139, 124, 255, 0.25);
+}
+
+/* Search input */
+html.dark-theme .pricing-redesign-search,
+html[data-theme="dark"] .pricing-redesign-search,
+body.dark-theme .pricing-redesign-search {
+  background: #0d1220;
+  border-color: #30394e;
+  color: #cbd5e1;
+}
+
+html.dark-theme .pricing-redesign-search input,
+html[data-theme="dark"] .pricing-redesign-search input,
+body.dark-theme .pricing-redesign-search input {
+  color: #f8fafc;
+  background: transparent;
+}
+
+html.dark-theme .pricing-redesign-search input::placeholder,
+html[data-theme="dark"] .pricing-redesign-search input::placeholder,
+body.dark-theme .pricing-redesign-search input::placeholder {
+  color: #7f8aa3;
+}
+
+/* Filter controls — active selection stays purple */
+html.dark-theme .pricing-redesign-filter,
+html[data-theme="dark"] .pricing-redesign-filter,
+body.dark-theme .pricing-redesign-filter {
+  color: #c4cce0;
+  background: #171e2e;
+  border-color: #30394e;
+}
+
+html.dark-theme .pricing-redesign-filter:hover,
+html[data-theme="dark"] .pricing-redesign-filter:hover,
+body.dark-theme .pricing-redesign-filter:hover {
+  color: #ffffff;
+  background: rgba(99, 91, 255, 0.18);
+  border-color: rgba(124, 108, 255, 0.55);
+}
+
+html.dark-theme .pricing-redesign-filter.active,
+html[data-theme="dark"] .pricing-redesign-filter.active,
+body.dark-theme .pricing-redesign-filter.active {
+  color: #ffffff;
+  background: #5145e5;
+  border-color: #6558ff;
+  box-shadow: 0 7px 18px rgba(81, 69, 229, 0.28);
+}
+
+html.dark-theme .pricing-redesign-filter-title,
+html[data-theme="dark"] .pricing-redesign-filter-title,
+body.dark-theme .pricing-redesign-filter-title {
+  color: #c4cce0;
+}
+
+/* Card footer/buttons */
+html.dark-theme .pricing-redesign-button,
+html[data-theme="dark"] .pricing-redesign-button,
+body.dark-theme .pricing-redesign-button {
+  color: #ffffff;
+  background: #5145e5;
+  border-color: #6558ff;
+}
+
+html.dark-theme .pricing-redesign-button:hover,
+html[data-theme="dark"] .pricing-redesign-button:hover,
+body.dark-theme .pricing-redesign-button:hover {
+  background: #4034d7;
+}
+
+html.dark-theme .pricing-redesign-empty,
+html[data-theme="dark"] .pricing-redesign-empty,
+body.dark-theme .pricing-redesign-empty {
+  color: #aab4c8;
+  background: #141a29;
+  border-color: #30394e;
+}
+
+/* Small-screen contrast */
+@media (max-width: 680px) {
+  html.dark-theme .pricing-redesign-card,
+  html[data-theme="dark"] .pricing-redesign-card,
+  body.dark-theme .pricing-redesign-card {
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+  }
+}
+/* API HUB — PRICING PAGE DARK THEME FIX
+   Append this entire block to the VERY END of src/styles/dark-theme.css.
+   !important is intentional because Pricing.jsx contains its own inline <style>. */
+
+html.dark-theme body .pricing-redesign-main,
+html[data-theme="dark"] body .pricing-redesign-main,
+body.dark-theme .pricing-redesign-main {
+  background: #090b12 !important;
+  background-image:
+    radial-gradient(circle at 85% 8%, rgba(99, 91, 255, 0.16), transparent 30%),
+    radial-gradient(circle at 8% 30%, rgba(59, 130, 246, 0.08), transparent 25%) !important;
+  color: #f8fafc !important;
+}
+
+/* Heading: fix the low-contrast white text visible in the screenshot */
+html.dark-theme body .pricing-redesign-hero h1,
+html[data-theme="dark"] body .pricing-redesign-hero h1,
+body.dark-theme .pricing-redesign-hero h1 {
+  color: #f8fafc !important;
+}
+html.dark-theme body .pricing-redesign-hero h1 span,
+html[data-theme="dark"] body .pricing-redesign-hero h1 span,
+body.dark-theme .pricing-redesign-hero h1 span {
+  color: #8b7cff !important;
+}
+html.dark-theme body .pricing-redesign-eyebrow,
+html[data-theme="dark"] body .pricing-redesign-eyebrow,
+body.dark-theme .pricing-redesign-eyebrow,
+html.dark-theme body .pricing-redesign-subtitle,
+html[data-theme="dark"] body .pricing-redesign-subtitle,
+body.dark-theme .pricing-redesign-subtitle,
+html.dark-theme body .pricing-redesign-filter-title,
+html[data-theme="dark"] body .pricing-redesign-filter-title,
+body.dark-theme .pricing-redesign-filter-title {
+  color: #aab4c8 !important;
+}
+
+/* Pricing note and count tiles */
+html.dark-theme body .pricing-redesign-note,
+html[data-theme="dark"] body .pricing-redesign-note,
+body.dark-theme .pricing-redesign-note,
+html.dark-theme body .pricing-redesign-count,
+html[data-theme="dark"] body .pricing-redesign-count,
+body.dark-theme .pricing-redesign-count {
+  background: #141a29 !important;
+  color: #e5eaf4 !important;
+  border-color: rgba(255,255,255,.10) !important;
+}
+html.dark-theme body .pricing-redesign-count span,
+html[data-theme="dark"] body .pricing-redesign-count span,
+body.dark-theme .pricing-redesign-count span {
+  color: #aab4c8 !important;
+}
+html.dark-theme body .pricing-redesign-count strong,
+html[data-theme="dark"] body .pricing-redesign-count strong,
+body.dark-theme .pricing-redesign-count strong {
+  color: #b7a8ff !important;
+}
+html.dark-theme body .pricing-redesign-count.free strong,
+html[data-theme="dark"] body .pricing-redesign-count.free strong,
+body.dark-theme .pricing-redesign-count.free strong {
+  color: #34d399 !important;
+}
+
+/* API cards */
+html.dark-theme body .pricing-redesign-card,
+html[data-theme="dark"] body .pricing-redesign-card,
+body.dark-theme .pricing-redesign-card {
+  background: #141a29 !important;
+  color: #e5eaf4 !important;
+  border-color: rgba(255,255,255,.10) !important;
+  box-shadow: 0 16px 38px rgba(0,0,0,.24) !important;
+}
+html.dark-theme body .pricing-redesign-card h2,
+html[data-theme="dark"] body .pricing-redesign-card h2,
+body.dark-theme .pricing-redesign-card h2 {
+  color: #f8fafc !important;
+}
+html.dark-theme body .pricing-redesign-description,
+html[data-theme="dark"] body .pricing-redesign-description,
+body.dark-theme .pricing-redesign-description {
+  color: #aab4c8 !important;
+}
+
+/* Price panel and its text */
+html.dark-theme body .pricing-redesign-price,
+html[data-theme="dark"] body .pricing-redesign-price,
+body.dark-theme .pricing-redesign-price {
+  background: linear-gradient(135deg, #211f42, #1b2033) !important;
+  border-color: rgba(139,124,255,.30) !important;
+}
+html.dark-theme body .pricing-redesign-price-label,
+html[data-theme="dark"] body .pricing-redesign-price-label,
+body.dark-theme .pricing-redesign-price-label {
+  color: #c4baff !important;
+}
+html.dark-theme body .pricing-redesign-price strong,
+html[data-theme="dark"] body .pricing-redesign-price strong,
+body.dark-theme .pricing-redesign-price strong,
+html.dark-theme body .pricing-redesign-price-value,
+html[data-theme="dark"] body .pricing-redesign-price-value,
+body.dark-theme .pricing-redesign-price-value {
+  color: #b7a8ff !important;
+}
+html.dark-theme body .pricing-redesign-price small,
+html[data-theme="dark"] body .pricing-redesign-price small,
+body.dark-theme .pricing-redesign-price small,
+html.dark-theme body .pricing-redesign-free-tier,
+html[data-theme="dark"] body .pricing-redesign-free-tier,
+body.dark-theme .pricing-redesign-free-tier {
+  color: #aab4c8 !important;
+}
+
+/* Filter buttons and search input */
+html.dark-theme body .pricing-redesign-filter,
+html[data-theme="dark"] body .pricing-redesign-filter,
+body.dark-theme .pricing-redesign-filter {
+  color: #d5dbea !important;
+  background: #171e2e !important;
+  border-color: #30394e !important;
+}
+html.dark-theme body .pricing-redesign-filter.active,
+html[data-theme="dark"] body .pricing-redesign-filter.active,
+body.dark-theme .pricing-redesign-filter.active {
+  color: #fff !important;
+  background: #5145e5 !important;
+  border-color: #6558ff !important;
+}
+html.dark-theme body .pricing-redesign-search,
+html[data-theme="dark"] body .pricing-redesign-search,
+body.dark-theme .pricing-redesign-search {
+  color: #cbd5e1 !important;
+  background: #0d1220 !important;
+  border-color: #30394e !important;
+}
+html.dark-theme body .pricing-redesign-search input,
+html[data-theme="dark"] body .pricing-redesign-search input,
+body.dark-theme .pricing-redesign-search input {
+  color: #f8fafc !important;
+  background: transparent !important;
+}
+html.dark-theme body .pricing-redesign-search input::placeholder,
+html[data-theme="dark"] body .pricing-redesign-search input::placeholder,
+body.dark-theme .pricing-redesign-search input::placeholder {
+  color: #8792a8 !important;
+}
+
+/* Buttons, tags, and empty state */
+html.dark-theme body .pricing-redesign-button,
+html[data-theme="dark"] body .pricing-redesign-button,
+body.dark-theme .pricing-redesign-button {
+  color: #fff !important;
+  background: #5145e5 !important;
+  border-color: #6558ff !important;
+}
+html.dark-theme body .pricing-redesign-footer,
+html[data-theme="dark"] body .pricing-redesign-footer,
+body.dark-theme .pricing-redesign-footer,
+html.dark-theme body .pricing-redesign-empty,
+html[data-theme="dark"] body .pricing-redesign-empty,
+body.dark-theme .pricing-redesign-empty {
+  color: #aab4c8 !important;
+  background: #141a29 !important;
+  border-color: rgba(255,255,255,.10) !important;
+}

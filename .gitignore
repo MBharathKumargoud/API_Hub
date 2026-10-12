@@ -1,17 +1,18 @@
-# Secrets
+# Environment variables and secrets
 .env
 .env.*
 !.env.example
 
-# Frontend generated files
-api-hub-frontend/node_modules/
-api-hub-frontend/dist/
+# Java / Maven
+**/target/
 
-# Backend generated files
-api-hub-backend/target/
+# Node.js
+**/node_modules/
+**/dist/
 
-# IDE and OS files
-.vscode/
+# IDE files
 .idea/
-.DS_Store
-Thumbs.db
+.vscode/
+
+# Logs
+*.log
